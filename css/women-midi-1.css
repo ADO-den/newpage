@@ -1,0 +1,170 @@
+
+/* css/midi-dress.css
+   Styles for a Midi Women Dress product page and product card
+   Clean, responsive, accessible, and easy to customize
+*/
+
+:root{
+  --bg: #fbfbfb;
+  --card-bg: #ffffff;
+  --primary: #b85c7a;
+  --accent: #6b3e26;
+  --muted: #6c6c6c;
+  --text: #111214;
+  --radius: 12px;
+  --shadow-soft: 0 18px 40px rgba(16,24,40,0.06);
+  --transition: 180ms;
+  --max-width: 1200px;
+  --container-pad: 1rem;
+}
+
+/* Reset and base */
+* { box-sizing: border-box; }
+html, body { height: 100%; margin: 0; font-family: "Inter", "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale; background:var(--bg); color:var(--text); }
+.container { max-width:var(--max-width); margin:0 auto; padding:0 var(--container-pad); }
+
+/* Page header */
+.midi-hero {
+  padding:2.25rem 0;
+  background:linear-gradient(180deg,#fff 0%, #fff7f8 100%);
+  border-bottom:1px solid rgba(0,0,0,0.03);
+  text-align:center;
+}
+.midi-hero h1 { margin:0; font-size:clamp(1.4rem,2.6vw,2.2rem); color:var(--accent); font-weight:800; }
+.midi-hero p.lead { margin:.5rem 0 0; color:var(--muted); font-size:1rem; }
+
+/* Product layout */
+.product-wrap {
+  display:grid;
+  grid-template-columns: 1fr 380px;
+  gap:2rem;
+  align-items:start;
+  padding:2rem 0;
+}
+@media (max-width:980px) { .product-wrap { grid-template-columns: 1fr; } }
+
+/* Gallery */
+.gallery {
+  border-radius:var(--radius);
+}
+.gallery-main {
+  width:100%;
+  border-radius:12px;
+  overflow:hidden;
+  box-shadow:var(--shadow-soft);
+  background:var(--card-bg);
+}
+.gallery-main img {
+  width:100%;
+  height:560px;
+  object-fit:cover;
+  display:block;
+  transition: transform var(--transition) ease;
+}
+@media (max-width:575px){ .gallery-main img { height:420px; } }
+
+.gallery-thumbs {
+  margin-top:.75rem;
+  display:flex;
+  gap:.6rem;
+  flex-wrap:wrap;
+}
+.gallery-thumbs button {
+  border:1px solid rgba(0,0,0,0.06);
+  background:#fff;
+  padding:6px;
+  border-radius:8px;
+  cursor:pointer;
+  transition: box-shadow var(--transition), transform var(--transition);
+}
+.gallery-thumbs button img { width:64px; height:64px; object-fit:cover; display:block; border-radius:6px; }
+.gallery-thumbs button.active { box-shadow:0 8px 24px rgba(16,24,40,0.08); transform:translateY(-4px); border-color:rgba(0,0,0,0.08); }
+
+/* Product card details */
+.product-card {
+  background:var(--card-bg);
+  border-radius:var(--radius);
+  padding:1.25rem;
+  box-shadow:var(--shadow-soft);
+  border:1px solid rgba(0,0,0,0.03);
+  display:flex;
+  flex-direction:column;
+  gap:.75rem;
+}
+.product-card .brand { font-weight:700; color:var(--accent); font-size:.95rem; }
+.product-card .name { font-size:1.15rem; font-weight:800; margin:0; color:var(--text); }
+.product-card .price { font-weight:800; color:var(--accent); font-size:1.05rem; margin-top:.25rem; }
+.product-card .desc { color:var(--muted); font-size:.95rem; margin:0.5rem 0; line-height:1.45; }
+
+/* Variant controls */
+.controls { display:flex; flex-direction:column; gap:.75rem; margin-top:.5rem; }
+.controls .label { font-size:.85rem; color:var(--muted); font-weight:700; margin-bottom:.25rem; }
+
+/* Color swatches */
+.swatches { display:flex; gap:.5rem; align-items:center; flex-wrap:wrap; }
+.swatch {
+  width:34px; height:34px; border-radius:8px; border:2px solid rgba(0,0,0,0.06);
+  cursor:pointer; transition: transform var(--transition), box-shadow var(--transition);
+  display:inline-flex; align-items:center; justify-content:center;
+}
+.swatch:focus { outline:3px solid rgba(184,92,122,0.14); outline-offset:2px; }
+.swatch.active { transform:translateY(-3px); box-shadow:0 10px 30px rgba(107,62,38,0.08); border-color:rgba(0,0,0,0.08); }
+
+/* Size selector */
+.size-grid { display:flex; gap:.5rem; flex-wrap:wrap; }
+.size-option {
+  padding:.45rem .7rem; border-radius:8px; border:1px solid rgba(0,0,0,0.06);
+  background:#fff; cursor:pointer; font-weight:700; color:var(--text);
+  transition: background var(--transition), transform var(--transition);
+}
+.size-option.disabled { opacity:.45; cursor:not-allowed; }
+.size-option.active { background:var(--primary); color:#fff; transform:translateY(-3px); }
+
+/* Quantity and actions */
+.actions { display:flex; gap:.6rem; align-items:center; margin-top:.5rem; flex-wrap:wrap; }
+.qty {
+  display:inline-flex; align-items:center; gap:.5rem; border:1px solid rgba(0,0,0,0.06); padding:.35rem .5rem; border-radius:8px; background:#fff;
+}
+.qty button { background:transparent; border:0; font-weight:700; cursor:pointer; padding:.25rem .4rem; color:var(--accent); }
+.btn-primary {
+  background:var(--primary); color:#fff; border:0; padding:.7rem 1rem; border-radius:10px; font-weight:800; cursor:pointer;
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+.btn-outline {
+  background:transparent; border:2px solid var(--primary); color:var(--primary); padding:.6rem .9rem; border-radius:10px; font-weight:700; cursor:pointer;
+}
+.btn-primary:hover { transform:translateY(-3px); box-shadow:0 18px 40px rgba(184,92,122,0.12); }
+.btn-outline:hover { transform:translateY(-3px); }
+
+/* Fit and care info */
+.info-list { display:flex; flex-direction:column; gap:.5rem; margin-top:.75rem; }
+.info-list .item { display:flex; gap:.5rem; color:var(--muted); font-size:.95rem; }
+
+/* Related products */
+.related {
+  margin-top:2rem;
+}
+.related .grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1rem; }
+@media (max-width:700px) { .related .grid { grid-template-columns:repeat(2,1fr); } }
+.related .card { border-radius:10px; overflow:hidden; background:#fff; border:1px solid rgba(0,0,0,0.03); box-shadow:var(--shadow-soft); }
+
+/* Responsive tweaks */
+@media (max-width:1200px) { .product-wrap { gap:1.25rem; } }
+@media (max-width:640px) {
+  .product-card { padding:1rem; }
+  .gallery-main img { height:420px; }
+}
+
+/* Accessibility focus */
+a:focus, button:focus, .size-option:focus, .swatch:focus { outline:3px solid rgba(107,62,38,0.12); outline-offset:2px; }
+
+/* Utility */
+.kicker { font-size:.85rem; color:var(--muted); font-weight:700; }
+.badge-new { background:linear-gradient(90deg,#ffd6e8,#ffb3d1); color:var(--accent); padding:.25rem .5rem; border-radius:999px; font-weight:800; font-size:.8rem; }
+
+/* Print friendly */
+@media print {
+  body { background:#fff; color:#000; }
+  .gallery-main img { height:auto; }
+  .btn-primary, .btn-outline { display:none; }
+}

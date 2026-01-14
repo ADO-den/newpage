@@ -1,0 +1,64 @@
+/* Responsive product grid fallback applied site-wide
+   Ensures `.row.g-4` shows multiple cards per row on small screens.
+   Add this file last in the head so it can override page-specific styles.
+*/
+.row.g-4 {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 1rem !important;
+}
+
+@media (max-width: 420px) {
+  .row.g-4 {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 0.6rem !important;
+  }
+}
+
+.row.g-4 .card, .row.g-4 .product-card, .row.g-4 .category-card {
+  width: 100%;
+}
+
+.row.g-4 > [class*="col-"] {
+  flex: 0 0 auto !important;
+  -ms-flex: 0 0 auto !important;
+  width: auto !important;
+  max-width: none !important;
+}
+
+.row.g-4 > [class*="col-"] > * { width: 100%; }
+
+/* Navbar responsive fallback: show toggler and stack nav items below lg (992px) */
+.navbar-toggler { display: none !important; }
+
+@media (max-width: 991.98px) {
+  .navbar-toggler { display: inline-block !important; }
+  .navbar-nav { flex-direction: column !important; }
+  .navbar .nav-link { padding: .5rem 0 !important; }
+  .navbar-brand { margin-right: 0 !important; }
+  .navbar-collapse { width: 100%; }
+}
+
+/* Normalize order button hover to white text on brown background */
+.order-btn, .btn-brown.order-btn { transition: background-color .15s, color .15s; }
+.order-btn:hover, .btn-brown.order-btn:hover {
+  background-color: #5a2c12 !important;
+  color: #ffffff !important;
+  border-color: #5a2c12 !important;
+}
+
+/* Hero action buttons: allow wrapping and full-width on narrow screens */
+.hero-banner .mt-3 { display: flex; gap: .75rem; justify-content: center; flex-wrap: wrap; }
+.hero-banner .mt-3 .btn { flex: 0 1 auto; }
+@media (max-width: 575.98px) {
+  .hero-banner .mt-3 .btn { flex: 1 1 100%; }
+}
+
+/* Filter bar: wrap filter buttons and make select full-width on small screens */
+.py-3.bg-light .container > .d-flex { flex-wrap: wrap; }
+.py-3.bg-light .container > .d-flex .d-flex { flex-wrap: wrap; }
+.py-3.bg-light .container .btn-outline-brown { white-space: nowrap; margin-bottom: .4rem; }
+@media (max-width: 575.98px) {
+  .py-3.bg-light .container .form-select { width: 100% !important; }
+  .py-3.bg-light .container > .d-flex { gap: .5rem; }
+}
