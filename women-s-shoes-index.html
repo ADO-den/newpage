@@ -1,0 +1,1208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Women's Shoes — JK Fashion Empire</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+
+  <!-- Site CSS -->
+  <link rel="stylesheet" href="css/Womenshoe.css" />
+  <link rel="stylesheet" href="css/responsive-cards-1.css" />
+  <link rel="stylesheet" href="css/size-guide-1.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <div class="container">
+      <div class="d-flex align-items-center brand-wrap">
+        <img src="https://i.imghippo.com/files/sDGr2452Xk.png" alt="JK Fashion Empire logo" class="logo" />
+        <a class="navbar-brand fw-bold text-brown ms-2" href="index.html">JK Fashion Empire</a>
+      </div>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain"
+              aria-controls="navMain" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navMain">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="women-collection-index.html">Women</a></li>
+          <li class="nav-item"><a class="nav-link" href="women-s-dresses-index.html">Dresses</a></li>
+          <li class="nav-item"><a class="nav-link" href="women-s-tops-index.html">Tops</a></li>
+          <li class="nav-item"><a class="nav-link" href="women-s-skirts-index.html">Skirts</a></li>
+          <li class="nav-item"><a class="nav-link active" href="women-s-shoes-index.html">Shoes</a></li>
+          <li class="nav-item ms-2"><a class="nav-link" href="https://wa.me/2348136754060" title="WhatsApp"><i class="bi bi-whatsapp"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero-banner text-center py-5">
+    <div class="container">
+      <h1 class="fw-bold text-brown">Women's Shoes</h1>
+      <p class="lead text-muted">Heels, flats, sandals, sneakers and boots — elegant, comfortable, and crafted to last. Order via WhatsApp.</p>
+      <div class="mt-3 d-flex justify-content-center gap-2 flex-wrap">
+        <a class="btn btn-outline-brown" href="women-collection-index.html">Back to Women</a>
+        <a class="btn btn-brown" href="#products">Browse Shoes</a>
+        <a class="btn btn-outline-brown" href="https://wa.me/2348136754060?text=Join%20Women%20Shoes%20Group" title="Join Shoes WhatsApp Group">Join Shoes WhatsApp</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- FILTER / SORT BAR -->
+  <section class="py-3 bg-light filter-bar">
+    <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between gap-3">
+      <div class="d-flex gap-2 align-items-center flex-wrap">
+        <button class="btn btn-outline-brown active" data-filter="all">All</button>
+       <a href="heels-women-shoes-index.html"><button class="btn btn-outline-brown" >Heels</button></a>
+        <a href="flats-women-shoes-index.html"><button class="btn btn-outline-brown" >Flats</button></a>
+        <a href="sandals-women-shoes-index.html"><button class="btn btn-outline-brown" >Sandals</button></a>
+        <a href="sneakers-women-shoes-index.html"><button class="btn btn-outline-brown" >Sneakers</button></a>
+        <a href="boots-women-shoes-index.html"><button class="btn btn-outline-brown" >Boots</button></a>
+        <a href="mules-women-shoes-index.html"><button class="btn btn-outline-brown" >Mules</button></a>
+      </div>
+
+      <div class="d-flex align-items-center gap-2">
+        <label class="small text-muted mb-0">Sort</label>
+        <select id="sort-select" class="form-select form-select-sm" style="width:170px;">
+          <option value="popular">Most Popular</option>
+          <option value="new">Newest</option>
+          <option value="price-low">Price: Low to High</option>
+          <option value="price-high">Price: High to Low</option>
+        </select>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS GRID -->
+  <main id="products" class="py-5">
+    <div class="container">
+      <h2 class="section-title">Shoes Collection</h2>
+      <p class="section-subtle">Select size and tap "Order via WhatsApp" to place your order. For custom fittings, message our team.</p>
+
+      <div class="row g-4">
+        <!-- 1 Classic Block Heel -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card product-card h-100" data-category="heels" data-newest="true">
+            <div class="position-relative">
+              <span class="product-badge">Heels</span>
+              <img class="card-img-top lazy" data-src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=1200&auto=format&fit=crop" alt="Classic Block Heel - Nude" />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">Classic Block Heel</h5>
+              <p class="card-text price">₦9,800</p>
+              <select class="form-select form-select-sm size-select mb-2" aria-label="Select shoe size for Classic Block Heel">
+                <option value="">Select Size</option><option>36</option><option>37</option><option>38</option><option>39</option><option>40</option>
+              </select>
+              <button class="btn btn-brown order-btn w-100" data-phone="2348136754060">Order via WhatsApp</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2 Strappy Stiletto -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card product-card h-100" data-category="heels" data-newest="false">
+            <div class="position-relative">
+              <span class="product-badge">Heels</span>
+              <img class="card-img-top lazy" data-src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?q=80&w=1200&auto=format&fit=crop" alt="Strappy Stiletto - Black" />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">Strappy Stiletto</h5>
+              <p class="card-text price">₦12,400</p>
+              <select class="form-select form-select-sm size-select mb-2" aria-label="Select shoe size for Strappy Stiletto">
+                <option value="">Select Size</option><option>36</option><option>37</option><option>38</option><option>39</option><option>40</option>
+              </select>
+              <button class="btn btn-brown order-btn w-100" data-phone="2348136754060">Order via WhatsApp</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3 Pointed Leather Flat -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card product-card h-100" data-category="flats" data-newest="true">
+            <div class="position-relative">
+              <span class="product-badge">Flats</span>
+              <img class="card-img-top lazy" data-src="https://images.unsplash.com/photo-1526178611990-3c0b6f6b6b6b?q=80&w=1200&auto=format&fit=crop" alt="Pointed Leather Flat - Tan" />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">Pointed Leather Flat</h5>
+              <p class="card-text price">₦7,200</p>
+              <select class="form-select form-select-sm size-select mb-2" aria-label="Select shoe size for Pointed Leather Flat">
+                <option value="">Select Size</option><option>36</option><option>37</option><option>38</option><option>39</option><option>40</option>
+              </select>
+              <button class="btn btn-brown order-btn w-100" data-phone="2348136754060">Order via WhatsApp</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4 Leather Slide Sandal -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card product-card h-100" data-category="sandals" data-newest="false">
+            <div class="position-relative">
+              <span class="product-badge">Sandals</span>
+              <img class="card-img-top lazy" data-src="https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?q=80&w=1200&auto=format&fit=crop" alt="Leather Slide Sandal - Brown" />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">Leather Slide Sandal</h5>
+              <p class="card-text price">₦5,600</p>
+              <select class="form-select form-select-sm size-select mb-2" aria-label="Select shoe size for Leather Slide Sandal">
+                <option value="">Select Size</option><option>36</option><option>37</option><option>38</option><option>39</option><option>40</option>
+              </select>
+              <button class="btn btn-brown order-btn w-100" data-phone="2348136754060">Order via WhatsApp</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5 White Leather Sneakers -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card product-card h-100" data-category="sneakers" data-newest="true">
+            <div class="position-relative">
+              <span class="product-badge">Sneakers</span>
+              <img class="card-img-top lazy" data-src="https://images.unsplash.com/photo-1519741491640-6f1b6a6b6b6b?q=80&w=1200&auto=format&fit=crop" alt="White Leather Sneakers" />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">White Leather Sneakers</h5>
+              <p class="card-text price">₦8,900</p>
+              <select class="form-select form-select-sm size-select mb-2" aria-label="Select shoe size for White Leather Sneakers">
+                <option value="">Select Size</option><option>36</option><option>37</option><option>38</option><option>39</option><option>40</option>
+              </select>
+              <button class="btn btn-brown order-btn w-100" data-phone="2348136754060">Order via WhatsApp</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6 Espadrille Wedge -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card product-card h-100" data-category="heels summer" data-newest="false">
+            <div class="position-relative">
+              <span class="product-badge">Wedge</span>
+              <img class="card-img-top lazy" data-src="https://images.unsplash.com/photo-1495121605193-b116b5b09f3a?q=80&w=1200&auto=format&fit=crop" alt="Espadrille Wedge - Natural" />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">Espadrille Wedge</h5>
+              <p class="card-text price">₦10,200</p>
+              <select class="form-select form-select-sm size-select mb-2" aria-label="Select shoe size for Espadrille Wedge">
+                <option value="">Select Size</option><option>36</option><option>37</option><option>38</option><option>39</option><option>40</option>
+              </select>
+              <button class="btn btn-brown order-btn w-100" data-phone="2348136754060">Order via WhatsApp</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 7 Slingback Kitten Heel -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card product-card h-100" data-category="heels" data-newest="true">
+            <div class="position-relative">
+              <span class="product-badge">Kitten</span>
+              <img class="card-img-top lazy" data-src="https://images.unsplash.com/photo-1526178611990-3c0b6f6b6b6b?q=80&w=1200&auto=format&fit=crop" alt="Slingback Kitten Heel - Blush" />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">Slingback Kitten Heel</h5>
+              <p class="card-text price">₦9,100</p>
+              <select class="form-select form-select-sm size-select mb-2" aria-label="Select shoe size for Slingback Kitten Heel">
+                <option value="">Select Size</option><option>36</option><option>37</option><option>38</option><option>39</option><option>40</option>
+              </select>
+              <button class="btn btn-brown order-btn w-100" data-phone="2348136754060">Order via WhatsApp</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 8 Ankle Strap Block Heel -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card product-card h-100" data-category="heels evening" data-newest="false">
+            <div class="position-relative">
+              <span class="product-badge">Evening</span>
+              <img class="card-img-top lazy" data-src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?q=80&w=1200&auto=format&fit=crop" alt="Ankle Strap Block Heel - Wine" />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">Ankle Strap Block Heel</h5>
+              <p class="card-text price">₦11,300</p>
+              <select class="form-select form-select-sm size-select mb-2" aria-label="Select shoe size for Ankle Strap Block Heel">
+                <option value="">Select Size</option><option>36</option><option>37</option><option>38</option><option>39</option><option>40</option>
+              </select>
+              <button class="btn btn-brown order-btn w-100" data-phone="2348136754060">Order via WhatsApp</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 9 Platform Sandal -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card product-card h-100" data-category="sandals platform" data-newest="true">
+            <div class="position-relative">
+              <span class="product-badge">Platform</span>
+              <img class="card-img-top lazy" data-src="https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?q=80&w=1200&auto=format&fit=crop" alt="Platform Sandal - Black" />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">Platform Sandal</h5>
+              <p class="card-text price">₦8,700</p>
+              <select class="form-select form-select-sm size-select mb-2" aria-label="Select shoe size for Platform Sandal">
+                <option value="">Select Size</option><option>36</option><option>37</option><option>38</option><option>39</option><option>40</option>
+              </select>
+              <button class="btn btn-brown order-btn w-100" data-phone="2348136754060">Order via WhatsApp</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 10 Chunky Sole Sneaker -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card product-card h-100" data-category="sneakers chunky" data-newest="false">
+            <div class="position-relative">
+              <span class="product-badge">Chunky</span>
+              <img class="card-img-top lazy" data-src="https://images.unsplash.com/photo-1519741491640-6f1b6a6b6b6b?q=80&w=1200&auto=format&fit=crop" alt="Chunky Sole Sneaker - White" />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">Chunky Sole Sneaker</h5>
+              <p class="card-text price">₦10,900</p>
+              <select class="form-select form-select-sm size-select mb-2" aria-label="Select shoe size for Chunky Sole Sneaker">
+                <option value="">Select Size</option><option>36</option><option>37</option><option>38</option><option>39</option><option>40</option>
+              </select>
+              <button class="btn btn-brown order-btn w-100" data-phone="2348136754060">Order via WhatsApp</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 11 Chelsea Ankle Boot -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card product-card h-100" data-category="boots" data-newest="true">
+            <div class="position-relative">
+              <span class="product-badge">Boots</span>
+              <img class="card-img-top lazy" data-src="https://images.unsplash.com/photo-1602810317759-4e4c4c3e8f3f?q=80&w=1200&auto=format&fit=crop" alt="Chelsea Ankle Boot - Brown" />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">Chelsea Ankle Boot</h5>
+              <p class="card-text price">₦13,500</p>
+              <select class="form-select form-select-sm size-select mb-2" aria-label="Select shoe size for Chelsea Ankle Boot">
+                <option value="">Select Size</option><option>36</option><option>37</option><option>38</option><option>39</option><option>40</option>
+              </select>
+              <button class="btn btn-brown order-btn w-100" data-phone="2348136754060">Order via WhatsApp</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 12 Ballet Flat with Bow -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card product-card h-100" data-category="flats casual" data-newest="false">
+            <div class="position-relative">
+              <span class="product-badge">Ballet</span>
+              <img class="card-img-top lazy" data-src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?q=80&w=1200&auto=format&fit=crop" alt="Ballet Flat with Bow - Pink" />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">Ballet Flat with Bow</h5>
+              <p class="card-text price">₦6,400</p>
+              <select class="form-select form-select-sm size-select mb-2" aria-label="Select shoe size for Ballet Flat with Bow">
+                <option value="">Select Size</option><option>36</option><option>37</option><option>38</option><option>39</option><option>40</option>
+              </select>
+              <button class="btn btn-brown order-btn w-100" data-phone="2348136754060">Order via WhatsApp</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 13 Mules with Low Heel -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card product-card h-100" data-category="mules" data-newest="true">
+            <div class="position-relative">
+              <span class="product-badge">Mules</span>
+              <img class="card-img-top lazy" data-src="https://images.unsplash.com/photo-1526178611990-3c0b6f6b6b6b?q=80&w=1200&auto=format&fit=crop" alt="Mules with Low Heel - Beige" />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">Mules with Low Heel</h5>
+              <p class="card-text price">₦7,900</p>
+              <select class="form-select form-select-sm size-select mb-2" aria-label="Select shoe size for Mules with Low Heel">
+                <option value="">Select Size</option><option>36</option><option>37</option><option>38</option><option>39</option><option>40</option>
+              </select>
+              <button class="btn btn-brown order-btn w-100" data-phone="2348136754060">Order via WhatsApp</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 14 Gladiator Sandal -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card product-card h-100" data-category="sandals bold" data-newest="false">
+            <div class="position-relative">
+              <span class="product-badge">Gladiator</span>
+              <img class="card-img-top lazy" data-src="https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?q=80&w=1200&auto=format&fit=crop" alt="Gladiator Sandal - Tan" />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">Gladiator Sandal</h5>
+              <p class="card-text price">₦6,800</p>
+              <select class="form-select form-select-sm size-select mb-2" aria-label="Select shoe size for Gladiator Sandal">
+                <option value="">Select Size</option><option>36</option><option>37</option><option>38</option><option>39</option><option>40</option>
+              </select>
+              <button class="btn btn-brown order-btn w-100" data-phone="2348136754060">Order via WhatsApp</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 15 Suede Ankle Boot -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card product-card h-100" data-category="boots suede" data-newest="true">
+            <div class="position-relative">
+              <span class="product-badge">Suede</span>
+              <img class="card-img-top lazy" data-src="https://images.unsplash.com/photo-1602810317759-4e4c4c3e8f3f?q=80&w=1200&auto=format&fit=crop" alt="Suede Ankle Boot - Taupe" />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">Suede Ankle Boot</h5>
+              <p class="card-text price">₦14,200</p>
+              <select class="form-select form-select-sm size-select mb-2" aria-label="Select shoe size for Suede Ankle Boot">
+                <option value="">Select Size</option><option>36</option><option>37</option><option>38</option><option>39</option><option>40</option>
+              </select>
+              <button class="btn btn-brown order-btn w-100" data-phone="2348136754060">Order via WhatsApp</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 16 Clear Strap Heels -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card product-card h-100" data-category="heels modern" data-newest="false">
+            <div class="position-relative">
+              <span class="product-badge">Modern</span>
+              <img class="card-img-top lazy" data-src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?q=80&w=1200&auto=format&fit=crop" alt="Clear Strap Heels - Transparent" />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">Clear Strap Heels</h5>
+              <p class="card-text price">₦11,000</p>
+              <select class="form-select form-select-sm size-select mb-2" aria-label="Select shoe size for Clear Strap Heels">
+                <option value="">Select Size</option><option>36</option><option>37</option><option>38</option><option>39</option><option>40</option>
+              </select>
+              <button class="btn btn-brown order-btn w-100" data-phone="2348136754060">Order via WhatsApp</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 17 Platform Espadrille -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card product-card h-100" data-category="platform summer" data-newest="true">
+            <div class="position-relative">
+              <span class="product-badge">Platform</span>
+              <img class="card-img-top lazy" data-src="https://images.unsplash.com/photo-1495121605193-b116b5b09f3a?q=80&w=1200&auto=format&fit=crop" alt="Platform Espadrille - Natural" />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">Platform Espadrille</h5>
+              <p class="card-text price">₦9,600</p>
+              <select class="form-select form-select-sm size-select mb-2" aria-label="Select shoe size for Platform Espadrille">
+                <option value="">Select Size</option><option>36</option><option>37</option><option>38</option><option>39</option><option>40</option>
+              </select>
+              <button class="btn btn-brown order-btn w-100" data-phone="2348136754060">Order via WhatsApp</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 18 Sporty Slip-on -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card product-card h-100" data-category="sneakers casual" data-newest="false">
+            <div class="position-relative">
+              <span class="product-badge">Slip-on</span>
+              <img class="card-img-top lazy" data-src="https://images.unsplash.com/photo-1519741491640-6f1b6a6b6b6b?q=80&w=1200&auto=format&fit=crop" alt="Sporty Slip-on - Grey" />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">Sporty Slip-on</h5>
+              <p class="card-text price">₦7,900</p>
+              <select class="form-select form-select-sm size-select mb-2" aria-label="Select shoe size for Sporty Slip-on">
+                <option value="">Select Size</option><option>36</option><option>37</option><option>38</option><option>39</option><option>40</option>
+              </select>
+              <button class="btn btn-brown order-btn w-100" data-phone="2348136754060">Order via WhatsApp</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 19 Embellished Evening Pump -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card product-card h-100" data-category="heels evening" data-newest="true">
+            <div class="position-relative">
+              <span class="product-badge">Evening</span>
+              <img class="card-img-top lazy" data-src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?q=80&w=1200&auto=format&fit=crop" alt="Embellished Evening Pump - Silver" />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">Embellished Evening Pump</h5>
+              <p class="card-text price">₦13,900</p>
+              <select class="form-select form-select-sm size-select mb-2" aria-label="Select shoe size for Embellished Evening Pump">
+                <option value="">Select Size</option><option>36</option><option>37</option><option>38</option><option>39</option><option>40</option>
+              </select>
+              <button class="btn btn-brown order-btn w-100" data-phone="2348136754060">Order via WhatsApp</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 20 Rubber Sole Rain Boot -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card product-card h-100" data-category="boots rain" data-newest="false">
+            <div class="position-relative">
+              <span class="product-badge">Rain</span>
+              <img class="card-img-top lazy" data-src="https://images.unsplash.com/photo-1602810317759-4e4c4c3e8f3f?q=80&w=1200&auto=format&fit=crop" alt="Rubber Sole Rain Boot - Black" />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">Rubber Sole Rain Boot</h5>
+              <p class="card-text price">₦10,800</p>
+              <select class="form-select form-select-sm size-select mb-2" aria-label="Select shoe size for Rubber Sole Rain Boot">
+                <option value="">Select Size</option><option>36</option><option>37</option><option>38</option><option>39</option><option>40</option>
+              </select>
+              <button class="btn btn-brown order-btn w-100" data-phone="2348136754060">Order via WhatsApp</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 21 T-strap Mary Jane -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card product-card h-100" data-category="flats retro" data-newest="true">
+            <div class="position-relative">
+              <span class="product-badge">Mary Jane</span>
+              <img class="card-img-top lazy" data-src="https://images.unsplash.com/photo-1526178611990-3c0b6f6b6b6b?q=80&w=1200&auto=format&fit=crop" alt="T-strap Mary Jane - Black" />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">T-strap Mary Jane</h5>
+              <p class="card-text price">₦7,300</p>
+              <select class="form-select form-select-sm size-select mb-2" aria-label="Select shoe size for T-strap Mary Jane">
+                <option value="">Select Size</option><option>36</option><option>37</option><option>38</option><option>39</option><option>40</option>
+              </select>
+              <button class="btn btn-brown order-btn w-100" data-phone="2348136754060">Order via WhatsApp</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 22 Metallic Slide -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card product-card h-100" data-category="sandals metallic" data-newest="false">
+            <div class="position-relative">
+              <span class="product-badge">Metallic</span>
+              <img class="card-img-top lazy" data-src="https://images.unsplash.com/photo-1519741491640-6f1b6a6b6b6b?q=80&w=1200&auto=format&fit=crop" alt="Metallic Slide - Gold" />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">Metallic Slide</h5>
+              <p class="card-text price">₦6,900</p>
+              <select class="form-select form-select-sm size-select mb-2" aria-label="Select shoe size for Metallic Slide">
+                <option value="">Select Size</option><option>36</option><option>37</option><option>38</option><option>39</option><option>40</option>
+              </select>
+              <button class="btn btn-brown order-btn w-100" data-phone="2348136754060">Order via WhatsApp</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 23 Velvet Evening Mule -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card product-card h-100" data-category="mules evening" data-newest="true">
+            <div class="position-relative">
+              <span class="product-badge">Velvet</span>
+              <img class="card-img-top lazy" data-src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?q=80&w=1200&auto=format&fit=crop" alt="Velvet Evening Mule - Navy" />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">Velvet Evening Mule</h5>
+              <p class="card-text price">₦12,600</p>
+              <select class="form-select form-select-sm size-select mb-2" aria-label="Select shoe size for Velvet Evening Mule">
+                <option value="">Select Size</option><option>36</option><option>37</option><option>38</option><option>39</option><option>40</option>
+              </select>
+              <button class="btn btn-brown order-btn w-100" data-phone="2348136754060">Order via WhatsApp</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 24 Cork Wedge Sandal -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card product-card h-100" data-category="wedges summer" data-newest="false">
+            <div class="position-relative">
+              <span class="product-badge">Cork</span>
+              <img class="card-img-top lazy" data-src="https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?q=80&w=1200&auto=format&fit=crop" alt="Cork Wedge Sandal - Tan" />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">Cork Wedge Sandal</h5>
+              <p class="card-text price">₦9,400</p>
+              <select class="form-select form-select-sm size-select mb-2" aria-label="Select shoe size for Cork Wedge Sandal">
+                <option value="">Select Size</option><option>36</option><option>37</option><option>38</option><option>39</option><option>40</option>
+              </select>
+              <button class="btn btn-brown order-btn w-100" data-phone="2348136754060">Order via WhatsApp</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 25 Classic Oxford Flat -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card product-card h-100" data-category="flats oxford" data-newest="true">
+            <div class="position-relative">
+              <span class="product-badge">Oxford</span>
+              <img class="card-img-top lazy" data-src="https://images.unsplash.com/photo-1526178611990-3c0b6f6b6b6b?q=80&w=1200&auto=format&fit=crop" alt="Classic Oxford Flat - Black" />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">Classic Oxford Flat</h5>
+              <p class="card-text price">₦8,100</p>
+              <select class="form-select form-select-sm size-select mb-2" aria-label="Select shoe size for Classic Oxford Flat">
+                <option value="">Select Size</option><option>36</option><option>37</option><option>38</option><option>39</option><option>40</option>
+              </select>
+              <button class="btn btn-brown order-btn w-100" data-phone="2348136754060">Order via WhatsApp</button>
+            </div>
+          </div>
+        </div>
+
+      
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="backpack" data-newest="true" data-price="12000" aria-labelledby="bag-1">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?backpack" alt="Black Backpack" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="bag-1" class="card-title">Black Backpack</h5>
+              <div class="price">₦12,000</div>
+              <p class="card-text text-muted small">Durable backpack with padded straps and multiple compartments.</p>
+
+              <label class="visually-hidden" for="size-bag-1">Select size</label>
+              <select id="size-bag-1" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Black Backpack">
+                <option value="">Select Size</option><option value="M">Medium</option><option value="L">Large</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Black Backpack">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="backpack" data-newest="true" data-price="12000" aria-labelledby="bag-1">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?backpack" alt="Black Backpack" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="bag-1" class="card-title">Black Backpack</h5>
+              <div class="price">₦12,000</div>
+              <p class="card-text text-muted small">Durable backpack with padded straps and multiple compartments.</p>
+
+              <label class="visually-hidden" for="size-bag-1">Select size</label>
+              <select id="size-bag-1" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Black Backpack">
+                <option value="">Select Size</option><option value="M">Medium</option><option value="L">Large</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Black Backpack">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="backpack" data-newest="true" data-price="12000" aria-labelledby="bag-1">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?backpack" alt="Black Backpack" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="bag-1" class="card-title">Black Backpack</h5>
+              <div class="price">₦12,000</div>
+              <p class="card-text text-muted small">Durable backpack with padded straps and multiple compartments.</p>
+
+              <label class="visually-hidden" for="size-bag-1">Select size</label>
+              <select id="size-bag-1" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Black Backpack">
+                <option value="">Select Size</option><option value="M">Medium</option><option value="L">Large</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Black Backpack">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="backpack" data-newest="true" data-price="12000" aria-labelledby="bag-1">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?backpack" alt="Black Backpack" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="bag-1" class="card-title">Black Backpack</h5>
+              <div class="price">₦12,000</div>
+              <p class="card-text text-muted small">Durable backpack with padded straps and multiple compartments.</p>
+
+              <label class="visually-hidden" for="size-bag-1">Select size</label>
+              <select id="size-bag-1" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Black Backpack">
+                <option value="">Select Size</option><option value="M">Medium</option><option value="L">Large</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Black Backpack">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="backpack" data-newest="true" data-price="12000" aria-labelledby="bag-1">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?backpack" alt="Black Backpack" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="bag-1" class="card-title">Black Backpack</h5>
+              <div class="price">₦12,000</div>
+              <p class="card-text text-muted small">Durable backpack with padded straps and multiple compartments.</p>
+
+              <label class="visually-hidden" for="size-bag-1">Select size</label>
+              <select id="size-bag-1" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Black Backpack">
+                <option value="">Select Size</option><option value="M">Medium</option><option value="L">Large</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Black Backpack">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="backpack" data-newest="true" data-price="12000" aria-labelledby="bag-1">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?backpack" alt="Black Backpack" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="bag-1" class="card-title">Black Backpack</h5>
+              <div class="price">₦12,000</div>
+              <p class="card-text text-muted small">Durable backpack with padded straps and multiple compartments.</p>
+
+              <label class="visually-hidden" for="size-bag-1">Select size</label>
+              <select id="size-bag-1" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Black Backpack">
+                <option value="">Select Size</option><option value="M">Medium</option><option value="L">Large</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Black Backpack">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="backpack" data-newest="true" data-price="12000" aria-labelledby="bag-1">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?backpack" alt="Black Backpack" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="bag-1" class="card-title">Black Backpack</h5>
+              <div class="price">₦12,000</div>
+              <p class="card-text text-muted small">Durable backpack with padded straps and multiple compartments.</p>
+
+              <label class="visually-hidden" for="size-bag-1">Select size</label>
+              <select id="size-bag-1" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Black Backpack">
+                <option value="">Select Size</option><option value="M">Medium</option><option value="L">Large</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Black Backpack">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="backpack" data-newest="true" data-price="12000" aria-labelledby="bag-1">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?backpack" alt="Black Backpack" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="bag-1" class="card-title">Black Backpack</h5>
+              <div class="price">₦12,000</div>
+              <p class="card-text text-muted small">Durable backpack with padded straps and multiple compartments.</p>
+
+              <label class="visually-hidden" for="size-bag-1">Select size</label>
+              <select id="size-bag-1" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Black Backpack">
+                <option value="">Select Size</option><option value="M">Medium</option><option value="L">Large</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Black Backpack">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="backpack" data-newest="true" data-price="12000" aria-labelledby="bag-1">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?backpack" alt="Black Backpack" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="bag-1" class="card-title">Black Backpack</h5>
+              <div class="price">₦12,000</div>
+              <p class="card-text text-muted small">Durable backpack with padded straps and multiple compartments.</p>
+
+              <label class="visually-hidden" for="size-bag-1">Select size</label>
+              <select id="size-bag-1" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Black Backpack">
+                <option value="">Select Size</option><option value="M">Medium</option><option value="L">Large</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Black Backpack">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="backpack" data-newest="true" data-price="12000" aria-labelledby="bag-1">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?backpack" alt="Black Backpack" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="bag-1" class="card-title">Black Backpack</h5>
+              <div class="price">₦12,000</div>
+              <p class="card-text text-muted small">Durable backpack with padded straps and multiple compartments.</p>
+
+              <label class="visually-hidden" for="size-bag-1">Select size</label>
+              <select id="size-bag-1" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Black Backpack">
+                <option value="">Select Size</option><option value="M">Medium</option><option value="L">Large</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Black Backpack">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="backpack" data-newest="true" data-price="12000" aria-labelledby="bag-1">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?backpack" alt="Black Backpack" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="bag-1" class="card-title">Black Backpack</h5>
+              <div class="price">₦12,000</div>
+              <p class="card-text text-muted small">Durable backpack with padded straps and multiple compartments.</p>
+
+              <label class="visually-hidden" for="size-bag-1">Select size</label>
+              <select id="size-bag-1" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Black Backpack">
+                <option value="">Select Size</option><option value="M">Medium</option><option value="L">Large</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Black Backpack">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="backpack" data-newest="true" data-price="12000" aria-labelledby="bag-1">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?backpack" alt="Black Backpack" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="bag-1" class="card-title">Black Backpack</h5>
+              <div class="price">₦12,000</div>
+              <p class="card-text text-muted small">Durable backpack with padded straps and multiple compartments.</p>
+
+              <label class="visually-hidden" for="size-bag-1">Select size</label>
+              <select id="size-bag-1" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Black Backpack">
+                <option value="">Select Size</option><option value="M">Medium</option><option value="L">Large</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Black Backpack">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="backpack" data-newest="true" data-price="12000" aria-labelledby="bag-1">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?backpack" alt="Black Backpack" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="bag-1" class="card-title">Black Backpack</h5>
+              <div class="price">₦12,000</div>
+              <p class="card-text text-muted small">Durable backpack with padded straps and multiple compartments.</p>
+
+              <label class="visually-hidden" for="size-bag-1">Select size</label>
+              <select id="size-bag-1" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Black Backpack">
+                <option value="">Select Size</option><option value="M">Medium</option><option value="L">Large</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Black Backpack">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="backpack" data-newest="true" data-price="12000" aria-labelledby="bag-1">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?backpack" alt="Black Backpack" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="bag-1" class="card-title">Black Backpack</h5>
+              <div class="price">₦12,000</div>
+              <p class="card-text text-muted small">Durable backpack with padded straps and multiple compartments.</p>
+
+              <label class="visually-hidden" for="size-bag-1">Select size</label>
+              <select id="size-bag-1" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Black Backpack">
+                <option value="">Select Size</option><option value="M">Medium</option><option value="L">Large</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Black Backpack">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="backpack" data-newest="true" data-price="12000" aria-labelledby="bag-1">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?backpack" alt="Black Backpack" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="bag-1" class="card-title">Black Backpack</h5>
+              <div class="price">₦12,000</div>
+              <p class="card-text text-muted small">Durable backpack with padded straps and multiple compartments.</p>
+
+              <label class="visually-hidden" for="size-bag-1">Select size</label>
+              <select id="size-bag-1" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Black Backpack">
+                <option value="">Select Size</option><option value="M">Medium</option><option value="L">Large</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Black Backpack">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="backpack" data-newest="true" data-price="12000" aria-labelledby="bag-1">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?backpack" alt="Black Backpack" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="bag-1" class="card-title">Black Backpack</h5>
+              <div class="price">₦12,000</div>
+              <p class="card-text text-muted small">Durable backpack with padded straps and multiple compartments.</p>
+
+              <label class="visually-hidden" for="size-bag-1">Select size</label>
+              <select id="size-bag-1" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Black Backpack">
+                <option value="">Select Size</option><option value="M">Medium</option><option value="L">Large</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Black Backpack">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="backpack" data-newest="true" data-price="12000" aria-labelledby="bag-1">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?backpack" alt="Black Backpack" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="bag-1" class="card-title">Black Backpack</h5>
+              <div class="price">₦12,000</div>
+              <p class="card-text text-muted small">Durable backpack with padded straps and multiple compartments.</p>
+
+              <label class="visually-hidden" for="size-bag-1">Select size</label>
+              <select id="size-bag-1" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Black Backpack">
+                <option value="">Select Size</option><option value="M">Medium</option><option value="L">Large</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Black Backpack">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="backpack" data-newest="true" data-price="12000" aria-labelledby="bag-1">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?backpack" alt="Black Backpack" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="bag-1" class="card-title">Black Backpack</h5>
+              <div class="price">₦12,000</div>
+              <p class="card-text text-muted small">Durable backpack with padded straps and multiple compartments.</p>
+
+              <label class="visually-hidden" for="size-bag-1">Select size</label>
+              <select id="size-bag-1" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Black Backpack">
+                <option value="">Select Size</option><option value="M">Medium</option><option value="L">Large</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Black Backpack">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="backpack" data-newest="true" data-price="12000" aria-labelledby="bag-1">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?backpack" alt="Black Backpack" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="bag-1" class="card-title">Black Backpack</h5>
+              <div class="price">₦12,000</div>
+              <p class="card-text text-muted small">Durable backpack with padded straps and multiple compartments.</p>
+
+              <label class="visually-hidden" for="size-bag-1">Select size</label>
+              <select id="size-bag-1" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Black Backpack">
+                <option value="">Select Size</option><option value="M">Medium</option><option value="L">Large</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Black Backpack">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="backpack" data-newest="true" data-price="12000" aria-labelledby="bag-1">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?backpack" alt="Black Backpack" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="bag-1" class="card-title">Black Backpack</h5>
+              <div class="price">₦12,000</div>
+              <p class="card-text text-muted small">Durable backpack with padded straps and multiple compartments.</p>
+
+              <label class="visually-hidden" for="size-bag-1">Select size</label>
+              <select id="size-bag-1" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Black Backpack">
+                <option value="">Select Size</option><option value="M">Medium</option><option value="L">Large</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Black Backpack">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="backpack" data-newest="true" data-price="12000" aria-labelledby="bag-1">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?backpack" alt="Black Backpack" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="bag-1" class="card-title">Black Backpack</h5>
+              <div class="price">₦12,000</div>
+              <p class="card-text text-muted small">Durable backpack with padded straps and multiple compartments.</p>
+
+              <label class="visually-hidden" for="size-bag-1">Select size</label>
+              <select id="size-bag-1" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Black Backpack">
+                <option value="">Select Size</option><option value="M">Medium</option><option value="L">Large</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Black Backpack">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="backpack" data-newest="true" data-price="12000" aria-labelledby="bag-1">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?backpack" alt="Black Backpack" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="bag-1" class="card-title">Black Backpack</h5>
+              <div class="price">₦12,000</div>
+              <p class="card-text text-muted small">Durable backpack with padded straps and multiple compartments.</p>
+
+              <label class="visually-hidden" for="size-bag-1">Select size</label>
+              <select id="size-bag-1" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Black Backpack">
+                <option value="">Select Size</option><option value="M">Medium</option><option value="L">Large</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Black Backpack">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="backpack" data-newest="true" data-price="12000" aria-labelledby="bag-1">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?backpack" alt="Black Backpack" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="bag-1" class="card-title">Black Backpack</h5>
+              <div class="price">₦12,000</div>
+              <p class="card-text text-muted small">Durable backpack with padded straps and multiple compartments.</p>
+
+              <label class="visually-hidden" for="size-bag-1">Select size</label>
+              <select id="size-bag-1" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Black Backpack">
+                <option value="">Select Size</option><option value="M">Medium</option><option value="L">Large</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Black Backpack">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="backpack" data-newest="true" data-price="12000" aria-labelledby="bag-1">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?backpack" alt="Black Backpack" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="bag-1" class="card-title">Black Backpack</h5>
+              <div class="price">₦12,000</div>
+              <p class="card-text text-muted small">Durable backpack with padded straps and multiple compartments.</p>
+
+              <label class="visually-hidden" for="size-bag-1">Select size</label>
+              <select id="size-bag-1" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Black Backpack">
+                <option value="">Select Size</option><option value="M">Medium</option><option value="L">Large</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Black Backpack">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="backpack" data-newest="true" data-price="12000" aria-labelledby="bag-1">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?backpack" alt="Black Backpack" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="bag-1" class="card-title">Black Backpack</h5>
+              <div class="price">₦12,000</div>
+              <p class="card-text text-muted small">Durable backpack with padded straps and multiple compartments.</p>
+
+              <label class="visually-hidden" for="size-bag-1">Select size</label>
+              <select id="size-bag-1" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Black Backpack">
+                <option value="">Select Size</option><option value="M">Medium</option><option value="L">Large</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Black Backpack">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="backpack" data-newest="true" data-price="12000" aria-labelledby="bag-1">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?backpack" alt="Black Backpack" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="bag-1" class="card-title">Black Backpack</h5>
+              <div class="price">₦12,000</div>
+              <p class="card-text text-muted small">Durable backpack with padded straps and multiple compartments.</p>
+
+              <label class="visually-hidden" for="size-bag-1">Select size</label>
+              <select id="size-bag-1" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Black Backpack">
+                <option value="">Select Size</option><option value="M">Medium</option><option value="L">Large</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Black Backpack">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="backpack" data-newest="true" data-price="12000" aria-labelledby="bag-1">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?backpack" alt="Black Backpack" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="bag-1" class="card-title">Black Backpack</h5>
+              <div class="price">₦12,000</div>
+              <p class="card-text text-muted small">Durable backpack with padded straps and multiple compartments.</p>
+
+              <label class="visually-hidden" for="size-bag-1">Select size</label>
+              <select id="size-bag-1" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Black Backpack">
+                <option value="">Select Size</option><option value="M">Medium</option><option value="L">Large</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Black Backpack">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="backpack" data-newest="true" data-price="12000" aria-labelledby="bag-1">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?backpack" alt="Black Backpack" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="bag-1" class="card-title">Black Backpack</h5>
+              <div class="price">₦12,000</div>
+              <p class="card-text text-muted small">Durable backpack with padded straps and multiple compartments.</p>
+
+              <label class="visually-hidden" for="size-bag-1">Select size</label>
+              <select id="size-bag-1" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Black Backpack">
+                <option value="">Select Size</option><option value="M">Medium</option><option value="L">Large</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Black Backpack">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="backpack" data-newest="true" data-price="12000" aria-labelledby="bag-1">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?backpack" alt="Black Backpack" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="bag-1" class="card-title">Black Backpack</h5>
+              <div class="price">₦12,000</div>
+              <p class="card-text text-muted small">Durable backpack with padded straps and multiple compartments.</p>
+
+              <label class="visually-hidden" for="size-bag-1">Select size</label>
+              <select id="size-bag-1" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Black Backpack">
+                <option value="">Select Size</option><option value="M">Medium</option><option value="L">Large</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Black Backpack">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="backpack" data-newest="true" data-price="12000" aria-labelledby="bag-1">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?backpack" alt="Black Backpack" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="bag-1" class="card-title">Black Backpack</h5>
+              <div class="price">₦12,000</div>
+              <p class="card-text text-muted small">Durable backpack with padded straps and multiple compartments.</p>
+
+              <label class="visually-hidden" for="size-bag-1">Select size</label>
+              <select id="size-bag-1" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Black Backpack">
+                <option value="">Select Size</option><option value="M">Medium</option><option value="L">Large</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Black Backpack">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+</div> <!-- /.row -->
+    </div> <!-- /.container -->
+  </main>
+
+  <!-- NEWSLETTER & CONTACT -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-md-6">
+          <h3 class="fw-bold text-brown">Stay updated on Shoe drops</h3>
+          <!-- <p class="text-muted mb-2">Subscribe for restocks, new arrivals, and exclusive women-only promos.</p>
+          <form id="newsletter-form" class="d-flex gap-2" aria-label="Subscribe to women's shoe collection updates">
+            <input type="email" name="email" class="form-control" placeholder="Your email address" required />
+            <button class="btn btn-brown" type="submit">Subscribe</button>
+          </form> -->
+        </div>
+        <div class="col-md-6 text-md-end">
+          <h5 class="fw-bold text-brown">Need help?</h5>
+          <p class="text-muted mb-0">Message our Women's team on WhatsApp for sizing help, custom fittings, and delivery rates.</p>
+          <a class="btn btn-outline-brown mt-2" href="https://wa.me/2348136754060?text=Hello%20Women%20Shoe%20Team">Chat on WhatsApp</a>
+        </div>
+      </div>
+    </div>
+
+          <div class="text-center mt-4">
+        <a href="https://wa.me/2348136754060?text=I%20want%20to%20order%20mules" class="btn btn-outline-brown">Load more</a>
+      </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer bg-brown text-white py-4">
+    <div class="container text-center">
+      <p class="mb-1">© 2025 JK Fashion Empire</p>
+      <p class="small mb-2">Orders via WhatsApp. Delivery available for a fee; contact us for rates and custom fittings.</p>
+      <div class="d-flex justify-content-center gap-4 small">
+        <div><i class="bi bi-truck"></i> Delivery (fee applies)</div>
+        <div><i class="bi bi-shield-lock"></i> Secure Payment</div>
+        <div><i class="bi bi-headset"></i> Customer Support</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/js/Womenshoe.js"></script>
+
+  <!-- Page JS (reuse women.js or a shoes-specific script) -->
+  <script src="C:\Users\USER\Documents\Main page for website\Women\Womenshoe.js"></script>
+  <script src="js/size-guide-1.js"></script>
+</body>
+</html>

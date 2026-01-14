@@ -1,0 +1,203 @@
+# Asset link manifest
+
+This file lists each HTML page and recommended CSS/JS include tags (workspace-relative). Use these snippets inside the HTML `<head>` (CSS) and before `</body>` (JS).
+
+- [Agbada.html](agbada-collection-index.html)
+  - CSS: <link rel="stylesheet" href="css/Agbada.css">
+  - JS: <script src="js/Agbada.js"></script>
+- [Bags.html](bags-men-and-women-index.html)
+  - CSS: <link rel="stylesheet" href="css/Bags.css">
+  - JS: <script src="js/Bags.js"></script>
+- [blouses-women-traditional-index.html](blouses-women-traditional-index.html)
+  - CSS: <link rel="stylesheet" href="css/blouses.css">
+  - JS: <script src="js/blouses.js"></script>
+- [men-boots-shoes-index.html](men-boots-shoes-index.html)
+  - CSS: <link rel="stylesheet" href="css/boots.css">
+  - JS: <script src="js/boots.js"></script>
+- [bootsWomen-s-collection-index.html](boots-women-shoes-index.html)
+  - CSS: <link rel="stylesheet" href="css/boots.css">
+  - JS: <script src="js/boots.js"></script>
+- [men-brogues-shoes-index.html](men-brogues-shoes-index.html)
+  - CSS: <link rel="stylesheet" href="css/brogues.css">
+  - JS: <script src="js/brogues.js"></script>
+- [button-up-shirts-top-section-index.html](button-up-shirts-top-section-index.html)
+  - CSS: <link rel="stylesheet" href="css/button-up.css">
+  - JS: <script src="js/button-up.js"></script>
+- [camisoles-top-section-index.html](camisoles-top-section-index.html)
+  - CSS: <link rel="stylesheet" href="css/camisoles.css">
+  - JS: <script src="js/camisoles.js"></script>
+- [men-cargo-pants-pants-index.html](men-cargo-pants-pants-index.html)
+  - CSS: <link rel="stylesheet" href="css/cargo.css">
+  - JS: <script src="js/cargo.js"></script>
+- [casualStandard.html](casual-standard-men-standard-wears-index.html)
+  - CSS: <link rel="stylesheet" href="css/casualStandard.css">
+  - JS: <script src="js/casualStandard.js"></script>
+- [casualWears.html](casual-wears-index.html)
+  - CSS: <link rel="stylesheet" href="css/casualWears.css">
+  - JS: <script src="js/casualWears.js"></script>
+- [men-chinos-pants-index.html](men-chinos-pants-index.html)
+  - CSS: <link rel="stylesheet" href="css/chinos.css">
+  - JS: <script src="js/chinos.js"></script>
+- [combos-men-standard-wears-index.html](combos-men-standard-wears-index.html)
+  - CSS: <link rel="stylesheet" href="css/combos.css">
+  - JS: <script src="js/combos.js"></script>
+- [CropTops.html](crop-tops-top-section-index.html)
+  - CSS: <link rel="stylesheet" href="css/CropTops.css">
+  - JS: <script src="js/CropTops.js"></script>
+- [flatsWomen-s-collection-index.html](flats-women-shoes-index.html)
+  - CSS: <link rel="stylesheet" href="css/flats.css">
+  - JS: <script src="js/flats.js"></script>
+- [GeleSet.html](gele-sets-index.html)
+  - CSS: <link rel="stylesheet" href="css/Geleset.css">
+  - JS: <script src="js/Geleset.js"></script>
+- [gifts-and-packages-index.html](gifts-and-packages-index.html)
+  - CSS: <link rel="stylesheet" href="css/gifts.css">
+  - JS: <script src="js/gifts.js"></script>
+- [Gowns.html](traditional-gowns-index.html)
+  - CSS: <link rel="stylesheet" href="css/Gowns.css">
+  - JS: <script src="js/Gowns.js"></script>
+- [heelsWomen-s-collection-index.html](heels-women-shoes-index.html)
+  - CSS: <link rel="stylesheet" href="css/heels.css">
+  - JS: <script src="js/heels.js"></script>
+- [Heritage.html](heritage-collection-traditional-index.html)
+  - CSS: <link rel="stylesheet" href="css/Heritage.css">
+  - JS: <script src="js/Heritage.js"></script>
+- [index.html](index.html)
+  - CSS: <link rel="stylesheet" href="css/style.css">
+  - JS: <script src="js/script.js"></script>
+- [Iro&buba.html](iro-and-buba-traditional-index.html)
+  - CSS: <link rel="stylesheet" href="css/Iro&buba.css">
+  - JS: <script src="js/Iro&buba.js"></script>
+- [men-jeans-pants-index.html](men-jeans-pants-index.html)
+  - CSS: <link rel="stylesheet" href="css/jeans.css">
+  - JS: <script src="js/jeans.js"></script>
+- [jewelry-men-and-women-index.html](jewelry-men-and-women-index.html)
+  - CSS: <link rel="stylesheet" href="css/jewel.css">
+  - JS: <script src="js/jewel.js"></script>
+- [men-joggers-pants-index.html](men-joggers-pants-index.html)
+  - CSS: <link rel="stylesheet" href="css/joggers.css">
+  - JS: <script src="js/joggers.js"></script>
+- [kaftan-collection-index.html](kaftan-collection-index.html)
+  - CSS: <link rel="stylesheet" href="css/kaftan.css">
+  - JS: <script src="js/kaftan.js"></script>
+- [men-loafers-shoes-index.html](men-loafers-shoes-index.html)
+  - CSS: <link rel="stylesheet" href="css/loafers.css">
+  - JS: <script src="js/loafers.js"></script>
+- [maxi-skirts-skirt-section-index.html](maxi-skirts-skirt-section-index.html)
+  - CSS: <link rel="stylesheet" href="css/maxi.css">
+  - JS: <script src="js/maxi.js"></script>
+- [maxiDress.html](maxi-dresses-women-index.html)
+  - CSS: <link rel="stylesheet" href="css/maxi.css">
+  - JS: <script src="js/maxi.js"></script>
+- [men-s-collection-index.html](men-s-collection-index.html)
+  - CSS: <link rel="stylesheet" href="css/style.css">
+  - JS: <script src="js/script.js"></script>
+- [midi-skirts-skirt-section-index.html](midi-skirts-skirt-section-index.html)
+  - CSS: <link rel="stylesheet" href="css/midi.css">
+  - JS: <script src="js/midi.js"></script>
+- [midiDress.html](midi-dresses-women-index.html)
+  - CSS: <link rel="stylesheet" href="css/midi.css">
+  - JS: <script src="js/midi.js"></script>
+- [mini-skirts-skirt-section-index.html](mini-skirts-skirt-section-index.html)
+  - CSS: <link rel="stylesheet" href="css/mini.css">
+  - JS: <script src="js/mini.js"></script>
+- [mulesWomen-s-collection-index.html](muleswomen-s-collection-index.html)
+  - CSS: <link rel="stylesheet" href="css/mules.css">
+  - JS: <script src="js/mules.js"></script>
+- [office-wear-men-standard-wears-index.html](office-wear-men-standard-wears-index.html)
+  - CSS: <link rel="stylesheet" href="css/office.css">
+  - JS: <script src="js/office.js"></script>
+- [OffShoulder.html](off-shoulders-top-section-index.html)
+  - CSS: <link rel="stylesheet" href="css/OffShoulder.css">
+  - JS: <script src="js/OffShoulder.js"></script>
+- [trousers-and-jeans-index.html](trousers-and-jeans-index.html)
+  - CSS: <link rel="stylesheet" href="css/pants.css">
+  - JS: <script src="js/pants.js"></script>
+- [pencil-skirts-skirt-section-index.html](pencil-skirts-skirt-section-index.html)
+  - CSS: <link rel="stylesheet" href="css/pencil.css">
+  - JS: <script src="js/pencil.js"></script>
+- [customer-reviews-index.html](customer-reviews-index.html)
+  - CSS: <link rel="stylesheet" href="css/reviews.css">
+  - JS: <script src="js/reviews.js"></script>
+- [ruffled-tops-top-section-index.html](ruffled-tops-top-section-index.html)
+  - CSS: <link rel="stylesheet" href="css/ruffled.css">
+  - JS: <script src="js/ruffled.js"></script>
+- [men-sandals-shoes-index.html](men-sandals-shoes-index.html)
+  - CSS: <link rel="stylesheet" href="css/sandals.css">
+  - JS: <script src="js/sandals.js"></script>
+- [sandalsWomen-s-collection-index.html](sandalswomen-s-collection-index.html)
+  - CSS: <link rel="stylesheet" href="css/sandals.css">
+  - JS: <script src="js/sandals.js"></script>
+- [Senator.html](men-s-senator-wears-index.html)
+  - CSS: <link rel="stylesheet" href="css/Senator.css">
+  - JS: <script src="js/Senator.js"></script>
+- [men-sets-standard-wears-index.html](men-sets-standard-wears-index.html)
+  - CSS: <link rel="stylesheet" href="css/sets.css">
+  - JS: <script src="js/sets.js"></script>
+- [shiftDress.html](women-shift-dress-index.html)
+  - CSS: <link rel="stylesheet" href="css/shiftDress.css">
+  - JS: <script src="js/shiftDress.js"></script>
+- [men-shirts-casual-wear-index.html](men-shirts-casual-wear-index.html)
+  - CSS: <link rel="stylesheet" href="css/shirts.css">
+  - JS: <script src="js/shirts.js"></script>
+- [men-s-shoes-index.html](men-s-shoes-index.html)
+  - CSS: <link rel="stylesheet" href="css/shoe.css">
+  - JS: <script src="js/shoe.js"></script>
+- [skirt.html](women-s-skirts-index.html)
+  - CSS: <link rel="stylesheet" href="css/skirt.css">
+  - JS: <script src="js/skirt.js"></script>
+- [men-sneakers-shoes-index.html](men-sneakers-shoes-index.html)
+  - CSS: <link rel="stylesheet" href="css/sneakers.css">
+  - JS: <script src="js/sneakers.js"></script>
+- [sneakersWomen-s-collection-index.html](sneakerswomen-s-collection-index.html)
+  - CSS: <link rel="stylesheet" href="css/sneakers.css">
+  - JS: <script src="js/sneakers.js"></script>
+- [standardWears.html](standard-wears-index.html)
+  - CSS: <link rel="stylesheet" href="css/standardWears.css">
+  - JS: <script src="js/standardWears.js"></script>
+- [men-tees-v-neck-casual-index.html](men-tees-v-neck-casual-index.html)
+  - CSS: <link rel="stylesheet" href="css/tees.css">
+  - JS: <script src="js/tees.js"></script>
+- [tiered-tops-top-section-index.html](tiered-tops-top-section-index.html)
+  - CSS: <link rel="stylesheet" href="css/tiered.css">
+  - JS: <script src="js/tiered.js"></script>
+- [men-tops-casual-wear-index.html](men-tops-casual-wear-index.html)
+  - CSS: <link rel="stylesheet" href="css/top.css">
+  - JS: <script src="js/top.js"></script>
+- [traditional-wears-index.html](traditional-wears-index.html)
+  - CSS: <link rel="stylesheet" href="css/traditional.css">
+  - JS: <script src="js/traditional.js"></script>
+- [traditionalWomen-s-collection-index.html](traditionalwomen-s-collection-index.html)
+  - CSS: <link rel="stylesheet" href="css/traditionalWomen.css">
+  - JS: <script src="js/traditionalWomen.js"></script>
+- [warp.html](warp.html)
+  - CSS: <link rel="stylesheet" href="css/warp.css">
+  - JS: <script src="js/warp.js"></script>
+- [women-s-collection-index.html](women-s-collection-index.html)
+  - CSS: <link rel="stylesheet" href="css/women.css">
+  - JS: <script src="js/woman.js"></script>
+- [womenDress.html](women-s-dresses-index.html)
+  - CSS: <link rel="stylesheet" href="css/womanDress.css">
+  - JS: <script src="js/womenDress.js"></script>
+- [Womenmen-s-shoes-index.html](womenmen-s-shoes-index.html)
+  - CSS: <link rel="stylesheet" href="css/Womenshoe.css">
+  - JS: <script src="js/Womenshoe.js"></script>
+- [womenTop.html](womenmen-tops-casual-wear-index.html)
+  - CSS: <link rel="stylesheet" href="css/womenTop.css">
+  - JS: <script src="js/womenTop.js"></script>
+- [wrapDress.html](wrap-dresses-women-index.html)
+  - CSS: <link rel="stylesheet" href="css/wrap.css">
+  - JS: <script src="js/wrap.js"></script>
+- [WrapperSet.html](men-s-wrapper-sets-index.html)
+  - CSS: <link rel="stylesheet" href="css/WrapperSet.css">
+  - JS: <script src="js/WrapperSet.js"></script>
+- [wrapperSets.html](wrappermen-sets-standard-wears-index.html)
+  - CSS: <link rel="stylesheet" href="css/wrapperSets.css">
+  - JS: <script src="js/wrapperSets.js"></script>
+
+---
+
+Notes:
+- If a page uses a common stylesheet or script (e.g., `style.css` and `script.js`), include those in addition to or instead of the page-specific files.
+- Filenames are workspace-relative; adjust capitalization if your server is case-sensitive.
+- Tell me if you want me to automatically insert these tags into each HTML file (I can apply patches).

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Customer Reviews — JK Fashion Empire</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+
+  <!-- Site CSS -->
+  <link rel="stylesheet" href="css/reviews-1.css" />
+  <style>
+    /* Minimal page-specific styles for reviews */
+    .rating-star { color: #f1c40f; }
+    .rating-empty { color: #e6e6e6; }
+    .review-card { border-radius: 12px; box-shadow: 0 8px 24px rgba(0,0,0,0.06); }
+    .avg-rating { font-size: 2.25rem; font-weight: 800; color: #6b3e26; }
+    .review-meta { font-size: .9rem; color: #6c6c6c; }
+    .filter-btn.active { background:#6b3e26; color:#fff; border-color:#6b3e26; }
+    .helpful-btn { background:transparent; border:0; color:#6b3e26; font-weight:600; }
+    .no-reviews { color:#6c6c6c; }
+  </style>
+  <link rel="stylesheet" href="css/reviews-1.css" />
+  <link rel="stylesheet" href="css/responsive-cards-1.css" />
+  <link rel="stylesheet" href="css/size-guide-1.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <div class="container">
+      <div class="d-flex align-items-center brand-wrap">
+        <img src="https://i.imghippo.com/files/sDGr2452Xk.png" alt="JK Fashion Empire logo" class="logo" />
+        <a class="navbar-brand fw-bold text-brown ms-2" href="index.html">JK Fashion Empire</a>
+      </div>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain"
+              aria-controls="navMain" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navMain">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="men-s-collection-index.html">Men</a></li>
+          <li class="nav-item"><a class="nav-link" href="women-collection-index.html">Women</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact-index.html">Contact</a></li>
+          <li class="nav-item ms-2"><a class="nav-link" href="https://wa.me/2348136754060" title="WhatsApp"><i class="bi bi-whatsapp"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="py-5 text-center bg-light">
+    <div class="container">
+      <h1 class="fw-bold text-brown">Customer Reviews</h1>
+      <p class="lead text-muted">Real feedback from customers — ratings, photos, and helpful votes to guide your choice.</p>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main class="py-5">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Left: Summary & Filters -->
+        <aside class="col-lg-4">
+          <div class="p-4 bg-white review-card">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <div>
+                <div class="avg-rating" id="avg-rating">4.6</div>
+                <div class="d-flex align-items-center gap-2">
+                  <div aria-hidden="true">
+                    <span class="rating-star">★</span><span class="rating-star">★</span><span class="rating-star">★</span><span class="rating-star">★</span><span class="rating-star">☆</span>
+                  </div>
+                  <div class="review-meta">Based on <strong id="total-reviews">128</strong> reviews</div>
+                </div>
+              </div>
+              <div class="text-end">
+                <button class="btn btn-outline-brown btn-sm" id="write-review-btn">Write a review</button>
+              </div>
+            </div>
+
+            <hr />
+
+            <h6 class="mb-2">Filter by rating</h6>
+            <div class="d-flex flex-column gap-2 mb-3" role="toolbar" aria-label="Filter reviews by rating">
+              <button class="btn btn-sm btn-outline-secondary filter-btn text-start" data-filter="all">All ratings</button>
+              <button class="btn btn-sm btn-outline-secondary filter-btn text-start" data-filter="5">5 stars</button>
+              <button class="btn btn-sm btn-outline-secondary filter-btn text-start" data-filter="4">4 stars</button>
+              <button class="btn btn-sm btn-outline-secondary filter-btn text-start" data-filter="3">3 stars</button>
+              <button class="btn btn-sm btn-outline-secondary filter-btn text-start" data-filter="2">2 stars</button>
+              <button class="btn btn-sm btn-outline-secondary filter-btn text-start" data-filter="1">1 star</button>
+            </div>
+
+            <h6 class="mb-2">Sort</h6>
+            <select id="sort-reviews" class="form-select form-select-sm mb-3" aria-label="Sort reviews">
+              <option value="newest">Newest</option>
+              <option value="helpful">Most helpful</option>
+              <option value="highest">Highest rating</option>
+              <option value="lowest">Lowest rating</option>
+            </select>
+
+            <h6 class="mb-2">Verified purchases</h6>
+            <div class="form-check form-switch">
+              <input class="form-check-input" type="checkbox" id="verified-only" />
+              <label class="form-check-label" for="verified-only">Show verified purchases only</label>
+            </div>
+          </div>
+        </aside>
+
+        <!-- Right: Reviews list and submission -->
+        <section class="col-lg-8">
+          <!-- Review submission form (collapsed by default) -->
+          <div class="mb-4">
+            <div class="card review-card p-3" id="review-form-card" aria-hidden="false">
+              <h5 class="mb-3">Share your experience</h5>
+              <form id="review-form" class="row g-2" novalidate>
+                <div class="col-12 col-md-6">
+                  <label class="form-label small">Your name</label>
+                  <input type="text" name="name" class="form-control" placeholder="Jane Doe" required />
+                </div>
+                <div class="col-12 col-md-6">
+                  <label class="form-label small">Email (optional)</label>
+                  <input type="email" name="email" class="form-control" placeholder="you@example.com" />
+                </div>
+
+                <div class="col-12 col-md-6">
+                  <label class="form-label small">Rating</label>
+                  <select name="rating" class="form-select" required aria-label="Select rating">
+                    <option value="">Choose rating</option>
+                    <option value="5">5 — Excellent</option>
+                    <option value="4">4 — Very good</option>
+                    <option value="3">3 — Good</option>
+                    <option value="2">2 — Fair</option>
+                    <option value="1">1 — Poor</option>
+                  </select>
+                </div>
+
+                <div class="col-12">
+                  <label class="form-label small">Review</label>
+                  <textarea name="comment" class="form-control" rows="4" placeholder="Tell others what you liked or what could be improved" required></textarea>
+                </div>
+
+  <div class="col-12 d-flex gap-2 align-items-center">
+    <button class="btn btn-brown" type="submit">Submit review</button>
+    <button class="btn btn-outline-secondary" type="reset">Reset</button>
+    <small class="text-muted ms-auto">By submitting you agree to our <a href="terms-index.html">terms</a>.</small>
+  </div>
+              </form>
+            </div>
+          </div>
+
+          <!-- Reviews list -->
+          <div id="reviews-list" class="d-grid gap-3">
+            <!-- Example review card (repeatable) -->
+            <article class="card review-card p-3" data-rating="5" data-verified="true" aria-label="Customer review">
+              <div class="d-flex align-items-start gap-3">
+                <div class="flex-shrink-0">
+                  <div class="rounded-circle bg-light d-flex align-items-center justify-content-center" style="width:56px;height:56px;">
+                    <span class="fw-bold text-brown">A</span>
+                  </div>
+                </div>
+                <div class="flex-grow-1">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <div>
+                      <strong>Amaka O.</strong>
+                      <div class="small review-meta">Verified purchase · 2 weeks ago</div>
+                    </div>
+                    <div aria-hidden="true">
+                      <span class="rating-star">★</span><span class="rating-star">★</span><span class="rating-star">★</span><span class="rating-star">★</span><span class="rating-star">★</span>
+                    </div>
+                  </div>
+
+                  <p class="mt-2 mb-2">Beautiful craftsmanship and comfortable fit. Delivery was prompt and the packaging was neat. Will order again.</p>
+
+                  <div class="d-flex gap-3 align-items-center">
+                    <button class="helpful-btn" data-helpful="true" aria-pressed="false">Helpful <span class="badge bg-light text-muted ms-1">24</span></button>
+                    <button class="helpful-btn" data-report="true">Report</button>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Additional sample reviews (shortened for brevity) -->
+            <article class="card review-card p-3" data-rating="4" data-verified="false">
+              <div class="d-flex gap-3">
+                <div class="flex-shrink-0">
+                  <div class="rounded-circle bg-light d-flex align-items-center justify-content-center" style="width:56px;height:56px;">
+                    <span class="fw-bold text-brown">B</span>
+                  </div>
+                </div>
+                <div class="flex-grow-1">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <div>
+                      <strong>Bisi K.</strong>
+                      <div class="small review-meta">3 months ago</div>
+                    </div>
+                    <div aria-hidden="true">
+                      <span class="rating-star">★</span><span class="rating-star">★</span><span class="rating-star">★</span><span class="rating-star">★</span><span class="rating-empty">☆</span>
+                    </div>
+                  </div>
+                  <p class="mt-2 mb-2">Nice quality but the color was slightly different than pictured. Customer support was helpful.</p>
+                  <div class="d-flex gap-3 align-items-center">
+                    <button class="helpful-btn" data-helpful="true" aria-pressed="false">Helpful <span class="badge bg-light text-muted ms-1">8</span></button>
+                    <button class="helpful-btn" data-report="true">Report</button>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="card review-card p-3" data-rating="2" data-verified="true">
+              <div class="d-flex gap-3">
+                <div class="flex-shrink-0">
+                  <div class="rounded-circle bg-light d-flex align-items-center justify-content-center" style="width:56px;height:56px;">
+                    <span class="fw-bold text-brown">C</span>
+                  </div>
+                </div>
+                <div class="flex-grow-1">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <div>
+                      <strong>Chinedu M.</strong>
+                      <div class="small review-meta">1 month ago · Verified purchase</div>
+                    </div>
+                    <div aria-hidden="true">
+                      <span class="rating-star">★</span><span class="rating-star">★</span><span class="rating-empty">☆</span><span class="rating-empty">☆</span><span class="rating-empty">☆</span>
+                    </div>
+                  </div>
+                  <p class="mt-2 mb-2">Sizing runs small. I had to return and exchange. Quality is okay but not exceptional.</p>
+                  <div class="d-flex gap-3 align-items-center">
+                    <button class="helpful-btn" data-helpful="true" aria-pressed="false">Helpful <span class="badge bg-light text-muted ms-1">3</span></button>
+                    <button class="helpful-btn" data-report="true">Report</button>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Placeholder for "no more reviews" or dynamic loading -->
+            <div id="reviews-empty" class="text-center py-4 no-reviews" style="display:none;">
+              No reviews match your filters yet.
+            </div>
+
+            <!-- Load more -->
+               <div class="text-center mt-4">
+        <a href="https://wa.me/2348136754060?text=I%20want%20to%20order%20mules" class="btn btn-outline-brown">Load more</a>
+      </div>>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer bg-brown text-white py-4">
+    <div class="container text-center">
+      <p class="mb-1">© 2025 JK Fashion Empire</p>
+      <p class="small mb-2">Customer reviews reflect individual experiences. For assistance, contact our support team.</p>
+      <div class="d-flex justify-content-center gap-4 small">
+        <div><i class="bi bi-truck"></i> Delivery</div>
+        <div><i class="bi bi-shield-lock"></i> Secure Payment</div>
+        <div><i class="bi bi-headset"></i> Customer Support</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/reviews-1.js"></script>
+
+  <!-- Page JS (reviews behavior) -->
+  <script src="C:\Users\USER\Documents\Main page for website\reviews.js"></script>
+  <script src="js/size-guide-1.js"></script>
+</body>
+</html>

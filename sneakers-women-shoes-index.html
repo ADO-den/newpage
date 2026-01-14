@@ -1,0 +1,689 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sneakers Women Shoes — JK Fashion Empire</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/sneakers-1.css" />
+  <link rel="stylesheet" href="css/style-1.css" />
+  <link rel="stylesheet" href="css/responsive-cards-1.css" />
+  <link rel="stylesheet" href="css/size-guide-1.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <div class="container">
+      <div class="d-flex align-items-center brand-wrap">
+        <img src="https://i.imghippo.com/files/sDGr2452Xk.png" alt="JK Fashion Empire logo" class="logo" />
+        <a class="navbar-brand fw-bold text-brown ms-2" href="index.html">JK Fashion Empire</a>
+      </div>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain"
+              aria-controls="navMain" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navMain">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="women-collection-index.html">Women</a></li>
+          <li class="nav-item"><a class="nav-link" href="women-s-shoes-index.html">Shoes</a></li>
+          <li class="nav-item"><a class="nav-link active" href="sneakers-women-shoes-index.html">Sneakers</a></li>
+          <li class="nav-item ms-2"><a class="nav-link" href="https://wa.me/2348136754060" title="WhatsApp"><i class="bi bi-whatsapp"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero-banner text-center py-5">
+    <div class="container">
+      <h1 class="fw-bold text-brown">Sneakers for Women</h1>
+      <p class="lead text-muted">Comfortable and stylish sneakers — everyday classics, chunky trends and performance-ready pairs.</p>
+
+      <div class="mt-3 d-flex justify-content-center gap-2 flex-wrap">
+        <a class="btn btn-brown" href="#sneakers">Browse Sneakers</a>
+        <a class="btn btn-outline-brown" href="https://wa.me/2348136754060?text=I%20want%20to%20order%20a%20pair%20of%20sneakers">Order via WhatsApp</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- FILTER / SORT -->
+  <section class="py-3 bg-light filter-bar">
+    <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between gap-3">
+      <div class="d-flex gap-2 align-items-center flex-wrap">
+        <button class="btn btn-outline-brown active" data-filter="all">All</button>
+        <button class="btn btn-outline-brown" data-filter="casual">Casual</button>
+        <button class="btn btn-outline-brown" data-filter="sport">Sport</button>
+        <button class="btn btn-outline-brown" data-filter="chunky">Chunky</button>
+        <button class="btn btn-outline-brown" data-filter="ankara">Ankara</button>
+      </div>
+
+      <div class="d-flex align-items-center gap-2">
+        <label class="small text-muted mb-0">Sort</label>
+        <select id="sort-select" class="form-select form-select-sm" style="width:190px;">
+          <option value="popular">Most Popular</option>
+          <option value="new">Newest</option>
+          <option value="price-low">Price Low to High</option>
+          <option value="price-high">Price High to Low</option>
+        </select>
+      </div>
+    </div>
+  </section>
+
+  <!-- SNEAKERS GRID -->
+  <main id="sneakers" class="py-5">
+    <div class="container">
+      <div class="d-flex align-items-center justify-content-between mb-3">
+        <div>
+          <h2 class="section-title mb-0">Featured Sneakers</h2>
+          <p class="section-subtle mb-0">Ten curated sneaker styles for different looks and budgets.</p>
+        </div>
+
+        <div class="d-flex align-items-center gap-2">
+          <a class="btn btn-outline-brown" href="women-s-shoes-index.html">Back to Shoes</a>
+        </div>
+      </div>
+
+      <div class="row g-4">
+        <!-- Product 1 -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="casual" data-newest="true" data-price="9500" aria-labelledby="sneaker-1-title">
+            <img class="card-img-top lazy" data-src="assets/images/sneakers/casual-white-01.jpg" alt="Classic White Sneaker" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="sneaker-1-title" class="card-title">Classic White</h5>
+              <div class="price">₦9,500</div>
+              <p class="card-text text-muted small">Minimal leather-look sneaker for everyday wear.</p>
+
+              <label class="visually-hidden" for="size-sneaker-1">Select size</label>
+              <select id="size-sneaker-1" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Classic White">
+                <option value="">Select Size</option><option value="36">36</option><option value="37">37</option><option value="38">38</option><option value="39">39</option><option value="40">40</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Classic White Sneaker">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="sport" data-newest="false" data-price="12500" aria-labelledby="sneaker-2-title">
+            <img class="card-img-top lazy" data-src="assets/images/sneakers/sport-runner-01.jpg" alt="Performance Runner" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="sneaker-2-title" class="card-title">Performance Runner</h5>
+              <div class="price">₦12,500</div>
+              <p class="card-text text-muted small">Lightweight runner with breathable mesh and cushioned sole.</p>
+
+              <label class="visually-hidden" for="size-sneaker-2">Select size</label>
+              <select id="size-sneaker-2" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Performance Runner">
+                <option value="">Select Size</option><option value="36">36</option><option value="37">37</option><option value="38">38</option><option value="39">39</option><option value="40">40</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Performance Runner">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="chunky" data-newest="true" data-price="14500" aria-labelledby="sneaker-3-title">
+            <img class="card-img-top lazy" data-src="assets/images/sneakers/chunky-01.jpg" alt="Chunky Trend Sneaker" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="sneaker-3-title" class="card-title">Chunky Trend</h5>
+              <div class="price">₦14,500</div>
+              <p class="card-text text-muted small">Bold sole and layered panels for a fashion-forward look.</p>
+
+              <label class="visually-hidden" for="size-sneaker-3">Select size</label>
+              <select id="size-sneaker-3" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Chunky Trend">
+                <option value="">Select Size</option><option value="36">36</option><option value="37">37</option><option value="38">38</option><option value="39">39</option><option value="40">40</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <a class="btn btn-outline-brown" href="mailto:gifts@jkfashionempire.com">Request Quote</a>
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Chunky Trend Sneaker">Order via WhatsApp</button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="casual" data-newest="false" data-price="8200" aria-labelledby="sneaker-4-title">
+            <img class="card-img-top lazy" data-src="assets/images/sneakers/canvas-low-01.jpg" alt="Canvas Low Top" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="sneaker-4-title" class="card-title">Canvas Low Top</h5>
+              <div class="price">₦8,200</div>
+              <p class="card-text text-muted small">Classic canvas with rubber sole and stitched details.</p>
+
+              <label class="visually-hidden" for="size-sneaker-4">Select size</label>
+              <select id="size-sneaker-4" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Canvas Low Top">
+                <option value="">Select Size</option><option value="36">36</option><option value="37">37</option><option value="38">38</option><option value="39">39</option><option value="40">40</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Canvas Low Top">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="sport" data-newest="true" data-price="13200" aria-labelledby="sneaker-5-title">
+            <img class="card-img-top lazy" data-src="assets/images/sneakers/trainer-01.jpg" alt="Cross Trainer" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="sneaker-5-title" class="card-title">Cross Trainer</h5>
+              <div class="price">₦13,200</div>
+              <p class="card-text text-muted small">Stable trainer for gym and cross-training sessions.</p>
+
+              <label class="visually-hidden" for="size-sneaker-5">Select size</label>
+              <select id="size-sneaker-5" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Cross Trainer">
+                <option value="">Select Size</option><option value="36">36</option><option value="37">37</option><option value="38">38</option><option value="39">39</option><option value="40">40</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Cross Trainer">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="casual" data-newest="false" data-price="7200" aria-labelledby="sneaker-6-title">
+            <img class="card-img-top lazy" data-src="assets/images/sneakers/slip-on-01.jpg" alt="Slip On Sneaker" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="sneaker-6-title" class="card-title">Slip On</h5>
+              <div class="price">₦7,200</div>
+              <p class="card-text text-muted small">Easy slip-on design with cushioned insole.</p>
+
+              <label class="visually-hidden" for="size-sneaker-6">Select size</label>
+              <select id="size-sneaker-6" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Slip On">
+                <option value="">Select Size</option><option value="36">36</option><option value="37">37</option><option value="38">38</option><option value="39">39</option><option value="40">40</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Slip On Sneaker">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Product 7 -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="chunky" data-newest="true" data-price="15800" aria-labelledby="sneaker-7-title">
+            <img class="card-img-top lazy" data-src="assets/images/sneakers/platform-01.jpg" alt="Platform Sneaker" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="sneaker-7-title" class="card-title">Platform Sneaker</h5>
+              <div class="price">₦15,800</div>
+              <p class="card-text text-muted small">Elevated platform for height with comfortable padding.</p>
+
+              <label class="visually-hidden" for="size-sneaker-7">Select size</label>
+              <select id="size-sneaker-7" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Platform Sneaker">
+                <option value="">Select Size</option><option value="36">36</option><option value="37">37</option><option value="38">38</option><option value="39">39</option><option value="40">40</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <a class="btn btn-outline-brown" href="mailto:gifts@jkfashionempire.com">Request Quote</a>
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Platform Sneaker">Order via WhatsApp</button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Product 8 -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="sport" data-newest="false" data-price="11800" aria-labelledby="sneaker-8-title">
+            <img class="card-img-top lazy" data-src="assets/images/sneakers/road-runner-01.jpg" alt="Road Runner" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="sneaker-8-title" class="card-title">Road Runner</h5>
+              <div class="price">₦11,800</div>
+              <p class="card-text text-muted small">Durable outsole and responsive midsole for road running.</p>
+
+              <label class="visually-hidden" for="size-sneaker-8">Select size</label>
+              <select id="size-sneaker-8" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Road Runner">
+                <option value="">Select Size</option><option value="36">36</option><option value="37">37</option><option value="38">38</option><option value="39">39</option><option value="40">40</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Road Runner">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Product 9 -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="casual" data-newest="true" data-price="8900" aria-labelledby="sneaker-9-title">
+            <img class="card-img-top lazy" data-src="assets/images/sneakers/retro-01.jpg" alt="Retro Runner" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="sneaker-9-title" class="card-title">Retro Runner</h5>
+              <div class="price">₦8,900</div>
+              <p class="card-text text-muted small">Vintage-inspired runner with suede overlays.</p>
+
+              <label class="visually-hidden" for="size-sneaker-9">Select size</label>
+              <select id="size-sneaker-9" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Retro Runner">
+                <option value="">Select Size</option><option value="36">36</option><option value="37">37</option><option value="38">38</option><option value="39">39</option><option value="40">40</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Retro Runner">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Product 10 -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="ankara" data-newest="false" data-price="7600" aria-labelledby="sneaker-10-title">
+            <img class="card-img-top lazy" data-src="assets/images/sneakers/ankara-sneaker-01.jpg" alt="Ankara Accent Sneaker" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="sneaker-10-title" class="card-title">Ankara Accent</h5>
+              <div class="price">₦7,600</div>
+              <p class="card-text text-muted small">Sneaker with Ankara fabric accents for a bold local touch.</p>
+
+              <label class="visually-hidden" for="size-sneaker-10">Select size</label>
+              <select id="size-sneaker-10" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Ankara Accent">
+                <option value="">Select Size</option><option value="36">36</option><option value="37">37</option><option value="38">38</option><option value="39">39</option><option value="40">40</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Ankara Accent Sneaker">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+      
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="ankara" data-newest="false" data-price="7600" aria-labelledby="sneaker-10-title">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?ankara" alt="Ankara Accent Sneaker" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="sneaker-10-title" class="card-title">Ankara Accent</h5>
+              <div class="price">₦7,600</div>
+              <p class="card-text text-muted small">Sneaker with Ankara fabric accents for a bold local touch.</p>
+
+              <label class="visually-hidden" for="size-sneaker-10">Select size</label>
+              <select id="size-sneaker-10" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Ankara Accent">
+                <option value="">Select Size</option><option value="36">36</option><option value="37">37</option><option value="38">38</option><option value="39">39</option><option value="40">40</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Ankara Accent Sneaker">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="ankara" data-newest="false" data-price="7600" aria-labelledby="sneaker-10-title">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?ankara" alt="Ankara Accent Sneaker" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="sneaker-10-title" class="card-title">Ankara Accent</h5>
+              <div class="price">₦7,600</div>
+              <p class="card-text text-muted small">Sneaker with Ankara fabric accents for a bold local touch.</p>
+
+              <label class="visually-hidden" for="size-sneaker-10">Select size</label>
+              <select id="size-sneaker-10" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Ankara Accent">
+                <option value="">Select Size</option><option value="36">36</option><option value="37">37</option><option value="38">38</option><option value="39">39</option><option value="40">40</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Ankara Accent Sneaker">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="ankara" data-newest="false" data-price="7600" aria-labelledby="sneaker-10-title">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?ankara" alt="Ankara Accent Sneaker" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="sneaker-10-title" class="card-title">Ankara Accent</h5>
+              <div class="price">₦7,600</div>
+              <p class="card-text text-muted small">Sneaker with Ankara fabric accents for a bold local touch.</p>
+
+              <label class="visually-hidden" for="size-sneaker-10">Select size</label>
+              <select id="size-sneaker-10" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Ankara Accent">
+                <option value="">Select Size</option><option value="36">36</option><option value="37">37</option><option value="38">38</option><option value="39">39</option><option value="40">40</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Ankara Accent Sneaker">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="ankara" data-newest="false" data-price="7600" aria-labelledby="sneaker-10-title">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?ankara" alt="Ankara Accent Sneaker" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="sneaker-10-title" class="card-title">Ankara Accent</h5>
+              <div class="price">₦7,600</div>
+              <p class="card-text text-muted small">Sneaker with Ankara fabric accents for a bold local touch.</p>
+
+              <label class="visually-hidden" for="size-sneaker-10">Select size</label>
+              <select id="size-sneaker-10" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Ankara Accent">
+                <option value="">Select Size</option><option value="36">36</option><option value="37">37</option><option value="38">38</option><option value="39">39</option><option value="40">40</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Ankara Accent Sneaker">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="ankara" data-newest="false" data-price="7600" aria-labelledby="sneaker-10-title">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?ankara" alt="Ankara Accent Sneaker" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="sneaker-10-title" class="card-title">Ankara Accent</h5>
+              <div class="price">₦7,600</div>
+              <p class="card-text text-muted small">Sneaker with Ankara fabric accents for a bold local touch.</p>
+
+              <label class="visually-hidden" for="size-sneaker-10">Select size</label>
+              <select id="size-sneaker-10" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Ankara Accent">
+                <option value="">Select Size</option><option value="36">36</option><option value="37">37</option><option value="38">38</option><option value="39">39</option><option value="40">40</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Ankara Accent Sneaker">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="ankara" data-newest="false" data-price="7600" aria-labelledby="sneaker-10-title">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?ankara" alt="Ankara Accent Sneaker" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="sneaker-10-title" class="card-title">Ankara Accent</h5>
+              <div class="price">₦7,600</div>
+              <p class="card-text text-muted small">Sneaker with Ankara fabric accents for a bold local touch.</p>
+
+              <label class="visually-hidden" for="size-sneaker-10">Select size</label>
+              <select id="size-sneaker-10" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Ankara Accent">
+                <option value="">Select Size</option><option value="36">36</option><option value="37">37</option><option value="38">38</option><option value="39">39</option><option value="40">40</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Ankara Accent Sneaker">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="ankara" data-newest="false" data-price="7600" aria-labelledby="sneaker-10-title">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?ankara" alt="Ankara Accent Sneaker" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="sneaker-10-title" class="card-title">Ankara Accent</h5>
+              <div class="price">₦7,600</div>
+              <p class="card-text text-muted small">Sneaker with Ankara fabric accents for a bold local touch.</p>
+
+              <label class="visually-hidden" for="size-sneaker-10">Select size</label>
+              <select id="size-sneaker-10" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Ankara Accent">
+                <option value="">Select Size</option><option value="36">36</option><option value="37">37</option><option value="38">38</option><option value="39">39</option><option value="40">40</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Ankara Accent Sneaker">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="ankara" data-newest="false" data-price="7600" aria-labelledby="sneaker-10-title">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?ankara" alt="Ankara Accent Sneaker" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="sneaker-10-title" class="card-title">Ankara Accent</h5>
+              <div class="price">₦7,600</div>
+              <p class="card-text text-muted small">Sneaker with Ankara fabric accents for a bold local touch.</p>
+
+              <label class="visually-hidden" for="size-sneaker-10">Select size</label>
+              <select id="size-sneaker-10" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Ankara Accent">
+                <option value="">Select Size</option><option value="36">36</option><option value="37">37</option><option value="38">38</option><option value="39">39</option><option value="40">40</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Ankara Accent Sneaker">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="ankara" data-newest="false" data-price="7600" aria-labelledby="sneaker-10-title">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?ankara" alt="Ankara Accent Sneaker" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="sneaker-10-title" class="card-title">Ankara Accent</h5>
+              <div class="price">₦7,600</div>
+              <p class="card-text text-muted small">Sneaker with Ankara fabric accents for a bold local touch.</p>
+
+              <label class="visually-hidden" for="size-sneaker-10">Select size</label>
+              <select id="size-sneaker-10" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Ankara Accent">
+                <option value="">Select Size</option><option value="36">36</option><option value="37">37</option><option value="38">38</option><option value="39">39</option><option value="40">40</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Ankara Accent Sneaker">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="ankara" data-newest="false" data-price="7600" aria-labelledby="sneaker-10-title">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?ankara" alt="Ankara Accent Sneaker" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="sneaker-10-title" class="card-title">Ankara Accent</h5>
+              <div class="price">₦7,600</div>
+              <p class="card-text text-muted small">Sneaker with Ankara fabric accents for a bold local touch.</p>
+
+              <label class="visually-hidden" for="size-sneaker-10">Select size</label>
+              <select id="size-sneaker-10" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Ankara Accent">
+                <option value="">Select Size</option><option value="36">36</option><option value="37">37</option><option value="38">38</option><option value="39">39</option><option value="40">40</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Ankara Accent Sneaker">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="ankara" data-newest="false" data-price="7600" aria-labelledby="sneaker-10-title">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?ankara" alt="Ankara Accent Sneaker" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="sneaker-10-title" class="card-title">Ankara Accent</h5>
+              <div class="price">₦7,600</div>
+              <p class="card-text text-muted small">Sneaker with Ankara fabric accents for a bold local touch.</p>
+
+              <label class="visually-hidden" for="size-sneaker-10">Select size</label>
+              <select id="size-sneaker-10" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Ankara Accent">
+                <option value="">Select Size</option><option value="36">36</option><option value="37">37</option><option value="38">38</option><option value="39">39</option><option value="40">40</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Ankara Accent Sneaker">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="ankara" data-newest="false" data-price="7600" aria-labelledby="sneaker-10-title">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?ankara" alt="Ankara Accent Sneaker" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="sneaker-10-title" class="card-title">Ankara Accent</h5>
+              <div class="price">₦7,600</div>
+              <p class="card-text text-muted small">Sneaker with Ankara fabric accents for a bold local touch.</p>
+
+              <label class="visually-hidden" for="size-sneaker-10">Select size</label>
+              <select id="size-sneaker-10" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Ankara Accent">
+                <option value="">Select Size</option><option value="36">36</option><option value="37">37</option><option value="38">38</option><option value="39">39</option><option value="40">40</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Ankara Accent Sneaker">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="ankara" data-newest="false" data-price="7600" aria-labelledby="sneaker-10-title">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?ankara" alt="Ankara Accent Sneaker" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="sneaker-10-title" class="card-title">Ankara Accent</h5>
+              <div class="price">₦7,600</div>
+              <p class="card-text text-muted small">Sneaker with Ankara fabric accents for a bold local touch.</p>
+
+              <label class="visually-hidden" for="size-sneaker-10">Select size</label>
+              <select id="size-sneaker-10" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Ankara Accent">
+                <option value="">Select Size</option><option value="36">36</option><option value="37">37</option><option value="38">38</option><option value="39">39</option><option value="40">40</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Ankara Accent Sneaker">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="ankara" data-newest="false" data-price="7600" aria-labelledby="sneaker-10-title">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?ankara" alt="Ankara Accent Sneaker" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="sneaker-10-title" class="card-title">Ankara Accent</h5>
+              <div class="price">₦7,600</div>
+              <p class="card-text text-muted small">Sneaker with Ankara fabric accents for a bold local touch.</p>
+
+              <label class="visually-hidden" for="size-sneaker-10">Select size</label>
+              <select id="size-sneaker-10" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Ankara Accent">
+                <option value="">Select Size</option><option value="36">36</option><option value="37">37</option><option value="38">38</option><option value="39">39</option><option value="40">40</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Ankara Accent Sneaker">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="ankara" data-newest="false" data-price="7600" aria-labelledby="sneaker-10-title">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?ankara" alt="Ankara Accent Sneaker" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="sneaker-10-title" class="card-title">Ankara Accent</h5>
+              <div class="price">₦7,600</div>
+              <p class="card-text text-muted small">Sneaker with Ankara fabric accents for a bold local touch.</p>
+
+              <label class="visually-hidden" for="size-sneaker-10">Select size</label>
+              <select id="size-sneaker-10" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Ankara Accent">
+                <option value="">Select Size</option><option value="36">36</option><option value="37">37</option><option value="38">38</option><option value="39">39</option><option value="40">40</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Ankara Accent Sneaker">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="ankara" data-newest="false" data-price="7600" aria-labelledby="sneaker-10-title">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?ankara" alt="Ankara Accent Sneaker" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="sneaker-10-title" class="card-title">Ankara Accent</h5>
+              <div class="price">₦7,600</div>
+              <p class="card-text text-muted small">Sneaker with Ankara fabric accents for a bold local touch.</p>
+
+              <label class="visually-hidden" for="size-sneaker-10">Select size</label>
+              <select id="size-sneaker-10" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Ankara Accent">
+                <option value="">Select Size</option><option value="36">36</option><option value="37">37</option><option value="38">38</option><option value="39">39</option><option value="40">40</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Ankara Accent Sneaker">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="ankara" data-newest="false" data-price="7600" aria-labelledby="sneaker-10-title">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?ankara" alt="Ankara Accent Sneaker" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="sneaker-10-title" class="card-title">Ankara Accent</h5>
+              <div class="price">₦7,600</div>
+              <p class="card-text text-muted small">Sneaker with Ankara fabric accents for a bold local touch.</p>
+
+              <label class="visually-hidden" for="size-sneaker-10">Select size</label>
+              <select id="size-sneaker-10" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Ankara Accent">
+                <option value="">Select Size</option><option value="36">36</option><option value="37">37</option><option value="38">38</option><option value="39">39</option><option value="40">40</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Ankara Accent Sneaker">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="ankara" data-newest="false" data-price="7600" aria-labelledby="sneaker-10-title">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?ankara" alt="Ankara Accent Sneaker" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="sneaker-10-title" class="card-title">Ankara Accent</h5>
+              <div class="price">₦7,600</div>
+              <p class="card-text text-muted small">Sneaker with Ankara fabric accents for a bold local touch.</p>
+
+              <label class="visually-hidden" for="size-sneaker-10">Select size</label>
+              <select id="size-sneaker-10" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Ankara Accent">
+                <option value="">Select Size</option><option value="36">36</option><option value="37">37</option><option value="38">38</option><option value="39">39</option><option value="40">40</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Ankara Accent Sneaker">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="ankara" data-newest="false" data-price="7600" aria-labelledby="sneaker-10-title">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?ankara" alt="Ankara Accent Sneaker" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="sneaker-10-title" class="card-title">Ankara Accent</h5>
+              <div class="price">₦7,600</div>
+              <p class="card-text text-muted small">Sneaker with Ankara fabric accents for a bold local touch.</p>
+
+              <label class="visually-hidden" for="size-sneaker-10">Select size</label>
+              <select id="size-sneaker-10" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Ankara Accent">
+                <option value="">Select Size</option><option value="36">36</option><option value="37">37</option><option value="38">38</option><option value="39">39</option><option value="40">40</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Ankara Accent Sneaker">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="ankara" data-newest="false" data-price="7600" aria-labelledby="sneaker-10-title">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?ankara" alt="Ankara Accent Sneaker" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="sneaker-10-title" class="card-title">Ankara Accent</h5>
+              <div class="price">₦7,600</div>
+              <p class="card-text text-muted small">Sneaker with Ankara fabric accents for a bold local touch.</p>
+
+              <label class="visually-hidden" for="size-sneaker-10">Select size</label>
+              <select id="size-sneaker-10" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Ankara Accent">
+                <option value="">Select Size</option><option value="36">36</option><option value="37">37</option><option value="38">38</option><option value="39">39</option><option value="40">40</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Ankara Accent Sneaker">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div></div> <!-- /.row -->
+
+      <div class="text-center mt-4">
+        <a href="https://wa.me/2348136754060?text=I%20want%20to%20order%20mules" class="btn btn-outline-brown">Load more</a>
+      </div>
+    </div>
+  </main>
+
+  <!-- HELP / SIZE GUIDE -->
+  <section class="py-4 bg-light">
+    <div class="container">
+      <div class="d-flex flex-column flex-md-row align-items-center justify-content-between gap-3">
+        <div>
+          <strong class="text-brown">Fit tips</strong>
+          <p class="small text-muted mb-0">If between sizes, choose the larger size; consider socks and insole thickness.</p>
+        </div>
+        <div class="text-md-end">
+          <a class="btn btn-outline-brown" href="size-guide-index.html">View size guide</a>
+          <a class="btn btn-brown ms-2" href="https://wa.me/2348136754060?text=I%20need%20help%20with%20sneaker%20sizes">Ask for help</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer bg-brown text-white py-4 mt-5">
+    <div class="container text-center">
+      <p class="mb-1">© 2025 JK Fashion Empire</p>
+      <p class="small mb-0">Sneakers crafted with care. For custom orders and event styling contact our team.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script-1.js"></script>
+  <script src="js/women-sneakers.js"></script>
+  <script src="js/size-guide-1.js"></script>
+</body>
+</html>

@@ -1,0 +1,895 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Traditional Gowns — JK Fashion Empire</title>
+
+  <!-- Bootstrap CSS (layout only; page CSS will be added separately) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+
+  <!-- Shared site stylesheet (to be provided) -->
+  <link rel="stylesheet" href="css/Gowns.css" />
+  <link rel="stylesheet" href="css/responsive-cards-1.css" />
+  <link rel="stylesheet" href="css/size-guide-1.css" />
+</head>
+<body>
+
+  <!-- NAVBAR (consistent with other pages) -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <div class="container">
+      <div class="d-flex align-items-center brand-wrap">
+        <img src="https://i.imghippo.com/files/sDGr2452Xk.png" alt="JK Fashion Empire logo" class="logo" />
+        <a class="navbar-brand fw-bold text-brown ms-2" href="index.html">JK Fashion Empire</a>
+      </div>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain"
+              aria-controls="navMain" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navMain">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="women-collection-index.html">Women</a></li>
+          <li class="nav-item"><a class="nav-link active" href="women-s-traditional-index.html">Traditional</a></li>
+          <li class="nav-item"><a class="nav-link" href="gele-sets-index.html">Gele Sets</a></li>
+          <li class="nav-item"><a class="nav-link" href="gifts-and-packages-index.html">Gifts</a></li>
+          <li class="nav-item ms-2"><a class="nav-link" href="https://wa.me/2348136754060" title="WhatsApp"><i class="bi bi-whatsapp"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero-banner text-center py-5">
+    <div class="container">
+      <h1 class="fw-bold text-brown">Traditional Gowns</h1>
+      <p class="lead text-muted">Handcrafted gowns and native ensembles — tailored fits, premium fabrics, and classic craftsmanship.</p>
+      <div class="mt-3 d-flex justify-content-center gap-2 flex-wrap">
+        <a class="btn btn-brown" href="#featured">Browse Collection</a>
+        <a class="btn btn-outline-brown" href="https://wa.me/2348136754060?text=I%20want%20to%20order%20a%20traditional%20gown">Order via WhatsApp</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- FILTER / SORT BAR -->
+  <section class="py-3 bg-light filter-bar">
+    <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between gap-3">
+      <div class="d-flex gap-2 align-items-center flex-wrap">
+        <button class="btn btn-outline-brown active" data-filter="all">All</button>
+        <button class="btn btn-outline-brown" data-filter="aso-ebi">Aso-Ebi</button>
+        <button class="btn btn-outline-brown" data-filter="bridal">Bridal</button>
+        <button class="btn btn-outline-brown" data-filter="lace">Lace</button>
+        <button class="btn btn-outline-brown" data-filter="ankara">Ankara</button>
+      </div>
+
+      <div class="d-flex align-items-center gap-2">
+        <label class="small text-muted mb-0">Sort</label>
+        <select id="sort-select" class="form-select form-select-sm" style="width:170px;">
+          <option value="popular">Most Popular</option>
+          <option value="new">Newest</option>
+          <option value="price-low">Price: Low to High</option>
+          <option value="price-high">Price: High to Low</option>
+        </select>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED / PRODUCTS -->
+  <main id="featured" class="py-5">
+    <div class="container">
+      <h2 class="section-title text-center">Featured Gowns</h2>
+      <p class="section-subtle text-center">Select a size and tap Order to message our team on WhatsApp. Preview available for most items.</p>
+
+      <div class="row g-4 mt-3">
+        <!-- 1 Beaded Mermaid Gown -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="bridal" data-newest="true" data-price="28000" aria-labelledby="gown-beaded-title">
+            <img class="card-img-top lazy" data-src="assets/images/gowns/beaded-mermaid-01.jpg" alt="Beaded Mermaid Gown" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="gown-beaded-title" class="card-title">Beaded Mermaid Gown</h5>
+              <div class="price">₦28,000</div>
+              <p class="card-text text-muted small">Figure-hugging mermaid cut with hand-sewn beads.</p>
+
+              <label class="visually-hidden" for="size-beaded">Select size</label>
+              <select id="size-beaded" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Beaded Mermaid Gown">
+                <option value="">Select Size</option>
+                <option value="XS">XS</option><option value="S">S</option><option value="M">M</option>
+                <option value="L">L</option><option value="XL">XL</option><option value="XXL">XXL</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Beaded Mermaid Gown">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- 2 Embroidered Long Sleeve -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="lace" data-newest="false" data-price="17000" aria-labelledby="gown-embroidered-title">
+            <img class="card-img-top lazy" data-src="assets/images/gowns/embroidered-long-01.jpg" alt="Embroidered Long Sleeve Gown" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="gown-embroidered-title" class="card-title">Embroidered Long Sleeve</h5>
+              <div class="price">₦17,000</div>
+              <p class="card-text text-muted small">Elegant long sleeves with floral embroidery.</p>
+
+              <label class="visually-hidden" for="size-embroidered">Select size</label>
+              <select id="size-embroidered" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Embroidered Long Sleeve">
+                <option value="">Select Size</option>
+                <option value="XS">XS</option><option value="S">S</option><option value="M">M</option>
+                <option value="L">L</option><option value="XL">XL</option><option value="XXL">XXL</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Embroidered Long Sleeve">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- 3 Traditional Wrapper Gown -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="aso-ebi" data-newest="true" data-price="11000" aria-labelledby="gown-wrapper-title">
+            <img class="card-img-top lazy" data-src="assets/images/gowns/wrapper-gown-01.jpg" alt="Traditional Wrapper Gown" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="gown-wrapper-title" class="card-title">Traditional Wrapper Gown</h5>
+              <div class="price">₦11,000</div>
+              <p class="card-text text-muted small">Comfortable wrapper style with elegant drape.</p>
+
+              <label class="visually-hidden" for="size-wrapper">Select size</label>
+              <select id="size-wrapper" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Traditional Wrapper Gown">
+                <option value="">Select Size</option>
+                <option value="XS">XS</option><option value="S">S</option><option value="M">M</option>
+                <option value="L">L</option><option value="XL">XL</option><option value="XXL">XXL</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Traditional Wrapper Gown">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- 4 Gold Thread Aso-Oke (Request Quote + Order) -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="aso-oke" data-newest="false" data-price="32000" aria-labelledby="gown-asooke-title">
+            <img class="card-img-top lazy" data-src="assets/images/gowns/aso-oke-gold-01.jpg" alt="Gold Thread Aso-Oke Gown" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="gown-asooke-title" class="card-title">Gold Thread Aso-Oke</h5>
+              <div class="price">₦32,000</div>
+              <p class="card-text text-muted small">Handwoven fabric with metallic thread accents.</p>
+
+              <div class="mt-auto d-grid gap-2">
+                <a class="btn btn-outline-brown" href="mailto:gifts@jkfashionempire.com">Request Quote</a>
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Gold Thread Aso-Oke">Order via WhatsApp</button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- 5 Short Sleeve Day Gown -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="ankara" data-newest="true" data-price="8500" aria-labelledby="gown-day-title">
+            <img class="card-img-top lazy" data-src="assets/images/gowns/day-gown-01.jpg" alt="Short Sleeve Day Gown" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="gown-day-title" class="card-title">Short Sleeve Day Gown</h5>
+              <div class="price">₦8,500</div>
+              <p class="card-text text-muted small">Lightweight and breathable for daytime events.</p>
+
+              <label class="visually-hidden" for="size-day">Select size</label>
+              <select id="size-day" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Short Sleeve Day Gown">
+                <option value="">Select Size</option>
+                <option value="XS">XS</option><option value="S">S</option><option value="M">M</option>
+                <option value="L">L</option><option value="XL">XL</option><option value="XXL">XXL</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Short Sleeve Day Gown">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Custom tailoring / made-to-measure card -->
+        <div class="col-12">
+          <div class="card product-card p-3 d-flex flex-row gap-3 align-items-center">
+            <div style="width:140px;">
+              <img src="assets/images/gowns/custom-tailoring.jpg" alt="Custom Gown Tailoring" style="width:100%;height:100%;object-fit:cover;border-radius:8px;" />
+            </div>
+            <div class="flex-grow-1">
+              <h5 class="mb-1">Made-to-Measure Gowns</h5>
+              <p class="small text-muted mb-2">Choose fabric, color and embellishments. We tailor gowns to your exact fit and provide fittings.</p>
+              <div>
+                <a class="btn btn-outline-brown me-2" href="mailto:gifts@jkfashionempire.com">Request Quote</a>
+                <a class="btn btn-brown" href="https://wa.me/2348136754060?text=I%20want%20a%20made-to-measure%20gown">Contact via WhatsApp</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="bridal" data-newest="true" data-price="28000" aria-labelledby="gown-beaded-title">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?bridal" alt="Beaded Mermaid Gown" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="gown-beaded-title" class="card-title">Beaded Mermaid Gown</h5>
+              <div class="price">₦28,000</div>
+              <p class="card-text text-muted small">Figure-hugging mermaid cut with hand-sewn beads.</p>
+
+              <label class="visually-hidden" for="size-beaded">Select size</label>
+              <select id="size-beaded" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Beaded Mermaid Gown">
+                <option value="">Select Size</option>
+                <option value="XS">XS</option><option value="S">S</option><option value="M">M</option>
+                <option value="L">L</option><option value="XL">XL</option><option value="XXL">XXL</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Beaded Mermaid Gown">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="bridal" data-newest="true" data-price="28000" aria-labelledby="gown-beaded-title">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?bridal" alt="Beaded Mermaid Gown" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="gown-beaded-title" class="card-title">Beaded Mermaid Gown</h5>
+              <div class="price">₦28,000</div>
+              <p class="card-text text-muted small">Figure-hugging mermaid cut with hand-sewn beads.</p>
+
+              <label class="visually-hidden" for="size-beaded">Select size</label>
+              <select id="size-beaded" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Beaded Mermaid Gown">
+                <option value="">Select Size</option>
+                <option value="XS">XS</option><option value="S">S</option><option value="M">M</option>
+                <option value="L">L</option><option value="XL">XL</option><option value="XXL">XXL</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Beaded Mermaid Gown">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="bridal" data-newest="true" data-price="28000" aria-labelledby="gown-beaded-title">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?bridal" alt="Beaded Mermaid Gown" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="gown-beaded-title" class="card-title">Beaded Mermaid Gown</h5>
+              <div class="price">₦28,000</div>
+              <p class="card-text text-muted small">Figure-hugging mermaid cut with hand-sewn beads.</p>
+
+              <label class="visually-hidden" for="size-beaded">Select size</label>
+              <select id="size-beaded" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Beaded Mermaid Gown">
+                <option value="">Select Size</option>
+                <option value="XS">XS</option><option value="S">S</option><option value="M">M</option>
+                <option value="L">L</option><option value="XL">XL</option><option value="XXL">XXL</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Beaded Mermaid Gown">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="bridal" data-newest="true" data-price="28000" aria-labelledby="gown-beaded-title">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?bridal" alt="Beaded Mermaid Gown" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="gown-beaded-title" class="card-title">Beaded Mermaid Gown</h5>
+              <div class="price">₦28,000</div>
+              <p class="card-text text-muted small">Figure-hugging mermaid cut with hand-sewn beads.</p>
+
+              <label class="visually-hidden" for="size-beaded">Select size</label>
+              <select id="size-beaded" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Beaded Mermaid Gown">
+                <option value="">Select Size</option>
+                <option value="XS">XS</option><option value="S">S</option><option value="M">M</option>
+                <option value="L">L</option><option value="XL">XL</option><option value="XXL">XXL</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Beaded Mermaid Gown">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="bridal" data-newest="true" data-price="28000" aria-labelledby="gown-beaded-title">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?bridal" alt="Beaded Mermaid Gown" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="gown-beaded-title" class="card-title">Beaded Mermaid Gown</h5>
+              <div class="price">₦28,000</div>
+              <p class="card-text text-muted small">Figure-hugging mermaid cut with hand-sewn beads.</p>
+
+              <label class="visually-hidden" for="size-beaded">Select size</label>
+              <select id="size-beaded" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Beaded Mermaid Gown">
+                <option value="">Select Size</option>
+                <option value="XS">XS</option><option value="S">S</option><option value="M">M</option>
+                <option value="L">L</option><option value="XL">XL</option><option value="XXL">XXL</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Beaded Mermaid Gown">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="bridal" data-newest="true" data-price="28000" aria-labelledby="gown-beaded-title">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?bridal" alt="Beaded Mermaid Gown" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="gown-beaded-title" class="card-title">Beaded Mermaid Gown</h5>
+              <div class="price">₦28,000</div>
+              <p class="card-text text-muted small">Figure-hugging mermaid cut with hand-sewn beads.</p>
+
+              <label class="visually-hidden" for="size-beaded">Select size</label>
+              <select id="size-beaded" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Beaded Mermaid Gown">
+                <option value="">Select Size</option>
+                <option value="XS">XS</option><option value="S">S</option><option value="M">M</option>
+                <option value="L">L</option><option value="XL">XL</option><option value="XXL">XXL</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Beaded Mermaid Gown">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="bridal" data-newest="true" data-price="28000" aria-labelledby="gown-beaded-title">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?bridal" alt="Beaded Mermaid Gown" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="gown-beaded-title" class="card-title">Beaded Mermaid Gown</h5>
+              <div class="price">₦28,000</div>
+              <p class="card-text text-muted small">Figure-hugging mermaid cut with hand-sewn beads.</p>
+
+              <label class="visually-hidden" for="size-beaded">Select size</label>
+              <select id="size-beaded" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Beaded Mermaid Gown">
+                <option value="">Select Size</option>
+                <option value="XS">XS</option><option value="S">S</option><option value="M">M</option>
+                <option value="L">L</option><option value="XL">XL</option><option value="XXL">XXL</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Beaded Mermaid Gown">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="bridal" data-newest="true" data-price="28000" aria-labelledby="gown-beaded-title">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?bridal" alt="Beaded Mermaid Gown" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="gown-beaded-title" class="card-title">Beaded Mermaid Gown</h5>
+              <div class="price">₦28,000</div>
+              <p class="card-text text-muted small">Figure-hugging mermaid cut with hand-sewn beads.</p>
+
+              <label class="visually-hidden" for="size-beaded">Select size</label>
+              <select id="size-beaded" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Beaded Mermaid Gown">
+                <option value="">Select Size</option>
+                <option value="XS">XS</option><option value="S">S</option><option value="M">M</option>
+                <option value="L">L</option><option value="XL">XL</option><option value="XXL">XXL</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Beaded Mermaid Gown">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="bridal" data-newest="true" data-price="28000" aria-labelledby="gown-beaded-title">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?bridal" alt="Beaded Mermaid Gown" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="gown-beaded-title" class="card-title">Beaded Mermaid Gown</h5>
+              <div class="price">₦28,000</div>
+              <p class="card-text text-muted small">Figure-hugging mermaid cut with hand-sewn beads.</p>
+
+              <label class="visually-hidden" for="size-beaded">Select size</label>
+              <select id="size-beaded" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Beaded Mermaid Gown">
+                <option value="">Select Size</option>
+                <option value="XS">XS</option><option value="S">S</option><option value="M">M</option>
+                <option value="L">L</option><option value="XL">XL</option><option value="XXL">XXL</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Beaded Mermaid Gown">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="bridal" data-newest="true" data-price="28000" aria-labelledby="gown-beaded-title">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?bridal" alt="Beaded Mermaid Gown" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="gown-beaded-title" class="card-title">Beaded Mermaid Gown</h5>
+              <div class="price">₦28,000</div>
+              <p class="card-text text-muted small">Figure-hugging mermaid cut with hand-sewn beads.</p>
+
+              <label class="visually-hidden" for="size-beaded">Select size</label>
+              <select id="size-beaded" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Beaded Mermaid Gown">
+                <option value="">Select Size</option>
+                <option value="XS">XS</option><option value="S">S</option><option value="M">M</option>
+                <option value="L">L</option><option value="XL">XL</option><option value="XXL">XXL</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Beaded Mermaid Gown">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="bridal" data-newest="true" data-price="28000" aria-labelledby="gown-beaded-title">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?bridal" alt="Beaded Mermaid Gown" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="gown-beaded-title" class="card-title">Beaded Mermaid Gown</h5>
+              <div class="price">₦28,000</div>
+              <p class="card-text text-muted small">Figure-hugging mermaid cut with hand-sewn beads.</p>
+
+              <label class="visually-hidden" for="size-beaded">Select size</label>
+              <select id="size-beaded" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Beaded Mermaid Gown">
+                <option value="">Select Size</option>
+                <option value="XS">XS</option><option value="S">S</option><option value="M">M</option>
+                <option value="L">L</option><option value="XL">XL</option><option value="XXL">XXL</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Beaded Mermaid Gown">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="bridal" data-newest="true" data-price="28000" aria-labelledby="gown-beaded-title">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?bridal" alt="Beaded Mermaid Gown" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="gown-beaded-title" class="card-title">Beaded Mermaid Gown</h5>
+              <div class="price">₦28,000</div>
+              <p class="card-text text-muted small">Figure-hugging mermaid cut with hand-sewn beads.</p>
+
+              <label class="visually-hidden" for="size-beaded">Select size</label>
+              <select id="size-beaded" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Beaded Mermaid Gown">
+                <option value="">Select Size</option>
+                <option value="XS">XS</option><option value="S">S</option><option value="M">M</option>
+                <option value="L">L</option><option value="XL">XL</option><option value="XXL">XXL</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Beaded Mermaid Gown">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="bridal" data-newest="true" data-price="28000" aria-labelledby="gown-beaded-title">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?bridal" alt="Beaded Mermaid Gown" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="gown-beaded-title" class="card-title">Beaded Mermaid Gown</h5>
+              <div class="price">₦28,000</div>
+              <p class="card-text text-muted small">Figure-hugging mermaid cut with hand-sewn beads.</p>
+
+              <label class="visually-hidden" for="size-beaded">Select size</label>
+              <select id="size-beaded" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Beaded Mermaid Gown">
+                <option value="">Select Size</option>
+                <option value="XS">XS</option><option value="S">S</option><option value="M">M</option>
+                <option value="L">L</option><option value="XL">XL</option><option value="XXL">XXL</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Beaded Mermaid Gown">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="bridal" data-newest="true" data-price="28000" aria-labelledby="gown-beaded-title">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?bridal" alt="Beaded Mermaid Gown" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="gown-beaded-title" class="card-title">Beaded Mermaid Gown</h5>
+              <div class="price">₦28,000</div>
+              <p class="card-text text-muted small">Figure-hugging mermaid cut with hand-sewn beads.</p>
+
+              <label class="visually-hidden" for="size-beaded">Select size</label>
+              <select id="size-beaded" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Beaded Mermaid Gown">
+                <option value="">Select Size</option>
+                <option value="XS">XS</option><option value="S">S</option><option value="M">M</option>
+                <option value="L">L</option><option value="XL">XL</option><option value="XXL">XXL</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Beaded Mermaid Gown">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="bridal" data-newest="true" data-price="28000" aria-labelledby="gown-beaded-title">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?bridal" alt="Beaded Mermaid Gown" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="gown-beaded-title" class="card-title">Beaded Mermaid Gown</h5>
+              <div class="price">₦28,000</div>
+              <p class="card-text text-muted small">Figure-hugging mermaid cut with hand-sewn beads.</p>
+
+              <label class="visually-hidden" for="size-beaded">Select size</label>
+              <select id="size-beaded" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Beaded Mermaid Gown">
+                <option value="">Select Size</option>
+                <option value="XS">XS</option><option value="S">S</option><option value="M">M</option>
+                <option value="L">L</option><option value="XL">XL</option><option value="XXL">XXL</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Beaded Mermaid Gown">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="bridal" data-newest="true" data-price="28000" aria-labelledby="gown-beaded-title">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?bridal" alt="Beaded Mermaid Gown" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="gown-beaded-title" class="card-title">Beaded Mermaid Gown</h5>
+              <div class="price">₦28,000</div>
+              <p class="card-text text-muted small">Figure-hugging mermaid cut with hand-sewn beads.</p>
+
+              <label class="visually-hidden" for="size-beaded">Select size</label>
+              <select id="size-beaded" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Beaded Mermaid Gown">
+                <option value="">Select Size</option>
+                <option value="XS">XS</option><option value="S">S</option><option value="M">M</option>
+                <option value="L">L</option><option value="XL">XL</option><option value="XXL">XXL</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Beaded Mermaid Gown">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="bridal" data-newest="true" data-price="28000" aria-labelledby="gown-beaded-title">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?bridal" alt="Beaded Mermaid Gown" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="gown-beaded-title" class="card-title">Beaded Mermaid Gown</h5>
+              <div class="price">₦28,000</div>
+              <p class="card-text text-muted small">Figure-hugging mermaid cut with hand-sewn beads.</p>
+
+              <label class="visually-hidden" for="size-beaded">Select size</label>
+              <select id="size-beaded" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Beaded Mermaid Gown">
+                <option value="">Select Size</option>
+                <option value="XS">XS</option><option value="S">S</option><option value="M">M</option>
+                <option value="L">L</option><option value="XL">XL</option><option value="XXL">XXL</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Beaded Mermaid Gown">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="bridal" data-newest="true" data-price="28000" aria-labelledby="gown-beaded-title">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?bridal" alt="Beaded Mermaid Gown" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="gown-beaded-title" class="card-title">Beaded Mermaid Gown</h5>
+              <div class="price">₦28,000</div>
+              <p class="card-text text-muted small">Figure-hugging mermaid cut with hand-sewn beads.</p>
+
+              <label class="visually-hidden" for="size-beaded">Select size</label>
+              <select id="size-beaded" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Beaded Mermaid Gown">
+                <option value="">Select Size</option>
+                <option value="XS">XS</option><option value="S">S</option><option value="M">M</option>
+                <option value="L">L</option><option value="XL">XL</option><option value="XXL">XXL</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Beaded Mermaid Gown">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="bridal" data-newest="true" data-price="28000" aria-labelledby="gown-beaded-title">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?bridal" alt="Beaded Mermaid Gown" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="gown-beaded-title" class="card-title">Beaded Mermaid Gown</h5>
+              <div class="price">₦28,000</div>
+              <p class="card-text text-muted small">Figure-hugging mermaid cut with hand-sewn beads.</p>
+
+              <label class="visually-hidden" for="size-beaded">Select size</label>
+              <select id="size-beaded" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Beaded Mermaid Gown">
+                <option value="">Select Size</option>
+                <option value="XS">XS</option><option value="S">S</option><option value="M">M</option>
+                <option value="L">L</option><option value="XL">XL</option><option value="XXL">XXL</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Beaded Mermaid Gown">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="bridal" data-newest="true" data-price="28000" aria-labelledby="gown-beaded-title">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?bridal" alt="Beaded Mermaid Gown" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="gown-beaded-title" class="card-title">Beaded Mermaid Gown</h5>
+              <div class="price">₦28,000</div>
+              <p class="card-text text-muted small">Figure-hugging mermaid cut with hand-sewn beads.</p>
+
+              <label class="visually-hidden" for="size-beaded">Select size</label>
+              <select id="size-beaded" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Beaded Mermaid Gown">
+                <option value="">Select Size</option>
+                <option value="XS">XS</option><option value="S">S</option><option value="M">M</option>
+                <option value="L">L</option><option value="XL">XL</option><option value="XXL">XXL</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Beaded Mermaid Gown">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="bridal" data-newest="true" data-price="28000" aria-labelledby="gown-beaded-title">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?bridal" alt="Beaded Mermaid Gown" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="gown-beaded-title" class="card-title">Beaded Mermaid Gown</h5>
+              <div class="price">₦28,000</div>
+              <p class="card-text text-muted small">Figure-hugging mermaid cut with hand-sewn beads.</p>
+
+              <label class="visually-hidden" for="size-beaded">Select size</label>
+              <select id="size-beaded" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Beaded Mermaid Gown">
+                <option value="">Select Size</option>
+                <option value="XS">XS</option><option value="S">S</option><option value="M">M</option>
+                <option value="L">L</option><option value="XL">XL</option><option value="XXL">XXL</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Beaded Mermaid Gown">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="bridal" data-newest="true" data-price="28000" aria-labelledby="gown-beaded-title">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?bridal" alt="Beaded Mermaid Gown" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="gown-beaded-title" class="card-title">Beaded Mermaid Gown</h5>
+              <div class="price">₦28,000</div>
+              <p class="card-text text-muted small">Figure-hugging mermaid cut with hand-sewn beads.</p>
+
+              <label class="visually-hidden" for="size-beaded">Select size</label>
+              <select id="size-beaded" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Beaded Mermaid Gown">
+                <option value="">Select Size</option>
+                <option value="XS">XS</option><option value="S">S</option><option value="M">M</option>
+                <option value="L">L</option><option value="XL">XL</option><option value="XXL">XXL</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Beaded Mermaid Gown">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="bridal" data-newest="true" data-price="28000" aria-labelledby="gown-beaded-title">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?bridal" alt="Beaded Mermaid Gown" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="gown-beaded-title" class="card-title">Beaded Mermaid Gown</h5>
+              <div class="price">₦28,000</div>
+              <p class="card-text text-muted small">Figure-hugging mermaid cut with hand-sewn beads.</p>
+
+              <label class="visually-hidden" for="size-beaded">Select size</label>
+              <select id="size-beaded" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Beaded Mermaid Gown">
+                <option value="">Select Size</option>
+                <option value="XS">XS</option><option value="S">S</option><option value="M">M</option>
+                <option value="L">L</option><option value="XL">XL</option><option value="XXL">XXL</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Beaded Mermaid Gown">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="bridal" data-newest="true" data-price="28000" aria-labelledby="gown-beaded-title">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?bridal" alt="Beaded Mermaid Gown" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="gown-beaded-title" class="card-title">Beaded Mermaid Gown</h5>
+              <div class="price">₦28,000</div>
+              <p class="card-text text-muted small">Figure-hugging mermaid cut with hand-sewn beads.</p>
+
+              <label class="visually-hidden" for="size-beaded">Select size</label>
+              <select id="size-beaded" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Beaded Mermaid Gown">
+                <option value="">Select Size</option>
+                <option value="XS">XS</option><option value="S">S</option><option value="M">M</option>
+                <option value="L">L</option><option value="XL">XL</option><option value="XXL">XXL</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Beaded Mermaid Gown">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="bridal" data-newest="true" data-price="28000" aria-labelledby="gown-beaded-title">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?bridal" alt="Beaded Mermaid Gown" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="gown-beaded-title" class="card-title">Beaded Mermaid Gown</h5>
+              <div class="price">₦28,000</div>
+              <p class="card-text text-muted small">Figure-hugging mermaid cut with hand-sewn beads.</p>
+
+              <label class="visually-hidden" for="size-beaded">Select size</label>
+              <select id="size-beaded" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Beaded Mermaid Gown">
+                <option value="">Select Size</option>
+                <option value="XS">XS</option><option value="S">S</option><option value="M">M</option>
+                <option value="L">L</option><option value="XL">XL</option><option value="XXL">XXL</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Beaded Mermaid Gown">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+</div> <!-- /.row -->
+   <div class="text-center mt-4">
+        <a href="https://wa.me/2348136754060?text=I%20want%20to%20order%20mules" class="btn btn-outline-brown">Load more</a>
+      </div>
+      
+    </div> <!-- /.container -->
+  </main>
+
+  <!-- HOW IT WORKS / FAQ -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card p-3">
+            <h5 class="mb-2">How it works</h5>
+            <ol class="small mb-0">
+              <li>Select a gown and size (or request custom measurements).</li>
+              <li>Tap "Order via WhatsApp" and provide recipient details and delivery address.</li>
+              <li>We confirm availability, prepare and dispatch. Fittings available for custom orders.</li>
+            </ol>
+          </div>
+        </div>
+
+       
+  </section>
+
+  <!-- CONTACT / HELP -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-md-8">
+          <h5 class="fw-bold text-brown mb-1">Need help with fit or fabric?</h5>
+          <p class="small text-muted mb-0">Message our tailoring team on WhatsApp for measurements, fabric suggestions, and bespoke requests.</p>
+        </div>
+        <div class="col-md-4 text-md-end">
+          <a class="btn btn-brown" href="https://wa.me/2348136754060?text=Hi%20I%20need%20help%20with%20gown%20measurements">Chat on WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer bg-brown text-white py-4">
+    <div class="container text-center">
+      <p class="mb-1">© 2025 JK Fashion Empire</p>
+      <p class="small mb-0">Traditional gowns crafted with care. For custom orders and event styling contact our team.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS (kept for interactive components; page JS will be added later) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/js/Gowns.js"></script>
+
+  <!-- Page script placeholder (to be provided) -->
+  <script src="C:\Users\USER\Documents\Main page for website\Women\Tradiional\Gowns.js"></script>
+  <script src="js/size-guide-1.js"></script>
+</body>
+</html>

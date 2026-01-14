@@ -1,0 +1,1212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Agbada Collection - JK Fashion Empire</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/Agbada.css" />
+  <link rel="stylesheet" href="css/responsive-cards-1.css" />
+  <link rel="stylesheet" href="css/size-guide-1.css" />
+</head>
+<body>
+
+  <!-- NAVBAR (logo before brand name) -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <div class="container">
+      <div class="d-flex align-items-center">
+        <!-- Replace this src with your logo file when you host the site -->
+        <img src="https://i.imghippo.com/files/sDGr2452Xk.png" alt="JK Fashion Empire logo" class="logo" />
+        <a class="navbar-brand fw-bold text-brown ms-2" href="index.html">JK Fashion Empire</a>
+      </div>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain"
+              aria-controls="navMain" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navMain">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="men-s-collection-index.html">Men</a></li>
+          <li class="nav-item"><a class="nav-link" href="women-collection-index.html">Women</a></li>
+          <li class="nav-item"><a class="nav-link" href="gifts-and-packages-index.html">Gift Packages</a></li>
+          <li class="nav-item"><a class="nav-link" href="customer-reviews-index.html">Reviews</a></li>
+          <li class="nav-item ms-2"><a class="nav-link" href="https://wa.me/2348136754060" title="WhatsApp"><i class="bi bi-whatsapp"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero-banner text-center py-5">
+    <div class="container">
+      <h1 class="fw-bold text-brown">Agbada Collection</h1>
+      <p class="lead text-muted">Handcrafted Agbada styles — classic, contemporary, and ceremonial. Select size and order via WhatsApp.</p>
+      <div class="mt-3">
+        <a class="btn btn-outline-brown me-2" href="men-s-collection-index.html">Back to Men</a>
+        <a class="btn btn-brown" href="#products">Browse Agbada</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- FILTER / SORT BAR -->
+  <section class="py-3 bg-light filter-bar">
+    <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between gap-3">
+      <div class="d-flex gap-2 align-items-center flex-wrap">
+        <button class="btn btn-outline-brown active" data-filter="all">All Agbada</button>
+        <button class="btn btn-outline-brown" data-filter="classic">Classic</button>
+        <button class="btn btn-outline-brown" data-filter="premium">Premium</button>
+        <button class="btn btn-outline-brown" data-filter="handwoven">Handwoven</button>
+        <button class="btn btn-outline-brown" data-filter="festive">Festive</button>
+      </div>
+
+      <div class="d-flex align-items-center gap-2">
+        <label class="small text-muted mb-0">Sort</label>
+        <select id="sort-select" class="form-select form-select-sm" style="width:170px;">
+          <option value="popular">Most Popular</option>
+          <option value="new">Newest</option>
+          <option value="price-low">Price: Low to High</option>
+          <option value="price-high">Price: High to Low</option>
+        </select>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS GRID (30 Agbada product cards) -->
+  <main id="products" class="py-5">
+    <div class="container">
+      <h2 class="section-title">Agbada — Featured Styles</h2>
+      <p class="section-subtle">Tap a product to order via WhatsApp. Choose size where applicable.</p>
+
+      <div class="row g-4">
+        <!-- 1 -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card product-card h-100" data-category="agbada classic" data-newest="false">
+            <div class="position-relative">
+              <span class="product-badge">Classic</span>
+              <img src="https://images.unsplash.com/photo-1618354691214-7e5b6e3e3e3e?q=80&w=1200&auto=format&fit=crop" class="card-img-top lazy" data-src="https://images.unsplash.com/photo-1618354691214-7e5b6e3e3e3e?q=80&w=1200&auto=format&fit=crop" alt="Classic Agbada 1" />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">Classic Agbada I</h5>
+              <p class="card-text price">₦48,000</p>
+              <select class="form-select form-select-sm size-select mb-2">
+                <option value="">Select Size</option><option>M</option><option>L</option><option>XL</option>
+              </select>
+              <button class="btn btn-brown order-btn w-100" data-phone="2348136754060">Order via WhatsApp</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2 -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card product-card h-100" data-category="agbada premium" data-newest="true">
+            <div class="position-relative">
+              <span class="product-badge">Premium</span>
+              <img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?q=80&w=1200&auto=format&fit=crop" class="card-img-top lazy" data-src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?q=80&w=1200&auto=format&fit=crop" alt="Premium Agbada 2" />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">Premium Agbada II</h5>
+              <p class="card-text price">₦55,000</p>
+              <select class="form-select form-select-sm size-select mb-2">
+                <option value="">Select Size</option><option>M</option><option>L</option><option>XL</option>
+              </select>
+              <button class="btn btn-brown order-btn w-100" data-phone="2348136754060">Order via WhatsApp</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card product-card h-100" data-category="agbada handwoven" data-newest="false">
+            <div class="position-relative">
+              <span class="product-badge">Handwoven</span>
+              <img src="https://images.unsplash.com/photo-1602810317759-4e4c4c3e8f3f?q=80&w=1200&auto=format&fit=crop" class="card-img-top lazy" data-src="https://images.unsplash.com/photo-1602810317759-4e4c4c3e8f3f?q=80&w=1200&auto=format&fit=crop" alt="Handwoven Agbada 3" />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">Handwoven Agbada</h5>
+              <p class="card-text price">₦60,000</p>
+              <button class="btn btn-brown order-btn w-100" data-phone="2348136754060">Order via WhatsApp</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4 -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card product-card h-100" data-category="agbada festive" data-newest="false">
+            <div class="position-relative">
+              <span class="product-badge">Festive</span>
+              <img src="https://images.unsplash.com/photo-1520975912770-7b6f6b6b6b6b?q=80&w=1200&auto=format&fit=crop" class="card-img-top lazy" data-src="https://images.unsplash.com/photo-1520975912770-7b6f6b6b6b6b?q=80&w=1200&auto=format&fit=crop" alt="Festive Agbada 4" />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">Festive Agbada</h5>
+              <p class="card-text price">₦52,000</p>
+              <button class="btn btn-brown order-btn w-100" data-phone="2348136754060">Order via WhatsApp</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5 -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card product-card h-100" data-category="agbada classic" data-newest="true">
+            <div class="position-relative">
+              <span class="product-badge">Classic</span>
+              <img src="https://images.unsplash.com/photo-1514996937319-344454492b37?q=80&w=1200&auto=format&fit=crop" class="card-img-top lazy" data-src="https://images.unsplash.com/photo-1514996937319-344454492b37?q=80&w=1200&auto=format&fit=crop" alt="Classic Agbada 5" />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">Classic Agbada III</h5>
+              <p class="card-text price">₦46,000</p>
+              <select class="form-select form-select-sm size-select mb-2">
+                <option value="">Select Size</option><option>M</option><option>L</option><option>XL</option>
+              </select>
+              <button class="btn btn-brown order-btn w-100" data-phone="2348136754060">Order via WhatsApp</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6 -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card product-card h-100" data-category="agbada premium" data-newest="false">
+            <div class="position-relative">
+              <span class="product-badge">Premium</span>
+              <img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?q=80&w=1200&auto=format&fit=crop" class="card-img-top lazy" data-src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?q=80&w=1200&auto=format&fit=crop" alt="Premium Agbada 6" />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">Royal Premium Agbada</h5>
+              <p class="card-text price">₦75,000</p>
+              <button class="btn btn-brown order-btn w-100" data-phone="2348136754060">Order via WhatsApp</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 7 -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card product-card h-100" data-category="agbada handwoven" data-newest="false">
+            <div class="position-relative">
+              <span class="product-badge">Handwoven</span>
+              <img src="https://images.unsplash.com/photo-1602810317759-4e4c4c3e8f3f?q=80&w=1200&auto=format&fit=crop" class="card-img-top lazy" data-src="https://images.unsplash.com/photo-1602810317759-4e4c4c3e8f3f?q=80&w=1200&auto=format&fit=crop" alt="Handwoven Agbada 7" />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">Heritage Handwoven</h5>
+              <p class="card-text price">₦60,000</p>
+              <button class="btn btn-brown order-btn w-100" data-phone="2348136754060">Order via WhatsApp</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 8 -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card product-card h-100" data-category="agbada festive" data-newest="true">
+            <div class="position-relative">
+              <span class="product-badge">Festive</span>
+              <img src="https://images.unsplash.com/photo-1520975912770-7b6f6b6b6b6b?q=80&w=1200&auto=format&fit=crop" class="card-img-top lazy" data-src="https://images.unsplash.com/photo-1520975912770-7b6f6b6b6b6b?q=80&w=1200&auto=format&fit=crop" alt="Festive Agbada 8" />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">Festive Embellished</h5>
+              <p class="card-text price">₦52,000</p>
+              <select class="form-select form-select-sm size-select mb-2">
+                <option value="">Select Size</option><option>M</option><option>L</option><option>XL</option>
+              </select>
+              <button class="btn btn-brown order-btn w-100" data-phone="2348136754060">Order via WhatsApp</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 9 -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card product-card h-100" data-category="agbada classic" data-newest="false">
+            <div class="position-relative">
+              <span class="product-badge">Classic</span>
+              <img src="https://images.unsplash.com/photo-1514996937319-344454492b37?q=80&w=1200&auto=format&fit=crop" class="card-img-top lazy" data-src="https://images.unsplash.com/photo-1514996937319-344454492b37?q=80&w=1200&auto=format&fit=crop" alt="Classic Agbada 9" />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">Minimal Classic Agbada</h5>
+              <p class="card-text price">₦46,000</p>
+              <button class="btn btn-brown order-btn w-100" data-phone="2348136754060">Order via WhatsApp</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 10 -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card product-card h-100" data-category="agbada premium" data-newest="false">
+            <div class="position-relative">
+              <span class="product-badge">Premium</span>
+              <img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?q=80&w=1200&auto=format&fit=crop" class="card-img-top lazy" data-src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?q=80&w=1200&auto=format&fit=crop" alt="Premium Agbada 10" />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">Royal Embroidered Agbada</h5>
+              <p class="card-text price">₦58,000</p>
+              <select class="form-select form-select-sm size-select mb-2">
+                <option value="">Select Size</option><option>M</option><option>L</option><option>XL</option>
+              </select>
+              <button class="btn btn-brown order-btn w-100" data-phone="2348136754060">Order via WhatsApp</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 11 -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card product-card h-100" data-category="agbada handwoven" data-newest="false">
+            <div class="position-relative">
+              <span class="product-badge">Handwoven</span>
+              <img src="https://images.unsplash.com/photo-1602810317759-4e4c4c3e8f3f?q=80&w=1200&auto=format&fit=crop" class="card-img-top lazy" data-src="https://images.unsplash.com/photo-1602810317759-4e4c4c3e8f3f?q=80&w=1200&auto=format&fit=crop" alt="Handwoven Agbada 11" />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">Artisan Handwoven Agbada</h5>
+              <p class="card-text price">₦62,000</p>
+              <button class="btn btn-brown order-btn w-100" data-phone="2348136754060">Order via WhatsApp</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 12 -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card product-card h-100" data-category="agbada festive" data-newest="true">
+            <div class="position-relative">
+              <span class="product-badge">Festive</span>
+              <img src="https://images.unsplash.com/photo-1520975912770-7b6f6b6b6b6b?q=80&w=1200&auto=format&fit=crop" class="card-img-top lazy" data-src="https://images.unsplash.com/photo-1520975912770-7b6f6b6b6b6b?q=80&w=1200&auto=format&fit=crop" alt="Festive Agbada 12" />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">Festive Signature Agbada</h5>
+              <p class="card-text price">₦52,000</p>
+              <select class="form-select form-select-sm size-select mb-2">
+                <option value="">Select Size</option><option>M</option><option>L</option><option>XL</option>
+              </select>
+              <button class="btn btn-brown order-btn w-100" data-phone="2348136754060">Order via WhatsApp</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 13 -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card product-card h-100" data-category="agbada classic" data-newest="false">
+            <div class="position-relative">
+              <span class="product-badge">Classic</span>
+              <img src="https://images.unsplash.com/photo-1514996937319-344454492b37?q=80&w=1200&auto=format&fit=crop" class="card-img-top lazy" data-src="https://images.unsplash.com/photo-1514996937319-344454492b37?q=80&w=1200&auto=format&fit=crop" alt="Classic Agbada 13" />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">Classic Embroidered Agbada</h5>
+              <p class="card-text price">₦50,000</p>
+              <button class="btn btn-brown order-btn w-100" data-phone="2348136754060">Order via WhatsApp</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 14 -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card product-card h-100" data-category="agbada premium" data-newest="true">
+            <div class="position-relative">
+              <span class="product-badge">Premium</span>
+              <img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?q=80&w=1200&auto=format&fit=crop" class="card-img-top lazy" data-src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?q=80&w=1200&auto=format&fit=crop" alt="Premium Agbada 14" />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">Signature Premium Agbada</h5>
+              <p class="card-text price">₦58,000</p>
+              <select class="form-select form-select-sm size-select mb-2">
+                <option value="">Select Size</option><option>M</option><option>L</option><option>XL</option>
+              </select>
+              <button class="btn btn-brown order-btn w-100" data-phone="2348136754060">Order via WhatsApp</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 15 -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card product-card h-100" data-category="agbada handwoven" data-newest="false">
+            <div class="position-relative">
+              <span class="product-badge">Handwoven</span>
+              <img src="https://images.unsplash.com/photo-1602810317759-4e4c4c3e8f3f?q=80&w=1200&auto=format&fit=crop" class="card-img-top lazy" data-src="https://images.unsplash.com/photo-1602810317759-4e4c4c3e8f3f?q=80&w=1200&auto=format&fit=crop" alt="Handwoven Agbada 15" />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">Heritage Weave Agbada</h5>
+              <p class="card-text price">₦64,000</p>
+              <button class="btn btn-brown order-btn w-100" data-phone="2348136754060">Order via WhatsApp</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 16 -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card product-card h-100" data-category="agbada festive" data-newest="false">
+            <div class="position-relative">
+              <span class="product-badge">Festive</span>
+              <img src="https://images.unsplash.com/photo-1520975912770-7b6f6b6b6b6b?q=80&w=1200&auto=format&fit=crop" class="card-img-top lazy" data-src="https://images.unsplash.com/photo-1520975912770-7b6f6b6b6b6b?q=80&w=1200&auto=format&fit=crop" alt="Festive Agbada 16" />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">Ceremonial Festive Agbada</h5>
+              <p class="card-text price">₦52,000</p>
+              <select class="form-select form-select-sm size-select mb-2">
+                <option value="">Select Size</option><option>M</option><option>L</option><option>XL</option>
+              </select>
+              <button class="btn btn-brown order-btn w-100" data-phone="2348136754060">Order via WhatsApp</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 17 -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card product-card h-100" data-category="agbada classic" data-newest="false">
+            <div class="position-relative">
+              <span class="product-badge">Classic</span>
+              <img src="https://images.unsplash.com/photo-1514996937319-344454492b37?q=80&w=1200&auto=format&fit=crop" class="card-img-top lazy" data-src="https://images.unsplash.com/photo-1514996937319-344454492b37?q=80&w=1200&auto=format&fit=crop" alt="Classic Agbada 17" />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">Classic Cut Agbada</h5>
+              <p class="card-text price">₦48,000</p>
+              <button class="btn btn-brown order-btn w-100" data-phone="2348136754060">Order via WhatsApp</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 18 -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card product-card h-100" data-category="agbada premium" data-newest="true">
+            <div class="position-relative">
+              <span class="product-badge">Premium</span>
+              <img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?q=80&w=1200&auto=format&fit=crop" class="card-img-top lazy" data-src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?q=80&w=1200&auto=format&fit=crop" alt="Premium Agbada 18" />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">Signature Royal Agbada</h5>
+              <p class="card-text price">₦70,000</p>
+              <select class="form-select form-select-sm size-select mb-2">
+                <option value="">Select Size</option><option>M</option><option>L</option><option>XL</option>
+              </select>
+              <button class="btn btn-brown order-btn w-100" data-phone="2348136754060">Order via WhatsApp</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 19 -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card product-card h-100" data-category="agbada handwoven" data-newest="false">
+            <div class="position-relative">
+              <span class="product-badge">Handwoven</span>
+              <img src="https://images.unsplash.com/photo-1602810317759-4e4c4c3e8f3f?q=80&w=1200&auto=format&fit=crop" class="card-img-top lazy" data-src="https://images.unsplash.com/photo-1602810317759-4e4c4c3e8f3f?q=80&w=1200&auto=format&fit=crop" alt="Handwoven Agbada 19" />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">Artisan Weave Agbada</h5>
+              <p class="card-text price">₦63,000</p>
+              <button class="btn btn-brown order-btn w-100" data-phone="2348136754060">Order via WhatsApp</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 20 -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card product-card h-100" data-category="agbada festive" data-newest="false">
+            <div class="position-relative">
+              <span class="product-badge">Festive</span>
+              <img src="https://images.unsplash.com/photo-1520975912770-7b6f6b6b6b6b?q=80&w=1200&auto=format&fit=crop" class="card-img-top lazy" data-src="https://images.unsplash.com/photo-1520975912770-7b6f6b6b6b6b?q=80&w=1200&auto=format&fit=crop" alt="Festive Agbada 20" />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">Ceremonial Agbada</h5>
+              <p class="card-text price">₦54,000</p>
+              <select class="form-select form-select-sm size-select mb-2">
+                <option value="">Select Size</option><option>M</option><option>L</option><option>XL</option>
+              </select>
+              <button class="btn btn-brown order-btn w-100" data-phone="2348136754060">Order via WhatsApp</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 21 -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card product-card h-100" data-category="agbada classic" data-newest="true">
+            <div class="position-relative">
+              <span class="product-badge">Classic</span>
+              <img src="https://images.unsplash.com/photo-1514996937319-344454492b37?q=80&w=1200&auto=format&fit=crop" class="card-img-top lazy" data-src="https://images.unsplash.com/photo-1514996937319-344454492b37?q=80&w=1200&auto=format&fit=crop" alt="Classic Agbada 21" />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">Classic Tailored Agbada</h5>
+              <p class="card-text price">₦49,000</p>
+              <button class="btn btn-brown order-btn w-100" data-phone="2348136754060">Order via WhatsApp</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 22 -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card product-card h-100" data-category="agbada premium" data-newest="false">
+            <div class="position-relative">
+              <span class="product-badge">Premium</span>
+              <img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?q=80&w=1200&auto=format&fit=crop" class="card-img-top lazy" data-src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?q=80&w=1200&auto=format&fit=crop" alt="Premium Agbada 22" />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">Signature Embroidered Agbada</h5>
+              <p class="card-text price">₦56,000</p>
+              <select class="form-select form-select-sm size-select mb-2">
+                <option value="">Select Size</option><option>M</option><option>L</option><option>XL</option>
+              </select>
+              <button class="btn btn-brown order-btn w-100" data-phone="2348136754060">Order via WhatsApp</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 23 -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card product-card h-100" data-category="agbada handwoven" data-newest="false">
+            <div class="position-relative">
+              <span class="product-badge">Handwoven</span>
+              <img src="https://images.unsplash.com/photo-1602810317759-4e4c4c3e8f3f?q=80&w=1200&auto=format&fit=crop" class="card-img-top lazy" data-src="https://images.unsplash.com/photo-1602810317759-4e4c4c3e8f3f?q=80&w=1200&auto=format&fit=crop" alt="Handwoven Agbada 23" />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">Weave Heritage Agbada</h5>
+              <p class="card-text price">₦61,000</p>
+              <button class="btn btn-brown order-btn w-100" data-phone="2348136754060">Order via WhatsApp</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 24 -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card product-card h-100" data-category="agbada festive" data-newest="true">
+            <div class="position-relative">
+              <span class="product-badge">Festive</span>
+              <img src="https://images.unsplash.com/photo-1520975912770-7b6f6b6b6b6b?q=80&w=1200&auto=format&fit=crop" class="card-img-top lazy" data-src="https://images.unsplash.com/photo-1520975912770-7b6f6b6b6b6b?q=80&w=1200&auto=format&fit=crop" alt="Festive Agbada 24" />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">Festive Royal Agbada</h5>
+              <p class="card-text price">₦53,000</p>
+              <select class="form-select form-select-sm size-select mb-2">
+                <option value="">Select Size</option><option>M</option><option>L</option><option>XL</option>
+              </select>
+              <button class="btn btn-brown order-btn w-100" data-phone="2348136754060">Order via WhatsApp</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 25 -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card product-card h-100" data-category="agbada classic" data-newest="false">
+            <div class="position-relative">
+              <span class="product-badge">Classic</span>
+              <img src="https://images.unsplash.com/photo-1514996937319-344454492b37?q=80&w=1200&auto=format&fit=crop" class="card-img-top lazy" data-src="https://images.unsplash.com/photo-1514996937319-344454492b37?q=80&w=1200&auto=format&fit=crop" alt="Classic Agbada 25" />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">Classic Heritage Agbada</h5>
+              <p class="card-text price">₦47,000</p>
+              <button class="btn btn-brown order-btn w-100" data-phone="2348136754060">Order via WhatsApp</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 26 -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card product-card h-100" data-category="agbada premium" data-newest="false">
+            <div class="position-relative">
+              <span class="product-badge">Premium</span>
+              <img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?q=80&w=1200&auto=format&fit=crop" class="card-img-top lazy" data-src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?q=80&w=1200&auto=format&fit=crop" alt="Premium Agbada 26" />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">Premium Luxe Agbada</h5>
+              <p class="card-text price">₦66,000</p>
+              <select class="form-select form-select-sm size-select mb-2">
+                <option value="">Select Size</option><option>M</option><option>L</option><option>XL</option>
+              </select>
+              <button class="btn btn-brown order-btn w-100" data-phone="2348136754060">Order via WhatsApp</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 27 -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card product-card h-100" data-category="agbada handwoven" data-newest="true">
+            <div class="position-relative">
+              <span class="product-badge">Handwoven</span>
+              <img src="https://images.unsplash.com/photo-1602810317759-4e4c4c3e8f3f?q=80&w=1200&auto=format&fit=crop" class="card-img-top lazy" data-src="https://images.unsplash.com/photo-1602810317759-4e4c4c3e8f3f?q=80&w=1200&auto=format&fit=crop" alt="Handwoven Agbada 27" />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">Limited Handwoven Agbada</h5>
+              <p class="card-text price">₦68,000</p>
+              <button class="btn btn-brown order-btn w-100" data-phone="2348136754060">Order via WhatsApp</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 28 -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card product-card h-100" data-category="agbada festive" data-newest="false">
+            <div class="position-relative">
+              <span class="product-badge">Festive</span>
+              <img src="https://images.unsplash.com/photo-1520975912770-7b6f6b6b6b6b?q=80&w=1200&auto=format&fit=crop" class="card-img-top lazy" data-src="https://images.unsplash.com/photo-1520975912770-7b6f6b6b6b6b?q=80&w=1200&auto=format&fit=crop" alt="Festive Agbada 28" />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">Ornate Festive Agbada</h5>
+              <p class="card-text price">₦59,000</p>
+              <select class="form-select form-select-sm size-select mb-2">
+                <option value="">Select Size</option><option>M</option><option>L</option><option>XL</option>
+              </select>
+              <button class="btn btn-brown order-btn w-100" data-phone="2348136754060">Order via WhatsApp</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 29 -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card product-card h-100" data-category="agbada classic" data-newest="false">
+            <div class="position-relative">
+              <span class="product-badge">Classic</span>
+              <img src="https://images.unsplash.com/photo-1514996937319-344454492b37?q=80&w=1200&auto=format&fit=crop" class="card-img-top lazy" data-src="https://images.unsplash.com/photo-1514996937319-344454492b37?q=80&w=1200&auto=format&fit=crop" alt="Classic Agbada 29" />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">Timeless Classic Agbada</h5>
+              <p class="card-text price">₦50,000</p>
+              <button class="btn btn-brown order-btn w-100" data-phone="2348136754060">Order via WhatsApp</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 30 -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card product-card h-100" data-category="agbada premium" data-newest="true">
+            <div class="position-relative">
+              <span class="product-badge">Premium</span>
+              <img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?q=80&w=1200&auto=format&fit=crop" class="card-img-top lazy" data-src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?q=80&w=1200&auto=format&fit=crop" alt="Premium Agbada 30" />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">Signature Luxe Agbada</h5>
+              <p class="card-text price">₦72,000</p>
+              <select class="form-select form-select-sm size-select mb-2">
+                <option value="">Select Size</option><option>M</option><option>L</option><option>XL</option>
+              </select>
+              <button class="btn btn-brown order-btn w-100" data-phone="2348136754060">Order via WhatsApp</button>
+            </div>
+          </div>
+        </div>
+
+      
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="backpack" data-newest="true" data-price="12000" aria-labelledby="bag-1">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?backpack" alt="Black Backpack" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="bag-1" class="card-title">Black Backpack</h5>
+              <div class="price">₦12,000</div>
+              <p class="card-text text-muted small">Durable backpack with padded straps and multiple compartments.</p>
+
+              <label class="visually-hidden" for="size-bag-1">Select size</label>
+              <select id="size-bag-1" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Black Backpack">
+                <option value="">Select Size</option><option value="M">Medium</option><option value="L">Large</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Black Backpack">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="backpack" data-newest="true" data-price="12000" aria-labelledby="bag-1">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?backpack" alt="Black Backpack" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="bag-1" class="card-title">Black Backpack</h5>
+              <div class="price">₦12,000</div>
+              <p class="card-text text-muted small">Durable backpack with padded straps and multiple compartments.</p>
+
+              <label class="visually-hidden" for="size-bag-1">Select size</label>
+              <select id="size-bag-1" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Black Backpack">
+                <option value="">Select Size</option><option value="M">Medium</option><option value="L">Large</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Black Backpack">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="backpack" data-newest="true" data-price="12000" aria-labelledby="bag-1">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?backpack" alt="Black Backpack" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="bag-1" class="card-title">Black Backpack</h5>
+              <div class="price">₦12,000</div>
+              <p class="card-text text-muted small">Durable backpack with padded straps and multiple compartments.</p>
+
+              <label class="visually-hidden" for="size-bag-1">Select size</label>
+              <select id="size-bag-1" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Black Backpack">
+                <option value="">Select Size</option><option value="M">Medium</option><option value="L">Large</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Black Backpack">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="backpack" data-newest="true" data-price="12000" aria-labelledby="bag-1">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?backpack" alt="Black Backpack" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="bag-1" class="card-title">Black Backpack</h5>
+              <div class="price">₦12,000</div>
+              <p class="card-text text-muted small">Durable backpack with padded straps and multiple compartments.</p>
+
+              <label class="visually-hidden" for="size-bag-1">Select size</label>
+              <select id="size-bag-1" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Black Backpack">
+                <option value="">Select Size</option><option value="M">Medium</option><option value="L">Large</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Black Backpack">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="backpack" data-newest="true" data-price="12000" aria-labelledby="bag-1">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?backpack" alt="Black Backpack" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="bag-1" class="card-title">Black Backpack</h5>
+              <div class="price">₦12,000</div>
+              <p class="card-text text-muted small">Durable backpack with padded straps and multiple compartments.</p>
+
+              <label class="visually-hidden" for="size-bag-1">Select size</label>
+              <select id="size-bag-1" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Black Backpack">
+                <option value="">Select Size</option><option value="M">Medium</option><option value="L">Large</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Black Backpack">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="backpack" data-newest="true" data-price="12000" aria-labelledby="bag-1">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?backpack" alt="Black Backpack" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="bag-1" class="card-title">Black Backpack</h5>
+              <div class="price">₦12,000</div>
+              <p class="card-text text-muted small">Durable backpack with padded straps and multiple compartments.</p>
+
+              <label class="visually-hidden" for="size-bag-1">Select size</label>
+              <select id="size-bag-1" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Black Backpack">
+                <option value="">Select Size</option><option value="M">Medium</option><option value="L">Large</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Black Backpack">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="backpack" data-newest="true" data-price="12000" aria-labelledby="bag-1">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?backpack" alt="Black Backpack" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="bag-1" class="card-title">Black Backpack</h5>
+              <div class="price">₦12,000</div>
+              <p class="card-text text-muted small">Durable backpack with padded straps and multiple compartments.</p>
+
+              <label class="visually-hidden" for="size-bag-1">Select size</label>
+              <select id="size-bag-1" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Black Backpack">
+                <option value="">Select Size</option><option value="M">Medium</option><option value="L">Large</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Black Backpack">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="backpack" data-newest="true" data-price="12000" aria-labelledby="bag-1">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?backpack" alt="Black Backpack" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="bag-1" class="card-title">Black Backpack</h5>
+              <div class="price">₦12,000</div>
+              <p class="card-text text-muted small">Durable backpack with padded straps and multiple compartments.</p>
+
+              <label class="visually-hidden" for="size-bag-1">Select size</label>
+              <select id="size-bag-1" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Black Backpack">
+                <option value="">Select Size</option><option value="M">Medium</option><option value="L">Large</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Black Backpack">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="backpack" data-newest="true" data-price="12000" aria-labelledby="bag-1">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?backpack" alt="Black Backpack" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="bag-1" class="card-title">Black Backpack</h5>
+              <div class="price">₦12,000</div>
+              <p class="card-text text-muted small">Durable backpack with padded straps and multiple compartments.</p>
+
+              <label class="visually-hidden" for="size-bag-1">Select size</label>
+              <select id="size-bag-1" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Black Backpack">
+                <option value="">Select Size</option><option value="M">Medium</option><option value="L">Large</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Black Backpack">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="backpack" data-newest="true" data-price="12000" aria-labelledby="bag-1">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?backpack" alt="Black Backpack" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="bag-1" class="card-title">Black Backpack</h5>
+              <div class="price">₦12,000</div>
+              <p class="card-text text-muted small">Durable backpack with padded straps and multiple compartments.</p>
+
+              <label class="visually-hidden" for="size-bag-1">Select size</label>
+              <select id="size-bag-1" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Black Backpack">
+                <option value="">Select Size</option><option value="M">Medium</option><option value="L">Large</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Black Backpack">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="backpack" data-newest="true" data-price="12000" aria-labelledby="bag-1">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?backpack" alt="Black Backpack" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="bag-1" class="card-title">Black Backpack</h5>
+              <div class="price">₦12,000</div>
+              <p class="card-text text-muted small">Durable backpack with padded straps and multiple compartments.</p>
+
+              <label class="visually-hidden" for="size-bag-1">Select size</label>
+              <select id="size-bag-1" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Black Backpack">
+                <option value="">Select Size</option><option value="M">Medium</option><option value="L">Large</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Black Backpack">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="backpack" data-newest="true" data-price="12000" aria-labelledby="bag-1">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?backpack" alt="Black Backpack" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="bag-1" class="card-title">Black Backpack</h5>
+              <div class="price">₦12,000</div>
+              <p class="card-text text-muted small">Durable backpack with padded straps and multiple compartments.</p>
+
+              <label class="visually-hidden" for="size-bag-1">Select size</label>
+              <select id="size-bag-1" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Black Backpack">
+                <option value="">Select Size</option><option value="M">Medium</option><option value="L">Large</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Black Backpack">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="backpack" data-newest="true" data-price="12000" aria-labelledby="bag-1">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?backpack" alt="Black Backpack" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="bag-1" class="card-title">Black Backpack</h5>
+              <div class="price">₦12,000</div>
+              <p class="card-text text-muted small">Durable backpack with padded straps and multiple compartments.</p>
+
+              <label class="visually-hidden" for="size-bag-1">Select size</label>
+              <select id="size-bag-1" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Black Backpack">
+                <option value="">Select Size</option><option value="M">Medium</option><option value="L">Large</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Black Backpack">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="backpack" data-newest="true" data-price="12000" aria-labelledby="bag-1">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?backpack" alt="Black Backpack" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="bag-1" class="card-title">Black Backpack</h5>
+              <div class="price">₦12,000</div>
+              <p class="card-text text-muted small">Durable backpack with padded straps and multiple compartments.</p>
+
+              <label class="visually-hidden" for="size-bag-1">Select size</label>
+              <select id="size-bag-1" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Black Backpack">
+                <option value="">Select Size</option><option value="M">Medium</option><option value="L">Large</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Black Backpack">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="backpack" data-newest="true" data-price="12000" aria-labelledby="bag-1">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?backpack" alt="Black Backpack" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="bag-1" class="card-title">Black Backpack</h5>
+              <div class="price">₦12,000</div>
+              <p class="card-text text-muted small">Durable backpack with padded straps and multiple compartments.</p>
+
+              <label class="visually-hidden" for="size-bag-1">Select size</label>
+              <select id="size-bag-1" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Black Backpack">
+                <option value="">Select Size</option><option value="M">Medium</option><option value="L">Large</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Black Backpack">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="backpack" data-newest="true" data-price="12000" aria-labelledby="bag-1">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?backpack" alt="Black Backpack" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="bag-1" class="card-title">Black Backpack</h5>
+              <div class="price">₦12,000</div>
+              <p class="card-text text-muted small">Durable backpack with padded straps and multiple compartments.</p>
+
+              <label class="visually-hidden" for="size-bag-1">Select size</label>
+              <select id="size-bag-1" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Black Backpack">
+                <option value="">Select Size</option><option value="M">Medium</option><option value="L">Large</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Black Backpack">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="backpack" data-newest="true" data-price="12000" aria-labelledby="bag-1">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?backpack" alt="Black Backpack" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="bag-1" class="card-title">Black Backpack</h5>
+              <div class="price">₦12,000</div>
+              <p class="card-text text-muted small">Durable backpack with padded straps and multiple compartments.</p>
+
+              <label class="visually-hidden" for="size-bag-1">Select size</label>
+              <select id="size-bag-1" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Black Backpack">
+                <option value="">Select Size</option><option value="M">Medium</option><option value="L">Large</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Black Backpack">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="backpack" data-newest="true" data-price="12000" aria-labelledby="bag-1">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?backpack" alt="Black Backpack" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="bag-1" class="card-title">Black Backpack</h5>
+              <div class="price">₦12,000</div>
+              <p class="card-text text-muted small">Durable backpack with padded straps and multiple compartments.</p>
+
+              <label class="visually-hidden" for="size-bag-1">Select size</label>
+              <select id="size-bag-1" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Black Backpack">
+                <option value="">Select Size</option><option value="M">Medium</option><option value="L">Large</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Black Backpack">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="backpack" data-newest="true" data-price="12000" aria-labelledby="bag-1">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?backpack" alt="Black Backpack" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="bag-1" class="card-title">Black Backpack</h5>
+              <div class="price">₦12,000</div>
+              <p class="card-text text-muted small">Durable backpack with padded straps and multiple compartments.</p>
+
+              <label class="visually-hidden" for="size-bag-1">Select size</label>
+              <select id="size-bag-1" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Black Backpack">
+                <option value="">Select Size</option><option value="M">Medium</option><option value="L">Large</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Black Backpack">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="backpack" data-newest="true" data-price="12000" aria-labelledby="bag-1">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?backpack" alt="Black Backpack" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="bag-1" class="card-title">Black Backpack</h5>
+              <div class="price">₦12,000</div>
+              <p class="card-text text-muted small">Durable backpack with padded straps and multiple compartments.</p>
+
+              <label class="visually-hidden" for="size-bag-1">Select size</label>
+              <select id="size-bag-1" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Black Backpack">
+                <option value="">Select Size</option><option value="M">Medium</option><option value="L">Large</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Black Backpack">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="backpack" data-newest="true" data-price="12000" aria-labelledby="bag-1">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?backpack" alt="Black Backpack" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="bag-1" class="card-title">Black Backpack</h5>
+              <div class="price">₦12,000</div>
+              <p class="card-text text-muted small">Durable backpack with padded straps and multiple compartments.</p>
+
+              <label class="visually-hidden" for="size-bag-1">Select size</label>
+              <select id="size-bag-1" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Black Backpack">
+                <option value="">Select Size</option><option value="M">Medium</option><option value="L">Large</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Black Backpack">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="backpack" data-newest="true" data-price="12000" aria-labelledby="bag-1">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?backpack" alt="Black Backpack" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="bag-1" class="card-title">Black Backpack</h5>
+              <div class="price">₦12,000</div>
+              <p class="card-text text-muted small">Durable backpack with padded straps and multiple compartments.</p>
+
+              <label class="visually-hidden" for="size-bag-1">Select size</label>
+              <select id="size-bag-1" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Black Backpack">
+                <option value="">Select Size</option><option value="M">Medium</option><option value="L">Large</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Black Backpack">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="backpack" data-newest="true" data-price="12000" aria-labelledby="bag-1">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?backpack" alt="Black Backpack" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="bag-1" class="card-title">Black Backpack</h5>
+              <div class="price">₦12,000</div>
+              <p class="card-text text-muted small">Durable backpack with padded straps and multiple compartments.</p>
+
+              <label class="visually-hidden" for="size-bag-1">Select size</label>
+              <select id="size-bag-1" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Black Backpack">
+                <option value="">Select Size</option><option value="M">Medium</option><option value="L">Large</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Black Backpack">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="backpack" data-newest="true" data-price="12000" aria-labelledby="bag-1">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?backpack" alt="Black Backpack" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="bag-1" class="card-title">Black Backpack</h5>
+              <div class="price">₦12,000</div>
+              <p class="card-text text-muted small">Durable backpack with padded straps and multiple compartments.</p>
+
+              <label class="visually-hidden" for="size-bag-1">Select size</label>
+              <select id="size-bag-1" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Black Backpack">
+                <option value="">Select Size</option><option value="M">Medium</option><option value="L">Large</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Black Backpack">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="backpack" data-newest="true" data-price="12000" aria-labelledby="bag-1">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?backpack" alt="Black Backpack" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="bag-1" class="card-title">Black Backpack</h5>
+              <div class="price">₦12,000</div>
+              <p class="card-text text-muted small">Durable backpack with padded straps and multiple compartments.</p>
+
+              <label class="visually-hidden" for="size-bag-1">Select size</label>
+              <select id="size-bag-1" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Black Backpack">
+                <option value="">Select Size</option><option value="M">Medium</option><option value="L">Large</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Black Backpack">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="backpack" data-newest="true" data-price="12000" aria-labelledby="bag-1">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?backpack" alt="Black Backpack" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="bag-1" class="card-title">Black Backpack</h5>
+              <div class="price">₦12,000</div>
+              <p class="card-text text-muted small">Durable backpack with padded straps and multiple compartments.</p>
+
+              <label class="visually-hidden" for="size-bag-1">Select size</label>
+              <select id="size-bag-1" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Black Backpack">
+                <option value="">Select Size</option><option value="M">Medium</option><option value="L">Large</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Black Backpack">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="backpack" data-newest="true" data-price="12000" aria-labelledby="bag-1">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?backpack" alt="Black Backpack" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="bag-1" class="card-title">Black Backpack</h5>
+              <div class="price">₦12,000</div>
+              <p class="card-text text-muted small">Durable backpack with padded straps and multiple compartments.</p>
+
+              <label class="visually-hidden" for="size-bag-1">Select size</label>
+              <select id="size-bag-1" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Black Backpack">
+                <option value="">Select Size</option><option value="M">Medium</option><option value="L">Large</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Black Backpack">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="backpack" data-newest="true" data-price="12000" aria-labelledby="bag-1">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?backpack" alt="Black Backpack" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="bag-1" class="card-title">Black Backpack</h5>
+              <div class="price">₦12,000</div>
+              <p class="card-text text-muted small">Durable backpack with padded straps and multiple compartments.</p>
+
+              <label class="visually-hidden" for="size-bag-1">Select size</label>
+              <select id="size-bag-1" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Black Backpack">
+                <option value="">Select Size</option><option value="M">Medium</option><option value="L">Large</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Black Backpack">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="backpack" data-newest="true" data-price="12000" aria-labelledby="bag-1">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?backpack" alt="Black Backpack" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="bag-1" class="card-title">Black Backpack</h5>
+              <div class="price">₦12,000</div>
+              <p class="card-text text-muted small">Durable backpack with padded straps and multiple compartments.</p>
+
+              <label class="visually-hidden" for="size-bag-1">Select size</label>
+              <select id="size-bag-1" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Black Backpack">
+                <option value="">Select Size</option><option value="M">Medium</option><option value="L">Large</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Black Backpack">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="backpack" data-newest="true" data-price="12000" aria-labelledby="bag-1">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?backpack" alt="Black Backpack" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="bag-1" class="card-title">Black Backpack</h5>
+              <div class="price">₦12,000</div>
+              <p class="card-text text-muted small">Durable backpack with padded straps and multiple compartments.</p>
+
+              <label class="visually-hidden" for="size-bag-1">Select size</label>
+              <select id="size-bag-1" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Black Backpack">
+                <option value="">Select Size</option><option value="M">Medium</option><option value="L">Large</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Black Backpack">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+</div> <!-- /.row -->
+         <div class="text-center mt-4">
+        <a href="https://wa.me/2348136754060?text=I%20want%20to%20order%20mules" class="btn btn-outline-brown">Load more</a>
+      </div>
+    </div> <!-- /.container -->
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer bg-brown text-white py-4">
+    <div class="container text-center">
+      <p class="mb-1">© 2025 JK Fashion Empire</p>
+      <p class="small mb-2">Orders via WhatsApp. Delivery available for a fee; contact us for rates.</p>
+      <div class="d-flex justify-content-center gap-4 small">
+        <div><i class="bi bi-truck"></i> Delivery (fee applies)</div>
+        <div><i class="bi bi-shield-lock"></i> Secure Payment</div>
+        <div><i class="bi bi-headset"></i> Customer Support</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Page JS (reuses traditional.js) -->
+  <script src="js/Agbada.js"></script>
+  <script src="js/size-guide-1.js"></script>
+</body>
+</html>

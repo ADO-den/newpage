@@ -1,0 +1,1295 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Heritage Collection — Traditional — JK Fashion Empire</title>
+
+  <!-- Bootstrap CSS (consistent with site) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+
+  <!-- Shared site stylesheet -->
+  <link rel="stylesheet" href="C:\Users\USER\Documents\Main page for website\Women\Traditional\Heritage.css" />
+  <link rel="stylesheet" href="css/Heritage.css" />
+  <link rel="stylesheet" href="css/responsive-cards-1.css" />
+  <link rel="stylesheet" href="css/size-guide-1.css" />
+</head>
+<body>
+
+  <!-- NAVBAR (site-wide, consistent) -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <div class="container">
+      <div class="d-flex align-items-center brand-wrap">
+        <img src="https://i.imghippo.com/files/sDGr2452Xk.png" alt="JK Fashion Empire logo" class="logo" />
+        <a class="navbar-brand fw-bold text-brown ms-2" href="index.html">JK Fashion Empire</a>
+      </div>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain"
+              aria-controls="navMain" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navMain">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="women-collection-index.html">Women</a></li>
+          <li class="nav-item"><a class="nav-link active" href="women-s-traditional-index.html">Traditional</a></li>
+          <li class="nav-item"><a class="nav-link" href="gele-sets-index.html">Gele Sets</a></li>
+          <li class="nav-item"><a class="nav-link" href="heritage-collection-traditional-index.html">Heritage</a></li>
+          <li class="nav-item ms-2"><a class="nav-link" href="https://wa.me/2348136754060" title="WhatsApp"><i class="bi bi-whatsapp"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero-banner text-center py-5">
+    <div class="container">
+      <h1 class="fw-bold text-brown">Heritage Collection</h1>
+      <p class="lead text-muted">Celebrating traditional textiles and craftsmanship — Aso-Oke, Adire, Indigo, and handwoven classics reimagined for modern wear.</p>
+      <div class="mt-3 d-flex justify-content-center gap-2 flex-wrap">
+        <a class="btn btn-brown" href="#heritage">Browse Heritage</a>
+        <a class="btn btn-outline-brown" href="https://wa.me/2348136754060?text=I%20want%20to%20order%20from%20the%20heritage%20collection">Order via WhatsApp</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- FILTER / SORT BAR -->
+  <section class="py-3 bg-light filter-bar">
+    <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between gap-3">
+      <div class="d-flex gap-2 align-items-center flex-wrap">
+        <button class="btn btn-outline-brown active" data-filter="all">All</button>
+        <button class="btn btn-outline-brown" data-filter="aso-oke">Aso-Oke</button>
+        <button class="btn btn-outline-brown" data-filter="adire">Adire</button>
+        <button class="btn btn-outline-brown" data-filter="indigo">Indigo</button>
+        <button class="btn btn-outline-brown" data-filter="handwoven">Handwoven</button>
+      </div>
+
+      <div class="d-flex align-items-center gap-2">
+        <label class="small text-muted mb-0">Sort</label>
+        <select id="sort-select" class="form-select form-select-sm" style="width:170px;">
+          <option value="popular">Most Popular</option>
+          <option value="new">Newest</option>
+          <option value="price-low">Price: Low to High</option>
+          <option value="price-high">Price: High to Low</option>
+        </select>
+      </div>
+    </div>
+  </section>
+
+  <!-- HERITAGE GRID -->
+  <main id="heritage" class="py-5">
+    <div class="container">
+      <h2 class="section-title text-center">Heritage Pieces</h2>
+      <p class="section-subtle text-center">Each piece highlights traditional techniques and premium materials. Select a size and order via WhatsApp or request a custom quote.</p>
+
+      <div class="row g-4 mt-3">
+        <!-- 1 Aso-Oke Panel Gown -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="aso-oke" data-newest="true" data-price="32000" aria-labelledby="heritage-1-title">
+            <img class="card-img-top lazy" data-src="assets/images/heritage/aso-oke-panel.jpg" alt="Aso-Oke Panel Gown" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="heritage-1-title" class="card-title">Aso-Oke Panel Gown</h5>
+              <div class="price">₦32,000</div>
+              <p class="card-text text-muted small">Handwoven Aso-Oke panels with structured silhouette and gold thread accents.</p>
+
+              <label class="visually-hidden" for="size-heritage-1">Select size</label>
+              <select id="size-heritage-1" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Aso-Oke Panel Gown">
+                <option value="">Select Size</option>
+                <option value="XS">XS</option><option value="S">S</option><option value="M">M</option>
+                <option value="L">L</option><option value="XL">XL</option><option value="XXL">XXL</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Aso-Oke Panel Gown">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- 2 Indigo Dyed Wrap Dress -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="indigo" data-newest="false" data-price="14500" aria-labelledby="heritage-2-title">
+            <img class="card-img-top lazy" data-src="assets/images/heritage/indigo-wrap.jpg" alt="Indigo Dyed Wrap Dress" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="heritage-2-title" class="card-title">Indigo Dyed Wrap Dress</h5>
+              <div class="price">₦14,500</div>
+              <p class="card-text text-muted small">Hand-dyed indigo with natural resist patterns and comfortable wrap fit.</p>
+
+              <label class="visually-hidden" for="size-heritage-2">Select size</label>
+              <select id="size-heritage-2" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Indigo Dyed Wrap Dress">
+                <option value="">Select Size</option>
+                <option value="XS">XS</option><option value="S">S</option><option value="M">M</option>
+                <option value="L">L</option><option value="XL">XL</option><option value="XXL">XXL</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Indigo Dyed Wrap Dress">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- 3 Adire Tunic Set -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="adire" data-newest="true" data-price="12500" aria-labelledby="heritage-3-title">
+            <img class="card-img-top lazy" data-src="assets/images/heritage/adire-tunic.jpg" alt="Adire Tunic Set" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="heritage-3-title" class="card-title">Adire Tunic Set</h5>
+              <div class="price">₦12,500</div>
+              <p class="card-text text-muted small">Traditional resist-dyed Adire paired with matching trousers for a modern look.</p>
+
+              <label class="visually-hidden" for="size-heritage-3">Select size</label>
+              <select id="size-heritage-3" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Adire Tunic Set">
+                <option value="">Select Size</option>
+                <option value="XS">XS</option><option value="S">S</option><option value="M">M</option>
+                <option value="L">L</option><option value="XL">XL</option><option value="XXL">XXL</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Adire Tunic Set">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- 4 Handwoven Indigo Wrapper -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="handwoven" data-newest="false" data-price="9800" aria-labelledby="heritage-4-title">
+            <img class="card-img-top lazy" data-src="assets/images/heritage/handwoven-wrapper.jpg" alt="Handwoven Indigo Wrapper" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="heritage-4-title" class="card-title">Handwoven Indigo Wrapper</h5>
+              <div class="price">₦9,800</div>
+              <p class="card-text text-muted small">Locally woven wrapper with indigo highlights — versatile for day and evening wear.</p>
+
+              <label class="visually-hidden" for="size-heritage-4">Select size</label>
+              <select id="size-heritage-4" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Handwoven Indigo Wrapper">
+                <option value="">Select Size</option>
+                <option value="XS">XS</option><option value="S">S</option><option value="M">M</option>
+                <option value="L">L</option><option value="XL">XL</option><option value="XXL">XXL</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Handwoven Indigo Wrapper">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- 5 Heritage Jacket (Aso-Oke trim) -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="aso-oke" data-newest="true" data-price="18500" aria-labelledby="heritage-5-title">
+            <img class="card-img-top lazy" data-src="assets/images/heritage/heritage-jacket.jpg" alt="Heritage Jacket with Aso-Oke Trim" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="heritage-5-title" class="card-title">Heritage Jacket</h5>
+              <div class="price">₦18,500</div>
+              <p class="card-text text-muted small">Tailored jacket with Aso-Oke trim and hand-stitched detailing.</p>
+
+              <label class="visually-hidden" for="size-heritage-5">Select size</label>
+              <select id="size-heritage-5" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Heritage Jacket">
+                <option value="">Select Size</option>
+                <option value="XS">XS</option><option value="S">S</option><option value="M">M</option>
+                <option value="L">L</option><option value="XL">XL</option><option value="XXL">XXL</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Heritage Jacket">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- 6 Indigo Scarf & Tunic -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="indigo" data-newest="false" data-price="7200" aria-labelledby="heritage-6-title">
+            <img class="card-img-top lazy" data-src="assets/images/heritage/indigo-scarf-tunic.jpg" alt="Indigo Scarf & Tunic" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="heritage-6-title" class="card-title">Indigo Scarf & Tunic</h5>
+              <div class="price">₦7,200</div>
+              <p class="card-text text-muted small">Light tunic with matching indigo scarf — breathable and artisanal.</p>
+
+              <label class="visually-hidden" for="size-heritage-6">Select size</label>
+              <select id="size-heritage-6" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Indigo Scarf & Tunic">
+                <option value="">Select Size</option>
+                <option value="XS">XS</option><option value="S">S</option><option value="M">M</option>
+                <option value="L">L</option><option value="XL">XL</option><option value="XXL">XXL</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Indigo Scarf & Tunic">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- 7 Hand-embroidered Wrapper Gown -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="handwoven" data-newest="true" data-price="21000" aria-labelledby="heritage-7-title">
+            <img class="card-img-top lazy" data-src="assets/images/heritage/embroidered-wrapper.jpg" alt="Hand-embroidered Wrapper Gown" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="heritage-7-title" class="card-title">Hand-embroidered Wrapper Gown</h5>
+              <div class="price">₦21,000</div>
+              <p class="card-text text-muted small">Traditional wrapper with hand embroidery and finishing.</p>
+
+              <label class="visually-hidden" for="size-heritage-7">Select size</label>
+              <select id="size-heritage-7" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Hand-embroidered Wrapper Gown">
+                <option value="">Select Size</option>
+                <option value="XS">XS</option><option value="S">S</option><option value="M">M</option>
+                <option value="L">L</option><option value="XL">XL</option><option value="XXL">XXL</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Hand-embroidered Wrapper Gown">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- 8 Adire Maxi Dress -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="adire" data-newest="false" data-price="13800" aria-labelledby="heritage-8-title">
+            <img class="card-img-top lazy" data-src="assets/images/heritage/adire-maxi.jpg" alt="Adire Maxi Dress" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="heritage-8-title" class="card-title">Adire Maxi Dress</h5>
+              <div class="price">₦13,800</div>
+              <p class="card-text text-muted small">Flowing maxi with traditional Adire motifs and modern cut.</p>
+
+              <label class="visually-hidden" for="size-heritage-8">Select size</label>
+              <select id="size-heritage-8" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Adire Maxi Dress">
+                <option value="">Select Size</option>
+                <option value="XS">XS</option><option value="S">S</option><option value="M">M</option>
+                <option value="L">L</option><option value="XL">XL</option><option value="XXL">XXL</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Adire Maxi Dress">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- 9 Woven Belted Dress -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="handwoven" data-newest="true" data-price="11200" aria-labelledby="heritage-9-title">
+            <img class="card-img-top lazy" data-src="assets/images/heritage/woven-belted.jpg" alt="Woven Belted Dress" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="heritage-9-title" class="card-title">Woven Belted Dress</h5>
+              <div class="price">₦11,200</div>
+              <p class="card-text text-muted small">Handwoven fabric with a tailored belted waist for a refined silhouette.</p>
+
+              <label class="visually-hidden" for="size-heritage-9">Select size</label>
+              <select id="size-heritage-9" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Woven Belted Dress">
+                <option value="">Select Size</option>
+                <option value="XS">XS</option><option value="S">S</option><option value="M">M</option>
+                <option value="L">L</option><option value="XL">XL</option><option value="XXL">XXL</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Woven Belted Dress">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- 10 Heritage Evening Gown -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="aso-oke" data-newest="false" data-price="36000" aria-labelledby="heritage-10-title">
+            <img class="card-img-top lazy" data-src="assets/images/heritage/evening-gown.jpg" alt="Heritage Evening Gown" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="heritage-10-title" class="card-title">Heritage Evening Gown</h5>
+              <div class="price">₦36,000</div>
+              <p class="card-text text-muted small">Luxurious evening gown combining Aso-Oke and hand-embroidery for special occasions.</p>
+
+              <label class="visually-hidden" for="size-heritage-10">Select size</label>
+              <select id="size-heritage-10" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Heritage Evening Gown">
+                <option value="">Select Size</option>
+                <option value="XS">XS</option><option value="S">S</option><option value="M">M</option>
+                <option value="L">L</option><option value="XL">XL</option><option value="XXL">XXL</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <a class="btn btn-outline-brown" href="mailto:gifts@jkfashionempire.com">Request Quote</a>
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Heritage Evening Gown">Order via WhatsApp</button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- 11 Limited Edition Indigo Coat -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="indigo" data-newest="true" data-price="24000" aria-labelledby="heritage-11-title">
+            <img class="card-img-top lazy" data-src="assets/images/heritage/indigo-coat.jpg" alt="Limited Edition Indigo Coat" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="heritage-11-title" class="card-title">Limited Edition Indigo Coat</h5>
+              <div class="price">₦24,000</div>
+              <p class="card-text text-muted small">Limited run coat with artisanal indigo patterns and premium lining.</p>
+
+              <label class="visually-hidden" for="size-heritage-11">Select size</label>
+              <select id="size-heritage-11" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Limited Edition Indigo Coat">
+                <option value="">Select Size</option>
+                <option value="XS">XS</option><option value="S">S</option><option value="M">M</option>
+                <option value="L">L</option><option value="XL">XL</option><option value="XXL">XXL</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Limited Edition Indigo Coat">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- 12 Heritage Accessories Set -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="handwoven" data-newest="false" data-price="4200" aria-labelledby="heritage-12-title">
+            <img class="card-img-top lazy" data-src="assets/images/heritage/accessories-set.jpg" alt="Heritage Accessories Set" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="heritage-12-title" class="card-title">Heritage Accessories Set</h5>
+              <div class="price">₦4,200</div>
+              <p class="card-text text-muted small">Set includes woven belt, headscarf and small clutch — perfect finishing touches.</p>
+
+              <label class="visually-hidden" for="size-heritage-12">Select size</label>
+              <select id="size-heritage-12" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Heritage Accessories Set">
+                <option value="">Select Size</option>
+                <option value="OneSize">One Size</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Heritage Accessories Set">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Custom tailoring / made-to-measure card (full width) -->
+        <div class="col-12">
+          <div class="card product-card p-3 d-flex flex-row gap-3 align-items-center">
+            <div style="width:140px;">
+              <img src="assets/images/heritage/custom-tailoring.jpg" alt="Custom Heritage Tailoring" style="width:100%;height:100%;object-fit:cover;border-radius:8px;" />
+            </div>
+            <div class="flex-grow-1">
+              <h5 class="mb-1">Custom Heritage Tailoring</h5>
+              <p class="small text-muted mb-2">Choose fabric, dye technique and embellishments. We tailor heritage pieces to your measurements and event needs.</p>
+              <div>
+                <a class="btn btn-outline-brown me-2" href="mailto:gifts@jkfashionempire.com">Request Quote</a>
+                <a class="btn btn-brown" href="https://wa.me/2348136754060?text=I%20want%20a%20custom%20heritage%20piece">Contact via WhatsApp</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="aso-oke" data-newest="true" data-price="32000" aria-labelledby="heritage-1-title">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?aso-oke" alt="Aso-Oke Panel Gown" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="heritage-1-title" class="card-title">Aso-Oke Panel Gown</h5>
+              <div class="price">₦32,000</div>
+              <p class="card-text text-muted small">Handwoven Aso-Oke panels with structured silhouette and gold thread accents.</p>
+
+              <label class="visually-hidden" for="size-heritage-1">Select size</label>
+              <select id="size-heritage-1" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Aso-Oke Panel Gown">
+                <option value="">Select Size</option>
+                <option value="XS">XS</option><option value="S">S</option><option value="M">M</option>
+                <option value="L">L</option><option value="XL">XL</option><option value="XXL">XXL</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Aso-Oke Panel Gown">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="aso-oke" data-newest="true" data-price="32000" aria-labelledby="heritage-1-title">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?aso-oke" alt="Aso-Oke Panel Gown" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="heritage-1-title" class="card-title">Aso-Oke Panel Gown</h5>
+              <div class="price">₦32,000</div>
+              <p class="card-text text-muted small">Handwoven Aso-Oke panels with structured silhouette and gold thread accents.</p>
+
+              <label class="visually-hidden" for="size-heritage-1">Select size</label>
+              <select id="size-heritage-1" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Aso-Oke Panel Gown">
+                <option value="">Select Size</option>
+                <option value="XS">XS</option><option value="S">S</option><option value="M">M</option>
+                <option value="L">L</option><option value="XL">XL</option><option value="XXL">XXL</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Aso-Oke Panel Gown">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="aso-oke" data-newest="true" data-price="32000" aria-labelledby="heritage-1-title">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?aso-oke" alt="Aso-Oke Panel Gown" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="heritage-1-title" class="card-title">Aso-Oke Panel Gown</h5>
+              <div class="price">₦32,000</div>
+              <p class="card-text text-muted small">Handwoven Aso-Oke panels with structured silhouette and gold thread accents.</p>
+
+              <label class="visually-hidden" for="size-heritage-1">Select size</label>
+              <select id="size-heritage-1" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Aso-Oke Panel Gown">
+                <option value="">Select Size</option>
+                <option value="XS">XS</option><option value="S">S</option><option value="M">M</option>
+                <option value="L">L</option><option value="XL">XL</option><option value="XXL">XXL</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Aso-Oke Panel Gown">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="aso-oke" data-newest="true" data-price="32000" aria-labelledby="heritage-1-title">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?aso-oke" alt="Aso-Oke Panel Gown" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="heritage-1-title" class="card-title">Aso-Oke Panel Gown</h5>
+              <div class="price">₦32,000</div>
+              <p class="card-text text-muted small">Handwoven Aso-Oke panels with structured silhouette and gold thread accents.</p>
+
+              <label class="visually-hidden" for="size-heritage-1">Select size</label>
+              <select id="size-heritage-1" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Aso-Oke Panel Gown">
+                <option value="">Select Size</option>
+                <option value="XS">XS</option><option value="S">S</option><option value="M">M</option>
+                <option value="L">L</option><option value="XL">XL</option><option value="XXL">XXL</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Aso-Oke Panel Gown">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="aso-oke" data-newest="true" data-price="32000" aria-labelledby="heritage-1-title">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?aso-oke" alt="Aso-Oke Panel Gown" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="heritage-1-title" class="card-title">Aso-Oke Panel Gown</h5>
+              <div class="price">₦32,000</div>
+              <p class="card-text text-muted small">Handwoven Aso-Oke panels with structured silhouette and gold thread accents.</p>
+
+              <label class="visually-hidden" for="size-heritage-1">Select size</label>
+              <select id="size-heritage-1" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Aso-Oke Panel Gown">
+                <option value="">Select Size</option>
+                <option value="XS">XS</option><option value="S">S</option><option value="M">M</option>
+                <option value="L">L</option><option value="XL">XL</option><option value="XXL">XXL</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Aso-Oke Panel Gown">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="aso-oke" data-newest="true" data-price="32000" aria-labelledby="heritage-1-title">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?aso-oke" alt="Aso-Oke Panel Gown" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="heritage-1-title" class="card-title">Aso-Oke Panel Gown</h5>
+              <div class="price">₦32,000</div>
+              <p class="card-text text-muted small">Handwoven Aso-Oke panels with structured silhouette and gold thread accents.</p>
+
+              <label class="visually-hidden" for="size-heritage-1">Select size</label>
+              <select id="size-heritage-1" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Aso-Oke Panel Gown">
+                <option value="">Select Size</option>
+                <option value="XS">XS</option><option value="S">S</option><option value="M">M</option>
+                <option value="L">L</option><option value="XL">XL</option><option value="XXL">XXL</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Aso-Oke Panel Gown">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="aso-oke" data-newest="true" data-price="32000" aria-labelledby="heritage-1-title">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?aso-oke" alt="Aso-Oke Panel Gown" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="heritage-1-title" class="card-title">Aso-Oke Panel Gown</h5>
+              <div class="price">₦32,000</div>
+              <p class="card-text text-muted small">Handwoven Aso-Oke panels with structured silhouette and gold thread accents.</p>
+
+              <label class="visually-hidden" for="size-heritage-1">Select size</label>
+              <select id="size-heritage-1" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Aso-Oke Panel Gown">
+                <option value="">Select Size</option>
+                <option value="XS">XS</option><option value="S">S</option><option value="M">M</option>
+                <option value="L">L</option><option value="XL">XL</option><option value="XXL">XXL</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Aso-Oke Panel Gown">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="aso-oke" data-newest="true" data-price="32000" aria-labelledby="heritage-1-title">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?aso-oke" alt="Aso-Oke Panel Gown" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="heritage-1-title" class="card-title">Aso-Oke Panel Gown</h5>
+              <div class="price">₦32,000</div>
+              <p class="card-text text-muted small">Handwoven Aso-Oke panels with structured silhouette and gold thread accents.</p>
+
+              <label class="visually-hidden" for="size-heritage-1">Select size</label>
+              <select id="size-heritage-1" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Aso-Oke Panel Gown">
+                <option value="">Select Size</option>
+                <option value="XS">XS</option><option value="S">S</option><option value="M">M</option>
+                <option value="L">L</option><option value="XL">XL</option><option value="XXL">XXL</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Aso-Oke Panel Gown">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="aso-oke" data-newest="true" data-price="32000" aria-labelledby="heritage-1-title">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?aso-oke" alt="Aso-Oke Panel Gown" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="heritage-1-title" class="card-title">Aso-Oke Panel Gown</h5>
+              <div class="price">₦32,000</div>
+              <p class="card-text text-muted small">Handwoven Aso-Oke panels with structured silhouette and gold thread accents.</p>
+
+              <label class="visually-hidden" for="size-heritage-1">Select size</label>
+              <select id="size-heritage-1" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Aso-Oke Panel Gown">
+                <option value="">Select Size</option>
+                <option value="XS">XS</option><option value="S">S</option><option value="M">M</option>
+                <option value="L">L</option><option value="XL">XL</option><option value="XXL">XXL</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Aso-Oke Panel Gown">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="aso-oke" data-newest="true" data-price="32000" aria-labelledby="heritage-1-title">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?aso-oke" alt="Aso-Oke Panel Gown" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="heritage-1-title" class="card-title">Aso-Oke Panel Gown</h5>
+              <div class="price">₦32,000</div>
+              <p class="card-text text-muted small">Handwoven Aso-Oke panels with structured silhouette and gold thread accents.</p>
+
+              <label class="visually-hidden" for="size-heritage-1">Select size</label>
+              <select id="size-heritage-1" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Aso-Oke Panel Gown">
+                <option value="">Select Size</option>
+                <option value="XS">XS</option><option value="S">S</option><option value="M">M</option>
+                <option value="L">L</option><option value="XL">XL</option><option value="XXL">XXL</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Aso-Oke Panel Gown">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="aso-oke" data-newest="true" data-price="32000" aria-labelledby="heritage-1-title">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?aso-oke" alt="Aso-Oke Panel Gown" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="heritage-1-title" class="card-title">Aso-Oke Panel Gown</h5>
+              <div class="price">₦32,000</div>
+              <p class="card-text text-muted small">Handwoven Aso-Oke panels with structured silhouette and gold thread accents.</p>
+
+              <label class="visually-hidden" for="size-heritage-1">Select size</label>
+              <select id="size-heritage-1" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Aso-Oke Panel Gown">
+                <option value="">Select Size</option>
+                <option value="XS">XS</option><option value="S">S</option><option value="M">M</option>
+                <option value="L">L</option><option value="XL">XL</option><option value="XXL">XXL</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Aso-Oke Panel Gown">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="aso-oke" data-newest="true" data-price="32000" aria-labelledby="heritage-1-title">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?aso-oke" alt="Aso-Oke Panel Gown" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="heritage-1-title" class="card-title">Aso-Oke Panel Gown</h5>
+              <div class="price">₦32,000</div>
+              <p class="card-text text-muted small">Handwoven Aso-Oke panels with structured silhouette and gold thread accents.</p>
+
+              <label class="visually-hidden" for="size-heritage-1">Select size</label>
+              <select id="size-heritage-1" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Aso-Oke Panel Gown">
+                <option value="">Select Size</option>
+                <option value="XS">XS</option><option value="S">S</option><option value="M">M</option>
+                <option value="L">L</option><option value="XL">XL</option><option value="XXL">XXL</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Aso-Oke Panel Gown">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="aso-oke" data-newest="true" data-price="32000" aria-labelledby="heritage-1-title">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?aso-oke" alt="Aso-Oke Panel Gown" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="heritage-1-title" class="card-title">Aso-Oke Panel Gown</h5>
+              <div class="price">₦32,000</div>
+              <p class="card-text text-muted small">Handwoven Aso-Oke panels with structured silhouette and gold thread accents.</p>
+
+              <label class="visually-hidden" for="size-heritage-1">Select size</label>
+              <select id="size-heritage-1" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Aso-Oke Panel Gown">
+                <option value="">Select Size</option>
+                <option value="XS">XS</option><option value="S">S</option><option value="M">M</option>
+                <option value="L">L</option><option value="XL">XL</option><option value="XXL">XXL</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Aso-Oke Panel Gown">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="aso-oke" data-newest="true" data-price="32000" aria-labelledby="heritage-1-title">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?aso-oke" alt="Aso-Oke Panel Gown" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="heritage-1-title" class="card-title">Aso-Oke Panel Gown</h5>
+              <div class="price">₦32,000</div>
+              <p class="card-text text-muted small">Handwoven Aso-Oke panels with structured silhouette and gold thread accents.</p>
+
+              <label class="visually-hidden" for="size-heritage-1">Select size</label>
+              <select id="size-heritage-1" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Aso-Oke Panel Gown">
+                <option value="">Select Size</option>
+                <option value="XS">XS</option><option value="S">S</option><option value="M">M</option>
+                <option value="L">L</option><option value="XL">XL</option><option value="XXL">XXL</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Aso-Oke Panel Gown">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="aso-oke" data-newest="true" data-price="32000" aria-labelledby="heritage-1-title">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?aso-oke" alt="Aso-Oke Panel Gown" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="heritage-1-title" class="card-title">Aso-Oke Panel Gown</h5>
+              <div class="price">₦32,000</div>
+              <p class="card-text text-muted small">Handwoven Aso-Oke panels with structured silhouette and gold thread accents.</p>
+
+              <label class="visually-hidden" for="size-heritage-1">Select size</label>
+              <select id="size-heritage-1" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Aso-Oke Panel Gown">
+                <option value="">Select Size</option>
+                <option value="XS">XS</option><option value="S">S</option><option value="M">M</option>
+                <option value="L">L</option><option value="XL">XL</option><option value="XXL">XXL</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Aso-Oke Panel Gown">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="aso-oke" data-newest="true" data-price="32000" aria-labelledby="heritage-1-title">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?aso-oke" alt="Aso-Oke Panel Gown" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="heritage-1-title" class="card-title">Aso-Oke Panel Gown</h5>
+              <div class="price">₦32,000</div>
+              <p class="card-text text-muted small">Handwoven Aso-Oke panels with structured silhouette and gold thread accents.</p>
+
+              <label class="visually-hidden" for="size-heritage-1">Select size</label>
+              <select id="size-heritage-1" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Aso-Oke Panel Gown">
+                <option value="">Select Size</option>
+                <option value="XS">XS</option><option value="S">S</option><option value="M">M</option>
+                <option value="L">L</option><option value="XL">XL</option><option value="XXL">XXL</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Aso-Oke Panel Gown">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="aso-oke" data-newest="true" data-price="32000" aria-labelledby="heritage-1-title">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?aso-oke" alt="Aso-Oke Panel Gown" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="heritage-1-title" class="card-title">Aso-Oke Panel Gown</h5>
+              <div class="price">₦32,000</div>
+              <p class="card-text text-muted small">Handwoven Aso-Oke panels with structured silhouette and gold thread accents.</p>
+
+              <label class="visually-hidden" for="size-heritage-1">Select size</label>
+              <select id="size-heritage-1" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Aso-Oke Panel Gown">
+                <option value="">Select Size</option>
+                <option value="XS">XS</option><option value="S">S</option><option value="M">M</option>
+                <option value="L">L</option><option value="XL">XL</option><option value="XXL">XXL</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Aso-Oke Panel Gown">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="aso-oke" data-newest="true" data-price="32000" aria-labelledby="heritage-1-title">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?aso-oke" alt="Aso-Oke Panel Gown" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="heritage-1-title" class="card-title">Aso-Oke Panel Gown</h5>
+              <div class="price">₦32,000</div>
+              <p class="card-text text-muted small">Handwoven Aso-Oke panels with structured silhouette and gold thread accents.</p>
+
+              <label class="visually-hidden" for="size-heritage-1">Select size</label>
+              <select id="size-heritage-1" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Aso-Oke Panel Gown">
+                <option value="">Select Size</option>
+                <option value="XS">XS</option><option value="S">S</option><option value="M">M</option>
+                <option value="L">L</option><option value="XL">XL</option><option value="XXL">XXL</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Aso-Oke Panel Gown">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+</div> <!-- /.row -->
+
+    </div> <!-- /.container -->
+  </main>
+
+  <!-- HOW IT WORKS / FAQ -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card p-3">
+            <h5 class="mb-2">How it works</h5>
+            <ol class="small mb-0">
+              <li>Choose a heritage piece and select size (or request custom measurements).</li>
+              <li>Tap "Order via WhatsApp" and provide recipient details and delivery address.</li>
+              <li>We confirm availability, prepare and dispatch. Fittings available for custom orders.</li>
+            </ol>
+          </div>
+        </div>
+
+      
+      
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="aso-oke" data-newest="true" data-price="32000" aria-labelledby="heritage-1-title">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?aso-oke" alt="Aso-Oke Panel Gown" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="heritage-1-title" class="card-title">Aso-Oke Panel Gown</h5>
+              <div class="price">₦32,000</div>
+              <p class="card-text text-muted small">Handwoven Aso-Oke panels with structured silhouette and gold thread accents.</p>
+
+              <label class="visually-hidden" for="size-heritage-1">Select size</label>
+              <select id="size-heritage-1" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Aso-Oke Panel Gown">
+                <option value="">Select Size</option>
+                <option value="XS">XS</option><option value="S">S</option><option value="M">M</option>
+                <option value="L">L</option><option value="XL">XL</option><option value="XXL">XXL</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Aso-Oke Panel Gown">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="aso-oke" data-newest="true" data-price="32000" aria-labelledby="heritage-1-title">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?aso-oke" alt="Aso-Oke Panel Gown" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="heritage-1-title" class="card-title">Aso-Oke Panel Gown</h5>
+              <div class="price">₦32,000</div>
+              <p class="card-text text-muted small">Handwoven Aso-Oke panels with structured silhouette and gold thread accents.</p>
+
+              <label class="visually-hidden" for="size-heritage-1">Select size</label>
+              <select id="size-heritage-1" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Aso-Oke Panel Gown">
+                <option value="">Select Size</option>
+                <option value="XS">XS</option><option value="S">S</option><option value="M">M</option>
+                <option value="L">L</option><option value="XL">XL</option><option value="XXL">XXL</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Aso-Oke Panel Gown">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="aso-oke" data-newest="true" data-price="32000" aria-labelledby="heritage-1-title">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?aso-oke" alt="Aso-Oke Panel Gown" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="heritage-1-title" class="card-title">Aso-Oke Panel Gown</h5>
+              <div class="price">₦32,000</div>
+              <p class="card-text text-muted small">Handwoven Aso-Oke panels with structured silhouette and gold thread accents.</p>
+
+              <label class="visually-hidden" for="size-heritage-1">Select size</label>
+              <select id="size-heritage-1" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Aso-Oke Panel Gown">
+                <option value="">Select Size</option>
+                <option value="XS">XS</option><option value="S">S</option><option value="M">M</option>
+                <option value="L">L</option><option value="XL">XL</option><option value="XXL">XXL</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Aso-Oke Panel Gown">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="aso-oke" data-newest="true" data-price="32000" aria-labelledby="heritage-1-title">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?aso-oke" alt="Aso-Oke Panel Gown" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="heritage-1-title" class="card-title">Aso-Oke Panel Gown</h5>
+              <div class="price">₦32,000</div>
+              <p class="card-text text-muted small">Handwoven Aso-Oke panels with structured silhouette and gold thread accents.</p>
+
+              <label class="visually-hidden" for="size-heritage-1">Select size</label>
+              <select id="size-heritage-1" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Aso-Oke Panel Gown">
+                <option value="">Select Size</option>
+                <option value="XS">XS</option><option value="S">S</option><option value="M">M</option>
+                <option value="L">L</option><option value="XL">XL</option><option value="XXL">XXL</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Aso-Oke Panel Gown">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="aso-oke" data-newest="true" data-price="32000" aria-labelledby="heritage-1-title">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?aso-oke" alt="Aso-Oke Panel Gown" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="heritage-1-title" class="card-title">Aso-Oke Panel Gown</h5>
+              <div class="price">₦32,000</div>
+              <p class="card-text text-muted small">Handwoven Aso-Oke panels with structured silhouette and gold thread accents.</p>
+
+              <label class="visually-hidden" for="size-heritage-1">Select size</label>
+              <select id="size-heritage-1" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Aso-Oke Panel Gown">
+                <option value="">Select Size</option>
+                <option value="XS">XS</option><option value="S">S</option><option value="M">M</option>
+                <option value="L">L</option><option value="XL">XL</option><option value="XXL">XXL</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Aso-Oke Panel Gown">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="aso-oke" data-newest="true" data-price="32000" aria-labelledby="heritage-1-title">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?aso-oke" alt="Aso-Oke Panel Gown" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="heritage-1-title" class="card-title">Aso-Oke Panel Gown</h5>
+              <div class="price">₦32,000</div>
+              <p class="card-text text-muted small">Handwoven Aso-Oke panels with structured silhouette and gold thread accents.</p>
+
+              <label class="visually-hidden" for="size-heritage-1">Select size</label>
+              <select id="size-heritage-1" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Aso-Oke Panel Gown">
+                <option value="">Select Size</option>
+                <option value="XS">XS</option><option value="S">S</option><option value="M">M</option>
+                <option value="L">L</option><option value="XL">XL</option><option value="XXL">XXL</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Aso-Oke Panel Gown">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="aso-oke" data-newest="true" data-price="32000" aria-labelledby="heritage-1-title">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?aso-oke" alt="Aso-Oke Panel Gown" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="heritage-1-title" class="card-title">Aso-Oke Panel Gown</h5>
+              <div class="price">₦32,000</div>
+              <p class="card-text text-muted small">Handwoven Aso-Oke panels with structured silhouette and gold thread accents.</p>
+
+              <label class="visually-hidden" for="size-heritage-1">Select size</label>
+              <select id="size-heritage-1" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Aso-Oke Panel Gown">
+                <option value="">Select Size</option>
+                <option value="XS">XS</option><option value="S">S</option><option value="M">M</option>
+                <option value="L">L</option><option value="XL">XL</option><option value="XXL">XXL</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Aso-Oke Panel Gown">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="aso-oke" data-newest="true" data-price="32000" aria-labelledby="heritage-1-title">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?aso-oke" alt="Aso-Oke Panel Gown" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="heritage-1-title" class="card-title">Aso-Oke Panel Gown</h5>
+              <div class="price">₦32,000</div>
+              <p class="card-text text-muted small">Handwoven Aso-Oke panels with structured silhouette and gold thread accents.</p>
+
+              <label class="visually-hidden" for="size-heritage-1">Select size</label>
+              <select id="size-heritage-1" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Aso-Oke Panel Gown">
+                <option value="">Select Size</option>
+                <option value="XS">XS</option><option value="S">S</option><option value="M">M</option>
+                <option value="L">L</option><option value="XL">XL</option><option value="XXL">XXL</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Aso-Oke Panel Gown">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="aso-oke" data-newest="true" data-price="32000" aria-labelledby="heritage-1-title">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?aso-oke" alt="Aso-Oke Panel Gown" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="heritage-1-title" class="card-title">Aso-Oke Panel Gown</h5>
+              <div class="price">₦32,000</div>
+              <p class="card-text text-muted small">Handwoven Aso-Oke panels with structured silhouette and gold thread accents.</p>
+
+              <label class="visually-hidden" for="size-heritage-1">Select size</label>
+              <select id="size-heritage-1" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Aso-Oke Panel Gown">
+                <option value="">Select Size</option>
+                <option value="XS">XS</option><option value="S">S</option><option value="M">M</option>
+                <option value="L">L</option><option value="XL">XL</option><option value="XXL">XXL</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Aso-Oke Panel Gown">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="aso-oke" data-newest="true" data-price="32000" aria-labelledby="heritage-1-title">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?aso-oke" alt="Aso-Oke Panel Gown" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="heritage-1-title" class="card-title">Aso-Oke Panel Gown</h5>
+              <div class="price">₦32,000</div>
+              <p class="card-text text-muted small">Handwoven Aso-Oke panels with structured silhouette and gold thread accents.</p>
+
+              <label class="visually-hidden" for="size-heritage-1">Select size</label>
+              <select id="size-heritage-1" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Aso-Oke Panel Gown">
+                <option value="">Select Size</option>
+                <option value="XS">XS</option><option value="S">S</option><option value="M">M</option>
+                <option value="L">L</option><option value="XL">XL</option><option value="XXL">XXL</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Aso-Oke Panel Gown">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="aso-oke" data-newest="true" data-price="32000" aria-labelledby="heritage-1-title">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?aso-oke" alt="Aso-Oke Panel Gown" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="heritage-1-title" class="card-title">Aso-Oke Panel Gown</h5>
+              <div class="price">₦32,000</div>
+              <p class="card-text text-muted small">Handwoven Aso-Oke panels with structured silhouette and gold thread accents.</p>
+
+              <label class="visually-hidden" for="size-heritage-1">Select size</label>
+              <select id="size-heritage-1" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Aso-Oke Panel Gown">
+                <option value="">Select Size</option>
+                <option value="XS">XS</option><option value="S">S</option><option value="M">M</option>
+                <option value="L">L</option><option value="XL">XL</option><option value="XXL">XXL</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Aso-Oke Panel Gown">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="aso-oke" data-newest="true" data-price="32000" aria-labelledby="heritage-1-title">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?aso-oke" alt="Aso-Oke Panel Gown" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="heritage-1-title" class="card-title">Aso-Oke Panel Gown</h5>
+              <div class="price">₦32,000</div>
+              <p class="card-text text-muted small">Handwoven Aso-Oke panels with structured silhouette and gold thread accents.</p>
+
+              <label class="visually-hidden" for="size-heritage-1">Select size</label>
+              <select id="size-heritage-1" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Aso-Oke Panel Gown">
+                <option value="">Select Size</option>
+                <option value="XS">XS</option><option value="S">S</option><option value="M">M</option>
+                <option value="L">L</option><option value="XL">XL</option><option value="XXL">XXL</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Aso-Oke Panel Gown">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="aso-oke" data-newest="true" data-price="32000" aria-labelledby="heritage-1-title">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?aso-oke" alt="Aso-Oke Panel Gown" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="heritage-1-title" class="card-title">Aso-Oke Panel Gown</h5>
+              <div class="price">₦32,000</div>
+              <p class="card-text text-muted small">Handwoven Aso-Oke panels with structured silhouette and gold thread accents.</p>
+
+              <label class="visually-hidden" for="size-heritage-1">Select size</label>
+              <select id="size-heritage-1" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Aso-Oke Panel Gown">
+                <option value="">Select Size</option>
+                <option value="XS">XS</option><option value="S">S</option><option value="M">M</option>
+                <option value="L">L</option><option value="XL">XL</option><option value="XXL">XXL</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Aso-Oke Panel Gown">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="aso-oke" data-newest="true" data-price="32000" aria-labelledby="heritage-1-title">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?aso-oke" alt="Aso-Oke Panel Gown" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="heritage-1-title" class="card-title">Aso-Oke Panel Gown</h5>
+              <div class="price">₦32,000</div>
+              <p class="card-text text-muted small">Handwoven Aso-Oke panels with structured silhouette and gold thread accents.</p>
+
+              <label class="visually-hidden" for="size-heritage-1">Select size</label>
+              <select id="size-heritage-1" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Aso-Oke Panel Gown">
+                <option value="">Select Size</option>
+                <option value="XS">XS</option><option value="S">S</option><option value="M">M</option>
+                <option value="L">L</option><option value="XL">XL</option><option value="XXL">XXL</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Aso-Oke Panel Gown">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="aso-oke" data-newest="true" data-price="32000" aria-labelledby="heritage-1-title">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?aso-oke" alt="Aso-Oke Panel Gown" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="heritage-1-title" class="card-title">Aso-Oke Panel Gown</h5>
+              <div class="price">₦32,000</div>
+              <p class="card-text text-muted small">Handwoven Aso-Oke panels with structured silhouette and gold thread accents.</p>
+
+              <label class="visually-hidden" for="size-heritage-1">Select size</label>
+              <select id="size-heritage-1" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Aso-Oke Panel Gown">
+                <option value="">Select Size</option>
+                <option value="XS">XS</option><option value="S">S</option><option value="M">M</option>
+                <option value="L">L</option><option value="XL">XL</option><option value="XXL">XXL</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Aso-Oke Panel Gown">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="aso-oke" data-newest="true" data-price="32000" aria-labelledby="heritage-1-title">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?aso-oke" alt="Aso-Oke Panel Gown" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="heritage-1-title" class="card-title">Aso-Oke Panel Gown</h5>
+              <div class="price">₦32,000</div>
+              <p class="card-text text-muted small">Handwoven Aso-Oke panels with structured silhouette and gold thread accents.</p>
+
+              <label class="visually-hidden" for="size-heritage-1">Select size</label>
+              <select id="size-heritage-1" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Aso-Oke Panel Gown">
+                <option value="">Select Size</option>
+                <option value="XS">XS</option><option value="S">S</option><option value="M">M</option>
+                <option value="L">L</option><option value="XL">XL</option><option value="XXL">XXL</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Aso-Oke Panel Gown">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="aso-oke" data-newest="true" data-price="32000" aria-labelledby="heritage-1-title">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?aso-oke" alt="Aso-Oke Panel Gown" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="heritage-1-title" class="card-title">Aso-Oke Panel Gown</h5>
+              <div class="price">₦32,000</div>
+              <p class="card-text text-muted small">Handwoven Aso-Oke panels with structured silhouette and gold thread accents.</p>
+
+              <label class="visually-hidden" for="size-heritage-1">Select size</label>
+              <select id="size-heritage-1" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Aso-Oke Panel Gown">
+                <option value="">Select Size</option>
+                <option value="XS">XS</option><option value="S">S</option><option value="M">M</option>
+                <option value="L">L</option><option value="XL">XL</option><option value="XXL">XXL</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Aso-Oke Panel Gown">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="aso-oke" data-newest="true" data-price="32000" aria-labelledby="heritage-1-title">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?aso-oke" alt="Aso-Oke Panel Gown" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="heritage-1-title" class="card-title">Aso-Oke Panel Gown</h5>
+              <div class="price">₦32,000</div>
+              <p class="card-text text-muted small">Handwoven Aso-Oke panels with structured silhouette and gold thread accents.</p>
+
+              <label class="visually-hidden" for="size-heritage-1">Select size</label>
+              <select id="size-heritage-1" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Aso-Oke Panel Gown">
+                <option value="">Select Size</option>
+                <option value="XS">XS</option><option value="S">S</option><option value="M">M</option>
+                <option value="L">L</option><option value="XL">XL</option><option value="XXL">XXL</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Aso-Oke Panel Gown">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+</div> <!-- /.row -->
+         <div class="text-center mt-4">
+        <a href="https://wa.me/2348136754060?text=I%20want%20to%20order%20mules" class="btn btn-outline-brown">Load more</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT / HELP -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-md-8">
+          <h5 class="fw-bold text-brown mb-1">Need help choosing a heritage piece?</h5>
+          <p class="small text-muted mb-0">Message our heritage team for fabric advice, measurements, and event styling.</p>
+        </div>
+        <div class="col-md-4 text-md-end">
+          <a class="btn btn-brown" href="https://wa.me/2348136754060?text=Hi%20I%20need%20help%20choosing%20a%20heritage%20piece">Chat on WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer bg-brown text-white py-4">
+    <div class="container text-center">
+      <p class="mb-1">© 2025 JK Fashion Empire</p>
+      <p class="small mb-0">Heritage pieces crafted with care. For custom orders and event styling contact our team.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS (kept for interactive components) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/js/Heritage.js"></script>
+
+  <!-- Page script placeholder (to be provided) -->
+  <script src="C:\Users\USER\Documents\Main page for website\Women\Traditional\Heritage.js"></script>
+  <script src="js/size-guide-1.js"></script>
+</body>
+</html>

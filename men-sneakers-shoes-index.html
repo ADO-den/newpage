@@ -1,0 +1,671 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Men Sneakers — Shoes — JK Fashion Empire</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/sneakers-1.css" />
+  <link rel="stylesheet" href="css/responsive-cards-1.css" />
+  <link rel="stylesheet" href="css/size-guide-1.css" />
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <div class="container">
+      <div class="d-flex align-items-center brand-wrap">
+        <img src="https://i.imghippo.com/files/sDGr2452Xk.png" alt="JK Fashion Empire logo" class="logo" />
+        <a class="navbar-brand fw-bold text-brown ms-2" href="index.html">JK Fashion Empire</a>
+      </div>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain"
+              aria-controls="navMain" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navMain">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="men-s-collection-index.html">Men</a></li>
+          <li class="nav-item"><a class="nav-link" href="men-s-shoes-index.html">Shoes</a></li>
+          <li class="nav-item"><a class="nav-link active" href="men-sneakers-shoes-index.html">Sneakers</a></li>
+          <li class="nav-item ms-2"><a class="nav-link" href="https://wa.me/2348136754060" title="WhatsApp"><i class="bi bi-whatsapp"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero-banner text-center py-5">
+    <div class="container">
+      <h1 class="fw-bold text-brown">Men Sneakers</h1>
+      <p class="lead text-muted">Everyday sneakers for city life, training and weekend style — classic, performance and lifestyle options.</p>
+
+      <div class="mt-3 d-flex justify-content-center gap-2 flex-wrap">
+        <a class="btn btn-brown" href="#sneakers-grid">Shop Sneakers</a>
+        <a class="btn btn-outline-brown" href="https://wa.me/2348136754060?text=I%20want%20to%20order%20sneakers">Order via WhatsApp</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="py-3 bg-light filter-bar">
+    <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between gap-3">
+      <div class="d-flex gap-2 align-items-center flex-wrap">
+        <button class="btn btn-outline-brown active" data-filter="all">All</button>
+        <button class="btn btn-outline-brown" data-filter="classic">Classic</button>
+        <button class="btn btn-outline-brown" data-filter="running">Running</button>
+        <button class="btn btn-outline-brown" data-filter="trainer">Trainer</button>
+        <button class="btn btn-outline-brown" data-filter="high-top">High Top</button>
+      </div>
+
+      <div class="d-flex align-items-center gap-2">
+        <label class="small text-muted mb-0">Sort</label>
+        <select id="sort-select" class="form-select form-select-sm" style="width:190px;">
+          <option value="popular">Most Popular</option>
+          <option value="new">Newest</option>
+          <option value="price-low">Price Low to High</option>
+          <option value="price-high">Price High to Low</option>
+        </select>
+      </div>
+    </div>
+  </section>
+
+  <main id="sneakers-grid" class="py-5">
+    <div class="container">
+      <div class="d-flex align-items-center justify-content-between mb-3">
+        <div>
+          <h2 class="section-title mb-0">Featured Sneakers</h2>
+          <p class="section-subtle mb-0">Comfort-first designs with durable soles and modern silhouettes.</p>
+        </div>
+        <div>
+          <a class="btn btn-outline-brown" href="men-s-shoes-index.html">Back to Shoes</a>
+        </div>
+      </div>
+
+      <div class="row g-4">
+        <!-- Sneaker 1 -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="classic" data-newest="true" data-price="9200" aria-labelledby="sneak-1-title">
+            <img class="card-img-top lazy" data-src="assets/images/sneakers/classic-white.jpg" alt="Classic White Sneaker" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="sneak-1-title" class="card-title">Classic White</h5>
+              <div class="price">₦9,200</div>
+              <p class="card-text text-muted small">Minimal leather sneaker with cushioned insole and versatile styling.</p>
+
+              <label class="visually-hidden" for="size-sneak-1">Select size</label>
+              <select id="size-sneak-1" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Classic White">
+                <option value="">Select Size</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Classic White Sneaker">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Sneaker 2 -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="running" data-newest="false" data-price="14200" aria-labelledby="sneak-2-title">
+            <img class="card-img-top lazy" data-src="assets/images/sneakers/running-black.jpg" alt="Black Running Shoe" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="sneak-2-title" class="card-title">Black Runner</h5>
+              <div class="price">₦14,200</div>
+              <p class="card-text text-muted small">Lightweight running shoe with breathable mesh and responsive midsole.</p>
+
+              <label class="visually-hidden" for="size-sneak-2">Select size</label>
+              <select id="size-sneak-2" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Black Runner">
+                <option value="">Select Size</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <a class="btn btn-outline-brown" href="mailto:gifts@jkfashionempire.com">Request Quote</a>
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Black Runner">Order via WhatsApp</button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Sneaker 3 -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="trainer" data-newest="true" data-price="11200" aria-labelledby="sneak-3-title">
+            <img class="card-img-top lazy" data-src="assets/images/sneakers/trainer-grey.jpg" alt="Grey Trainer" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="sneak-3-title" class="card-title">Grey Trainer</h5>
+              <div class="price">₦11,200</div>
+              <p class="card-text text-muted small">Stable trainer with supportive heel and durable outsole for gym and cross-training.</p>
+
+              <label class="visually-hidden" for="size-sneak-3">Select size</label>
+              <select id="size-sneak-3" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Grey Trainer">
+                <option value="">Select Size</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Grey Trainer">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Sneaker 4 -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="high-top" data-newest="false" data-price="13200" aria-labelledby="sneak-4-title">
+            <img class="card-img-top lazy" data-src="assets/images/sneakers/hightop-red.jpg" alt="Red High Top" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="sneak-4-title" class="card-title">Red High Top</h5>
+              <div class="price">₦13,200</div>
+              <p class="card-text text-muted small">Statement high-top with padded collar and reinforced toe for street-ready style.</p>
+
+              <label class="visually-hidden" for="size-sneak-4">Select size</label>
+              <select id="size-sneak-4" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Red High Top">
+                <option value="">Select Size</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Red High Top">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Sneaker 5 -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="classic" data-newest="true" data-price="9800" aria-labelledby="sneak-5-title">
+            <img class="card-img-top lazy" data-src="assets/images/sneakers/classic-navy.jpg" alt="Navy Classic" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="sneak-5-title" class="card-title">Navy Classic</h5>
+              <div class="price">₦9,800</div>
+              <p class="card-text text-muted small">Versatile navy sneaker with stitched upper and comfortable footbed.</p>
+
+              <label class="visually-hidden" for="size-sneak-5">Select size</label>
+              <select id="size-sneak-5" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Navy Classic">
+                <option value="">Select Size</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <a class="btn btn-outline-brown" href="mailto:gifts@jkfashionempire.com">Request Quote</a>
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Navy Classic">Order via WhatsApp</button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Sneaker 6 -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="running" data-newest="false" data-price="16200" aria-labelledby="sneak-6-title">
+            <img class="card-img-top lazy" data-src="assets/images/sneakers/running-white.jpg" alt="White Performance Runner" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="sneak-6-title" class="card-title">Performance White</h5>
+              <div class="price">₦16,200</div>
+              <p class="card-text text-muted small">Performance-focused runner with energy-return midsole and breathable upper.</p>
+
+              <label class="visually-hidden" for="size-sneak-6">Select size</label>
+              <select id="size-sneak-6" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Performance White">
+                <option value="">Select Size</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Performance White">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Sneaker 7 -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="trainer" data-newest="true" data-price="10200" aria-labelledby="sneak-7-title">
+            <img class="card-img-top lazy" data-src="assets/images/sneakers/trainer-black.jpg" alt="Black Trainer Low" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="sneak-7-title" class="card-title">Trainer Low</h5>
+              <div class="price">₦10,200</div>
+              <p class="card-text text-muted small">Low-profile trainer with multi-surface grip and breathable mesh panels.</p>
+
+              <label class="visually-hidden" for="size-sneak-7">Select size</label>
+              <select id="size-sneak-7" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Trainer Low">
+                <option value="">Select Size</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Trainer Low">Order via WhatsApp</button>
+                <button class="btn btn-outline-secondary" data-preview="true">Preview</button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Sneaker 8 -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="classic" data-newest="false" data-price="8800" aria-labelledby="sneak-8-title">
+            <img class="card-img-top lazy" data-src="assets/images/sneakers/classic-grey.jpg" alt="Grey Classic" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="sneak-8-title" class="card-title">Grey Classic</h5>
+              <div class="price">₦8,800</div>
+              <p class="card-text text-muted small">Everyday grey sneaker with soft lining and durable rubber sole.</p>
+
+              <label class="visually-hidden" for="size-sneak-8">Select size</label>
+              <select id="size-sneak-8" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Grey Classic">
+                <option value="">Select Size</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <a class="btn btn-outline-brown" href="mailto:gifts@jkfashionempire.com">Request Quote</a>
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Grey Classic">Order via WhatsApp</button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+      </div>
+
+           <div class="text-center mt-4">
+        <a href="https://wa.me/2348136754060?text=I%20want%20to%20order%20mules" class="btn btn-outline-brown">Load more</a>
+      </div>
+    </div>
+  
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="classic" data-newest="false" data-price="8800" aria-labelledby="sneak-8-title">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?classic" alt="Grey Classic" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="sneak-8-title" class="card-title">Grey Classic</h5>
+              <div class="price">₦8,800</div>
+              <p class="card-text text-muted small">Everyday grey sneaker with soft lining and durable rubber sole.</p>
+
+              <label class="visually-hidden" for="size-sneak-8">Select size</label>
+              <select id="size-sneak-8" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Grey Classic">
+                <option value="">Select Size</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <a class="btn btn-outline-brown" href="mailto:gifts@jkfashionempire.com">Request Quote</a>
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Grey Classic">Order via WhatsApp</button>
+              </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="classic" data-newest="false" data-price="8800" aria-labelledby="sneak-8-title">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?classic" alt="Grey Classic" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="sneak-8-title" class="card-title">Grey Classic</h5>
+              <div class="price">₦8,800</div>
+              <p class="card-text text-muted small">Everyday grey sneaker with soft lining and durable rubber sole.</p>
+
+              <label class="visually-hidden" for="size-sneak-8">Select size</label>
+              <select id="size-sneak-8" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Grey Classic">
+                <option value="">Select Size</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <a class="btn btn-outline-brown" href="mailto:gifts@jkfashionempire.com">Request Quote</a>
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Grey Classic">Order via WhatsApp</button>
+              </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="classic" data-newest="false" data-price="8800" aria-labelledby="sneak-8-title">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?classic" alt="Grey Classic" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="sneak-8-title" class="card-title">Grey Classic</h5>
+              <div class="price">₦8,800</div>
+              <p class="card-text text-muted small">Everyday grey sneaker with soft lining and durable rubber sole.</p>
+
+              <label class="visually-hidden" for="size-sneak-8">Select size</label>
+              <select id="size-sneak-8" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Grey Classic">
+                <option value="">Select Size</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <a class="btn btn-outline-brown" href="mailto:gifts@jkfashionempire.com">Request Quote</a>
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Grey Classic">Order via WhatsApp</button>
+              </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="classic" data-newest="false" data-price="8800" aria-labelledby="sneak-8-title">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?classic" alt="Grey Classic" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="sneak-8-title" class="card-title">Grey Classic</h5>
+              <div class="price">₦8,800</div>
+              <p class="card-text text-muted small">Everyday grey sneaker with soft lining and durable rubber sole.</p>
+
+              <label class="visually-hidden" for="size-sneak-8">Select size</label>
+              <select id="size-sneak-8" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Grey Classic">
+                <option value="">Select Size</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <a class="btn btn-outline-brown" href="mailto:gifts@jkfashionempire.com">Request Quote</a>
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Grey Classic">Order via WhatsApp</button>
+              </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="classic" data-newest="false" data-price="8800" aria-labelledby="sneak-8-title">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?classic" alt="Grey Classic" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="sneak-8-title" class="card-title">Grey Classic</h5>
+              <div class="price">₦8,800</div>
+              <p class="card-text text-muted small">Everyday grey sneaker with soft lining and durable rubber sole.</p>
+
+              <label class="visually-hidden" for="size-sneak-8">Select size</label>
+              <select id="size-sneak-8" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Grey Classic">
+                <option value="">Select Size</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <a class="btn btn-outline-brown" href="mailto:gifts@jkfashionempire.com">Request Quote</a>
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Grey Classic">Order via WhatsApp</button>
+              </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="classic" data-newest="false" data-price="8800" aria-labelledby="sneak-8-title">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?classic" alt="Grey Classic" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="sneak-8-title" class="card-title">Grey Classic</h5>
+              <div class="price">₦8,800</div>
+              <p class="card-text text-muted small">Everyday grey sneaker with soft lining and durable rubber sole.</p>
+
+              <label class="visually-hidden" for="size-sneak-8">Select size</label>
+              <select id="size-sneak-8" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Grey Classic">
+                <option value="">Select Size</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <a class="btn btn-outline-brown" href="mailto:gifts@jkfashionempire.com">Request Quote</a>
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Grey Classic">Order via WhatsApp</button>
+              </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="classic" data-newest="false" data-price="8800" aria-labelledby="sneak-8-title">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?classic" alt="Grey Classic" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="sneak-8-title" class="card-title">Grey Classic</h5>
+              <div class="price">₦8,800</div>
+              <p class="card-text text-muted small">Everyday grey sneaker with soft lining and durable rubber sole.</p>
+
+              <label class="visually-hidden" for="size-sneak-8">Select size</label>
+              <select id="size-sneak-8" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Grey Classic">
+                <option value="">Select Size</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <a class="btn btn-outline-brown" href="mailto:gifts@jkfashionempire.com">Request Quote</a>
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Grey Classic">Order via WhatsApp</button>
+              </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="classic" data-newest="false" data-price="8800" aria-labelledby="sneak-8-title">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?classic" alt="Grey Classic" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="sneak-8-title" class="card-title">Grey Classic</h5>
+              <div class="price">₦8,800</div>
+              <p class="card-text text-muted small">Everyday grey sneaker with soft lining and durable rubber sole.</p>
+
+              <label class="visually-hidden" for="size-sneak-8">Select size</label>
+              <select id="size-sneak-8" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Grey Classic">
+                <option value="">Select Size</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <a class="btn btn-outline-brown" href="mailto:gifts@jkfashionempire.com">Request Quote</a>
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Grey Classic">Order via WhatsApp</button>
+              </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="classic" data-newest="false" data-price="8800" aria-labelledby="sneak-8-title">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?classic" alt="Grey Classic" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="sneak-8-title" class="card-title">Grey Classic</h5>
+              <div class="price">₦8,800</div>
+              <p class="card-text text-muted small">Everyday grey sneaker with soft lining and durable rubber sole.</p>
+
+              <label class="visually-hidden" for="size-sneak-8">Select size</label>
+              <select id="size-sneak-8" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Grey Classic">
+                <option value="">Select Size</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <a class="btn btn-outline-brown" href="mailto:gifts@jkfashionempire.com">Request Quote</a>
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Grey Classic">Order via WhatsApp</button>
+              </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="classic" data-newest="false" data-price="8800" aria-labelledby="sneak-8-title">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?classic" alt="Grey Classic" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="sneak-8-title" class="card-title">Grey Classic</h5>
+              <div class="price">₦8,800</div>
+              <p class="card-text text-muted small">Everyday grey sneaker with soft lining and durable rubber sole.</p>
+
+              <label class="visually-hidden" for="size-sneak-8">Select size</label>
+              <select id="size-sneak-8" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Grey Classic">
+                <option value="">Select Size</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <a class="btn btn-outline-brown" href="mailto:gifts@jkfashionempire.com">Request Quote</a>
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Grey Classic">Order via WhatsApp</button>
+              </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="classic" data-newest="false" data-price="8800" aria-labelledby="sneak-8-title">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?classic" alt="Grey Classic" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="sneak-8-title" class="card-title">Grey Classic</h5>
+              <div class="price">₦8,800</div>
+              <p class="card-text text-muted small">Everyday grey sneaker with soft lining and durable rubber sole.</p>
+
+              <label class="visually-hidden" for="size-sneak-8">Select size</label>
+              <select id="size-sneak-8" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Grey Classic">
+                <option value="">Select Size</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <a class="btn btn-outline-brown" href="mailto:gifts@jkfashionempire.com">Request Quote</a>
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Grey Classic">Order via WhatsApp</button>
+              </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="classic" data-newest="false" data-price="8800" aria-labelledby="sneak-8-title">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?classic" alt="Grey Classic" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="sneak-8-title" class="card-title">Grey Classic</h5>
+              <div class="price">₦8,800</div>
+              <p class="card-text text-muted small">Everyday grey sneaker with soft lining and durable rubber sole.</p>
+
+              <label class="visually-hidden" for="size-sneak-8">Select size</label>
+              <select id="size-sneak-8" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Grey Classic">
+                <option value="">Select Size</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <a class="btn btn-outline-brown" href="mailto:gifts@jkfashionempire.com">Request Quote</a>
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Grey Classic">Order via WhatsApp</button>
+              </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="classic" data-newest="false" data-price="8800" aria-labelledby="sneak-8-title">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?classic" alt="Grey Classic" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="sneak-8-title" class="card-title">Grey Classic</h5>
+              <div class="price">₦8,800</div>
+              <p class="card-text text-muted small">Everyday grey sneaker with soft lining and durable rubber sole.</p>
+
+              <label class="visually-hidden" for="size-sneak-8">Select size</label>
+              <select id="size-sneak-8" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Grey Classic">
+                <option value="">Select Size</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <a class="btn btn-outline-brown" href="mailto:gifts@jkfashionempire.com">Request Quote</a>
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Grey Classic">Order via WhatsApp</button>
+              </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="classic" data-newest="false" data-price="8800" aria-labelledby="sneak-8-title">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?classic" alt="Grey Classic" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="sneak-8-title" class="card-title">Grey Classic</h5>
+              <div class="price">₦8,800</div>
+              <p class="card-text text-muted small">Everyday grey sneaker with soft lining and durable rubber sole.</p>
+
+              <label class="visually-hidden" for="size-sneak-8">Select size</label>
+              <select id="size-sneak-8" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Grey Classic">
+                <option value="">Select Size</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <a class="btn btn-outline-brown" href="mailto:gifts@jkfashionempire.com">Request Quote</a>
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Grey Classic">Order via WhatsApp</button>
+              </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="classic" data-newest="false" data-price="8800" aria-labelledby="sneak-8-title">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?classic" alt="Grey Classic" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="sneak-8-title" class="card-title">Grey Classic</h5>
+              <div class="price">₦8,800</div>
+              <p class="card-text text-muted small">Everyday grey sneaker with soft lining and durable rubber sole.</p>
+
+              <label class="visually-hidden" for="size-sneak-8">Select size</label>
+              <select id="size-sneak-8" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Grey Classic">
+                <option value="">Select Size</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <a class="btn btn-outline-brown" href="mailto:gifts@jkfashionempire.com">Request Quote</a>
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Grey Classic">Order via WhatsApp</button>
+              </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="classic" data-newest="false" data-price="8800" aria-labelledby="sneak-8-title">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?classic" alt="Grey Classic" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="sneak-8-title" class="card-title">Grey Classic</h5>
+              <div class="price">₦8,800</div>
+              <p class="card-text text-muted small">Everyday grey sneaker with soft lining and durable rubber sole.</p>
+
+              <label class="visually-hidden" for="size-sneak-8">Select size</label>
+              <select id="size-sneak-8" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Grey Classic">
+                <option value="">Select Size</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <a class="btn btn-outline-brown" href="mailto:gifts@jkfashionempire.com">Request Quote</a>
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Grey Classic">Order via WhatsApp</button>
+              </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="classic" data-newest="false" data-price="8800" aria-labelledby="sneak-8-title">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?classic" alt="Grey Classic" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="sneak-8-title" class="card-title">Grey Classic</h5>
+              <div class="price">₦8,800</div>
+              <p class="card-text text-muted small">Everyday grey sneaker with soft lining and durable rubber sole.</p>
+
+              <label class="visually-hidden" for="size-sneak-8">Select size</label>
+              <select id="size-sneak-8" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Grey Classic">
+                <option value="">Select Size</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <a class="btn btn-outline-brown" href="mailto:gifts@jkfashionempire.com">Request Quote</a>
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Grey Classic">Order via WhatsApp</button>
+              </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="classic" data-newest="false" data-price="8800" aria-labelledby="sneak-8-title">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?classic" alt="Grey Classic" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="sneak-8-title" class="card-title">Grey Classic</h5>
+              <div class="price">₦8,800</div>
+              <p class="card-text text-muted small">Everyday grey sneaker with soft lining and durable rubber sole.</p>
+
+              <label class="visually-hidden" for="size-sneak-8">Select size</label>
+              <select id="size-sneak-8" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Grey Classic">
+                <option value="">Select Size</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <a class="btn btn-outline-brown" href="mailto:gifts@jkfashionempire.com">Request Quote</a>
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Grey Classic">Order via WhatsApp</button>
+              </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="classic" data-newest="false" data-price="8800" aria-labelledby="sneak-8-title">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?classic" alt="Grey Classic" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="sneak-8-title" class="card-title">Grey Classic</h5>
+              <div class="price">₦8,800</div>
+              <p class="card-text text-muted small">Everyday grey sneaker with soft lining and durable rubber sole.</p>
+
+              <label class="visually-hidden" for="size-sneak-8">Select size</label>
+              <select id="size-sneak-8" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Grey Classic">
+                <option value="">Select Size</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <a class="btn btn-outline-brown" href="mailto:gifts@jkfashionempire.com">Request Quote</a>
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Grey Classic">Order via WhatsApp</button>
+              </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="classic" data-newest="false" data-price="8800" aria-labelledby="sneak-8-title">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?classic" alt="Grey Classic" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="sneak-8-title" class="card-title">Grey Classic</h5>
+              <div class="price">₦8,800</div>
+              <p class="card-text text-muted small">Everyday grey sneaker with soft lining and durable rubber sole.</p>
+
+              <label class="visually-hidden" for="size-sneak-8">Select size</label>
+              <select id="size-sneak-8" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Grey Classic">
+                <option value="">Select Size</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <a class="btn btn-outline-brown" href="mailto:gifts@jkfashionempire.com">Request Quote</a>
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Grey Classic">Order via WhatsApp</button>
+              </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="classic" data-newest="false" data-price="8800" aria-labelledby="sneak-8-title">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?classic" alt="Grey Classic" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="sneak-8-title" class="card-title">Grey Classic</h5>
+              <div class="price">₦8,800</div>
+              <p class="card-text text-muted small">Everyday grey sneaker with soft lining and durable rubber sole.</p>
+
+              <label class="visually-hidden" for="size-sneak-8">Select size</label>
+              <select id="size-sneak-8" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Grey Classic">
+                <option value="">Select Size</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <a class="btn btn-outline-brown" href="mailto:gifts@jkfashionempire.com">Request Quote</a>
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Grey Classic">Order via WhatsApp</button>
+              </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" data-category="classic" data-newest="false" data-price="8800" aria-labelledby="sneak-8-title">
+            <img class="card-img-top lazy" data-src="https://source.unsplash.com/featured/?classic" alt="Grey Classic" />
+            <div class="card-body d-flex flex-column">
+              <h5 id="sneak-8-title" class="card-title">Grey Classic</h5>
+              <div class="price">₦8,800</div>
+              <p class="card-text text-muted small">Everyday grey sneaker with soft lining and durable rubber sole.</p>
+
+              <label class="visually-hidden" for="size-sneak-8">Select size</label>
+              <select id="size-sneak-8" class="form-select form-select-sm size-select mb-2" aria-label="Select size for Grey Classic">
+                <option value="">Select Size</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option>
+              </select>
+
+              <div class="mt-auto d-grid gap-2">
+                <a class="btn btn-outline-brown" href="mailto:gifts@jkfashionempire.com">Request Quote</a>
+                <button class="btn btn-brown order-btn" data-phone="2348136754060" data-package="Grey Classic">Order via WhatsApp</button>
+              </div></main>
+
+  <section class="py-4 bg-light">
+    <div class="container">
+      <div class="d-flex flex-column flex-md-row align-items-center justify-content-between gap-3">
+        <div>
+          <strong class="text-brown">Sneaker care</strong>
+          <p class="small text-muted mb-0">Wipe clean after use; air-dry; use protector spray for suede and mesh; rotate pairs for longevity.</p>
+        </div>
+        <div class="text-md-end">
+          <a class="btn btn-outline-brown" href="size-guide-index.html">View size guide</a>
+          <a class="btn btn-brown ms-2" href="https://wa.me/2348136754060?text=I%20need%20help%20with%20sneakers%20sizes">Ask for help</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer bg-brown text-white py-4 mt-5">
+    <div class="container text-center">
+      <p class="mb-1">© 2025 JK Fashion Empire</p>
+      <p class="small mb-0">Sneakers engineered for comfort and style. For custom orders contact our team.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/sneakers-1.js"></script>
+  <script src="js/men-sneakers.js"></script>
+  <script src="js/size-guide-1.js"></script>
+</body>
+</html>
